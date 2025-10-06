@@ -1,0 +1,3282 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+		<title>Главная страница</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<link rel="stylesheet" href="css/fancybox.min.css" />
+		<link rel="stylesheet" href="css/hystmodal.min.css" />
+		<link rel="stylesheet" href="css/styles.css?v=1759735949860" />
+
+		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<meta name="apple-mobile-web-app-title" content="naanit.ru" />
+		<link rel="manifest" href="/site.webmanifest" />
+
+	</head>
+
+	<body class="preload mp">
+		<div class="main-wrapper-outer">
+			<header class="header">
+				<div class="container">
+					<div class="header__grid">
+						<div class="header__cell-logo">
+							<a class="header__logo" href="/">
+								<img src="img/logo-dark.svg" alt="">
+								<span>ООО "НААНИТ" <br>Официальный импортер <br>и дистрибьютор бренда ZCC-CT</span>
+							</a>
+						</div>
+						<div class="header__cell-nav scrollable">
+							<ul class="menu-main">
+								<li class="menu-main__catalog">
+									<button data-action="showCatalogMenu" type="button">
+										Продукция
+										<span class="menu-main__chevron1">
+											<svg aria-hidden="true" width="13" height="8">
+												<use xlink:href="img/sprite.svg#chevron2"></use>
+											</svg>
+										</span>
+									</button>
+								</li>
+								<li>
+									<a href="about.html">О компании</a>
+									<button class="menu-main__chevron1" type="button">
+										<svg aria-hidden="true" width="13" height="8">
+											<use xlink:href="img/sprite.svg#chevron2"></use>
+										</svg>
+									</button>
+									<div class="menu-main__sub">
+										<button data-action="menuBack1" class="header__btn-back" type="button">
+											<svg aria-hidden="true" width="20" height="12">
+												<use xlink:href="img/sprite.svg#chevron2"></use>
+											</svg>
+											О компании
+										</button>
+										<ul>
+											<li><a href="about.html">О компании</a></li>
+											<li><a href="vacancies.html">Вакансии</a></li>
+											<li><a href="blog.html">Блог</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<a href="info.html">Тех.информация</a>
+								</li>
+								<li>
+									<a href="catalogs.html">Каталоги</a>
+								</li>
+								<li>
+									<a href="news.html">Новости</a>
+								</li>
+								<li>
+									<a href="contacts.html">Контакты</a>
+								</li>
+							</ul>
+							<div class="header__cell-phone">
+								<a href="tel:+79045084162">
+									<svg aria-hidden="true" width="17" height="17">
+										<use xlink:href="img/sprite.svg#phone1"></use>
+									</svg>
+									<span>+7 (904) 508-41-62</span>
+								</a>
+								<button class="header__btn-phone" type="button">
+									<svg aria-hidden="true" width="13" height="8">
+										<use xlink:href="img/sprite.svg#chevron2"></use>
+									</svg>
+								</button>
+							</div>
+							<div class="header__cell-callback">
+								<button data-hystmodal="#modalCallback" class="header__btn-callback" type="button">Заказать звонок</button>
+							</div>
+						</div>
+						<div class="header__cell-catalog">
+							<button data-action="toggleCatalogMenu" class="btn-catalog" type="button">Продукция</button>
+						</div>
+						<div class="header__cell-search">
+							<div class="header-search">
+								<svg class="header-search__icon" aria-hidden="true" width="19" height="19">
+									<use xlink:href="img/sprite.svg#search1"></use>
+								</svg>
+								<div class="header-search__inner">
+									<input data-action-input="showSearchDropdown" class="header-search__input" type="text" placeholder="Поиск по сайту...">
+									<button class="header-search__clear" type="button">
+										<svg aria-hidden="true" width="14" height="14">
+											<use xlink:href="img/sprite.svg#close1"></use>
+										</svg>
+										<span class="v-h">Очистить</span>
+									</button>
+								</div>
+								<button class="header-search__btn btn btn_primary" type="submit">Найти</button>
+							</div>
+							<div class="header-search-dd">
+								<div class="header-search-dd__categories">
+									<ul class="categories-list1">
+										<li>
+											<a href="#">
+												<img src="img/category1.webp" alt="">
+												Токарная обработка
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="img/category2.webp" alt="">
+												Точение резьбы
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="img/category3.webp" alt="">
+												Токарная обработка
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="img/category4.webp" alt="">
+												Точение резьбы
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="header-search-dd__products">
+									<div class="card-product2">
+										<div class="card-product2__col-photo">
+											<img src="img/product2.webp" loading="lazy" alt="">
+										</div>
+										<div class="card-product2__col-data">
+											<div class="card-product2__name">
+												<a href="#">Твердосплавная пластина ZCC-CT TNMG160404-PM YBC252</a>
+											</div>
+											<div class="card-product2__description">Короткое описание</div>
+											<div class="card-product2__status status_instock">В наличии</div>
+										</div>
+										<div class="card-product2__col-price">
+											<div class="card-product2__label1">С НДС (1 шт.)</div>
+											<div class="card-product2__price1">441 ₽</div>
+											<div class="card-product2__price2">1200 ₽</div>
+										</div>
+									</div>
+
+									<div class="card-product2">
+										<div class="card-product2__col-photo">
+											<img src="img/product2.webp" loading="lazy" alt="">
+										</div>
+										<div class="card-product2__col-data">
+											<div class="card-product2__name">
+												<a href="#">Твердосплавная пластина ZCC-CT TNMG160404-PM YBC252</a>
+											</div>
+											<div class="card-product2__description">Короткое описание</div>
+											<div class="card-product2__status status_instock">В наличии</div>
+										</div>
+										<div class="card-product2__col-price">
+											<div class="card-product2__label1">С НДС (1 шт.)</div>
+											<div class="card-product2__price1">441 ₽</div>
+											<div class="card-product2__price2">1200 ₽</div>
+										</div>
+									</div>
+
+									<div class="card-product2">
+										<div class="card-product2__col-photo">
+											<img src="img/product2.webp" loading="lazy" alt="">
+										</div>
+										<div class="card-product2__col-data">
+											<div class="card-product2__name">
+												<a href="#">Твердосплавная пластина ZCC-CT TNMG160404-PM YBC252</a>
+											</div>
+											<div class="card-product2__description">Короткое описание</div>
+											<div class="card-product2__status status_instock">В наличии</div>
+										</div>
+										<div class="card-product2__col-price">
+											<div class="card-product2__label1">С НДС (1 шт.)</div>
+											<div class="card-product2__price1">441 ₽</div>
+											<div class="card-product2__price2">1200 ₽</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="header__cell-burger">
+							<button data-action="toggleMobileMenu" class="btn-burger">
+								<span></span>
+								<span></span>
+								<span></span>
+							</button>
+						</div>
+						<div class="header__cell-toolbar">
+							<a class="header__btn1 header__btn-user" href="login.html">
+								<svg aria-hidden="true" width="19" height="25">
+									<use xlink:href="img/sprite.svg#user1"></use>
+								</svg>
+								<span>Вход</span>
+							</a>
+							<a href="favorites.html" class="header__btn1">
+								<svg aria-hidden="true" width="25" height="23">
+									<use xlink:href="img/sprite.svg#heart1"></use>
+								</svg>
+								<span class="header__counter">
+									<span class="v-h">Товаров в избранном: </span>0
+								</span>
+							</a>
+							<a href="cart.html" class="header__btn1">
+								<svg aria-hidden="true" width="24" height="25">
+									<use xlink:href="img/sprite.svg#cart1"></use>
+								</svg>
+								<span class="header__counter">
+									<span class="v-h">Товаров в корзине: </span>0
+								</span>
+							</a>
+						</div>
+						<div class="catalog-menu">
+							<ul class="scrollable">
+								<li>
+									<button data-action="menuBack2" class="header__btn-back" type="button">
+										<svg aria-hidden="true" width="20" height="12">
+											<use xlink:href="img/sprite.svg#chevron2"></use>
+										</svg>
+										Продукция
+									</button>
+								</li>
+								<li class="catalog-menu__lvl1 active">
+									<div class="catalog-menu__inner1">
+										<a class="catalog-menu__lvl1-lnk" href="#">
+											<img src="img/category1.webp" alt="">
+											Токарная обработка
+										</a>
+										<button class="catalog-menu__btn1" type="button">
+											<svg aria-hidden="true" width="10" height="17">
+												<use xlink:href="img/sprite.svg#chevron3"></use>
+											</svg>
+										</button>
+									</div>
+									<div class="catalog-menu__sub">
+										<div class="catalog-menu__sub-inner scrollable">
+											<div class="catalog-menu__title1">Токарная обработка</div>
+											<button data-action="menuBack3" class="header__btn-back" type="button">
+												<svg aria-hidden="true" width="20" height="12">
+													<use xlink:href="img/sprite.svg#chevron2"></use>
+												</svg>
+												Токарная обработка
+											</button>
+											<ul class="catalog-menu__columns">
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 1</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 1
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+																<li class="catalog-menu__lvl2 catalog-menu__expander1">
+																	<button data-action="expandList1" class="btn-text btn-text_2" type="button">Посмотреть все</button>
+																	<button data-action="collapseList1" class="btn-text btn-text_2" type="button">Свернуть</button>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 2</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 2
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+																<li class="catalog-menu__lvl2 catalog-menu__expander1">
+																	<button data-action="expandList1" class="btn-text btn-text_2" type="button">Посмотреть все</button>
+																	<button data-action="collapseList1" class="btn-text btn-text_2" type="button">Свернуть</button>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 3</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 3
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 4</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 4
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+																<li class="catalog-menu__lvl2 catalog-menu__expander1">
+																	<button data-action="expandList1" class="btn-text btn-text_2" type="button">Посмотреть все</button>
+																	<button data-action="collapseList1" class="btn-text btn-text_2" type="button">Свернуть</button>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 5</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 5
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 6</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 6
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 7</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 7
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 8</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 8
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 9</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 9
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 10</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 10
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 11</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 11
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 12</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 12
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+											</ul>
+
+										</div>
+									</div>
+								</li>
+								<li class="catalog-menu__lvl1">
+									<div class="catalog-menu__inner1">
+										<a class="catalog-menu__lvl1-lnk" href="#">
+											<img src="img/category2.webp" alt="">
+											Точение резьбы
+										</a>
+										<button class="catalog-menu__btn1" type="button">
+											<svg aria-hidden="true" width="10" height="17">
+												<use xlink:href="img/sprite.svg#chevron3"></use>
+											</svg>
+										</button>
+									</div>
+									<div class="catalog-menu__sub">
+										<div class="catalog-menu__sub-inner scrollable">
+											<div class="catalog-menu__title1">Точение резьбы</div>
+											<button data-action="menuBack3" class="header__btn-back" type="button">
+												<svg aria-hidden="true" width="20" height="12">
+													<use xlink:href="img/sprite.svg#chevron2"></use>
+												</svg>
+												Точение резьбы
+											</button>
+											<ul class="catalog-menu__columns">
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 1</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 1
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+																<li class="catalog-menu__lvl2 catalog-menu__expander1">
+																	<button data-action="expandList1" class="btn-text btn-text_2" type="button">Посмотреть все</button>
+																	<button data-action="collapseList1" class="btn-text btn-text_2" type="button">Свернуть</button>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 2</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 2
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 3</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 3
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+											</ul>
+
+										</div>
+									</div>
+								</li>
+								<li class="catalog-menu__lvl1">
+									<div class="catalog-menu__inner1">
+										<a class="catalog-menu__lvl1-lnk" href="#">
+											<img src="img/category3.webp" alt="">
+											Сверление
+										</a>
+										<button class="catalog-menu__btn1" type="button">
+											<svg aria-hidden="true" width="10" height="17">
+												<use xlink:href="img/sprite.svg#chevron3"></use>
+											</svg>
+										</button>
+									</div>
+									<div class="catalog-menu__sub">
+										<div class="catalog-menu__sub-inner scrollable">
+											<div class="catalog-menu__title1">Сверление</div>
+											<button data-action="menuBack3" class="header__btn-back" type="button">
+												<svg aria-hidden="true" width="20" height="12">
+													<use xlink:href="img/sprite.svg#chevron2"></use>
+												</svg>
+												Сверление
+											</button>
+											<ul class="catalog-menu__columns">
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 1</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 1
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+																<li class="catalog-menu__lvl2 catalog-menu__expander1">
+																	<button data-action="expandList1" class="btn-text btn-text_2" type="button">Посмотреть все</button>
+																	<button data-action="collapseList1" class="btn-text btn-text_2" type="button">Свернуть</button>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 2</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 2
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+																<li class="catalog-menu__lvl2 catalog-menu__expander1">
+																	<button data-action="expandList1" class="btn-text btn-text_2" type="button">Посмотреть все</button>
+																	<button data-action="collapseList1" class="btn-text btn-text_2" type="button">Свернуть</button>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 3</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 3
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 4</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 4
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+																<li class="catalog-menu__lvl2 catalog-menu__expander1">
+																	<button data-action="expandList1" class="btn-text btn-text_2" type="button">Посмотреть все</button>
+																	<button data-action="collapseList1" class="btn-text btn-text_2" type="button">Свернуть</button>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 5</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 5
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 6</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 6
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 7</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 7
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 8</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 8
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 9</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 9
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 10</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 10
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 11</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 11
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 12</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 12
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+											</ul>
+
+										</div>
+									</div>
+								</li>
+								<li class="catalog-menu__lvl1">
+									<div class="catalog-menu__inner1">
+										<a class="catalog-menu__lvl1-lnk" href="#">
+											<img src="img/category4.webp" alt="">
+											Станочная оснастка
+										</a>
+										<button class="catalog-menu__btn1" type="button">
+											<svg aria-hidden="true" width="10" height="17">
+												<use xlink:href="img/sprite.svg#chevron3"></use>
+											</svg>
+										</button>
+									</div>
+									<div class="catalog-menu__sub">
+										<div class="catalog-menu__sub-inner scrollable">
+											<div class="catalog-menu__title1">Станочная оснастка</div>
+											<button data-action="menuBack3" class="header__btn-back" type="button">
+												<svg aria-hidden="true" width="20" height="12">
+													<use xlink:href="img/sprite.svg#chevron2"></use>
+												</svg>
+												Станочная оснастка
+											</button>
+											<ul class="catalog-menu__columns">
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 1</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 1
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+																<li class="catalog-menu__lvl2 catalog-menu__expander1">
+																	<button data-action="expandList1" class="btn-text btn-text_2" type="button">Посмотреть все</button>
+																	<button data-action="collapseList1" class="btn-text btn-text_2" type="button">Свернуть</button>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 2</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 2
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 3</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 3
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+											</ul>
+
+										</div>
+									</div>
+								</li>
+								<li class="catalog-menu__lvl1">
+									<div class="catalog-menu__inner1">
+										<a class="catalog-menu__lvl1-lnk" href="#">
+											<img src="img/category5.webp" alt="">
+											Твердосплавные фрезы
+										</a>
+										<button class="catalog-menu__btn1" type="button">
+											<svg aria-hidden="true" width="10" height="17">
+												<use xlink:href="img/sprite.svg#chevron3"></use>
+											</svg>
+										</button>
+									</div>
+									<div class="catalog-menu__sub">
+										<div class="catalog-menu__sub-inner scrollable">
+											<div class="catalog-menu__title1">Твердосплавные фрезы</div>
+											<button data-action="menuBack3" class="header__btn-back" type="button">
+												<svg aria-hidden="true" width="20" height="12">
+													<use xlink:href="img/sprite.svg#chevron2"></use>
+												</svg>
+												Твердосплавные фрезы
+											</button>
+											<ul class="catalog-menu__columns">
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 1</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 1
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+																<li class="catalog-menu__lvl2 catalog-menu__expander1">
+																	<button data-action="expandList1" class="btn-text btn-text_2" type="button">Посмотреть все</button>
+																	<button data-action="collapseList1" class="btn-text btn-text_2" type="button">Свернуть</button>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 2</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 2
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+																<li class="catalog-menu__lvl2 catalog-menu__expander1">
+																	<button data-action="expandList1" class="btn-text btn-text_2" type="button">Посмотреть все</button>
+																	<button data-action="collapseList1" class="btn-text btn-text_2" type="button">Свернуть</button>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 3</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 3
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 4</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 4
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+																<li class="catalog-menu__lvl2 catalog-menu__expander1">
+																	<button data-action="expandList1" class="btn-text btn-text_2" type="button">Посмотреть все</button>
+																	<button data-action="collapseList1" class="btn-text btn-text_2" type="button">Свернуть</button>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 5</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 5
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 6</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 6
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 7</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 7
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 8</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 8
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 9</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 9
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 10</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 10
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 11</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 11
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 12</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 12
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+											</ul>
+
+										</div>
+									</div>
+								</li>
+								<li class="catalog-menu__lvl1">
+									<div class="catalog-menu__inner1">
+										<a class="catalog-menu__lvl1-lnk" href="#">
+											<img src="img/category6.webp" alt="">
+											Метчики и резьбофрезы
+										</a>
+										<button class="catalog-menu__btn1" type="button">
+											<svg aria-hidden="true" width="10" height="17">
+												<use xlink:href="img/sprite.svg#chevron3"></use>
+											</svg>
+										</button>
+									</div>
+									<div class="catalog-menu__sub">
+										<div class="catalog-menu__sub-inner scrollable">
+											<div class="catalog-menu__title1">Метчики и резьбофрезы</div>
+											<button data-action="menuBack3" class="header__btn-back" type="button">
+												<svg aria-hidden="true" width="20" height="12">
+													<use xlink:href="img/sprite.svg#chevron2"></use>
+												</svg>
+												Метчики и резьбофрезы
+											</button>
+											<ul class="catalog-menu__columns">
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 1</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 1
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+																<li class="catalog-menu__lvl2 catalog-menu__expander1">
+																	<button data-action="expandList1" class="btn-text btn-text_2" type="button">Посмотреть все</button>
+																	<button data-action="collapseList1" class="btn-text btn-text_2" type="button">Свернуть</button>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 2</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 2
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 3</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 3
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+											</ul>
+
+										</div>
+									</div>
+								</li>
+								<li class="catalog-menu__lvl1">
+									<div class="catalog-menu__inner1">
+										<a class="catalog-menu__lvl1-lnk" href="#">
+											<img src="img/category7.webp" alt="">
+											Токарные держатели
+										</a>
+										<button class="catalog-menu__btn1" type="button">
+											<svg aria-hidden="true" width="10" height="17">
+												<use xlink:href="img/sprite.svg#chevron3"></use>
+											</svg>
+										</button>
+									</div>
+									<div class="catalog-menu__sub">
+										<div class="catalog-menu__sub-inner scrollable">
+											<div class="catalog-menu__title1">Токарные держатели</div>
+											<button data-action="menuBack3" class="header__btn-back" type="button">
+												<svg aria-hidden="true" width="20" height="12">
+													<use xlink:href="img/sprite.svg#chevron2"></use>
+												</svg>
+												Токарные держатели
+											</button>
+											<ul class="catalog-menu__columns">
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 1</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 1
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+																<li class="catalog-menu__lvl2 catalog-menu__expander1">
+																	<button data-action="expandList1" class="btn-text btn-text_2" type="button">Посмотреть все</button>
+																	<button data-action="collapseList1" class="btn-text btn-text_2" type="button">Свернуть</button>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 2</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 2
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+																<li class="catalog-menu__lvl2 catalog-menu__expander1">
+																	<button data-action="expandList1" class="btn-text btn-text_2" type="button">Посмотреть все</button>
+																	<button data-action="collapseList1" class="btn-text btn-text_2" type="button">Свернуть</button>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 3</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 3
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 4</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 4
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+																<li class="catalog-menu__lvl2 catalog-menu__expander1">
+																	<button data-action="expandList1" class="btn-text btn-text_2" type="button">Посмотреть все</button>
+																	<button data-action="collapseList1" class="btn-text btn-text_2" type="button">Свернуть</button>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 5</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 5
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 6</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 6
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 7</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 7
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 8</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 8
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 9</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 9
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 10</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 10
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 11</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 11
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 12</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 12
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+											</ul>
+
+										</div>
+									</div>
+								</li>
+								<li class="catalog-menu__lvl1">
+									<div class="catalog-menu__inner1">
+										<a class="catalog-menu__lvl1-lnk" href="#">
+											<img src="img/category8.webp" alt="">
+											Твердосплавные столбики
+										</a>
+										<button class="catalog-menu__btn1" type="button">
+											<svg aria-hidden="true" width="10" height="17">
+												<use xlink:href="img/sprite.svg#chevron3"></use>
+											</svg>
+										</button>
+									</div>
+									<div class="catalog-menu__sub">
+										<div class="catalog-menu__sub-inner scrollable">
+											<div class="catalog-menu__title1">Твердосплавные столбики</div>
+											<button data-action="menuBack3" class="header__btn-back" type="button">
+												<svg aria-hidden="true" width="20" height="12">
+													<use xlink:href="img/sprite.svg#chevron2"></use>
+												</svg>
+												Твердосплавные столбики
+											</button>
+											<ul class="catalog-menu__columns">
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 1</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 1
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+																<li class="catalog-menu__lvl2 catalog-menu__expander1">
+																	<button data-action="expandList1" class="btn-text btn-text_2" type="button">Посмотреть все</button>
+																	<button data-action="collapseList1" class="btn-text btn-text_2" type="button">Свернуть</button>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 2</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 2
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="catalog-menu__column-item">
+													<div class="catalog-menu__title2">
+														<a href="catalog.html">Токарная обработка 3</a>
+														<button class="catalog-menu__btn1" type="button">
+															<svg aria-hidden="true" width="10" height="17">
+																<use xlink:href="img/sprite.svg#chevron3"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="catalog-menu__sub2">
+														<div class="catalog-menu__sub2-inner">
+															<button data-action="menuBack4" class="header__btn-back" type="button">
+																<svg aria-hidden="true" width="20" height="12">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																Токарная обработка 3
+															</button>
+															<ul>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Твердосплавные сверла</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными пластинами</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Сверла со сменными головками</a></li>
+																<li class="catalog-menu__lvl2"><a href="catalog.html">Расточные системы</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+											</ul>
+
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="cart-items-stack"></div>
+					</div>
+				</div>
+			</header>
+			<div class="header-backdrop"></div>
+
+
+			<main class="main">
+				<div class="block-breadcrumbs">
+					<div class="container">
+						<nav aria-label="breadcrumb" class="breadcrumbs">
+							<a href="/" class="breadcrumbs__item">
+								Главная
+							</a>
+							<span aria-hidden="true">&mdash;</span>
+							<a href="catalog.html" class="breadcrumbs__item">
+								Продукция
+							</a>
+							<span aria-hidden="true">&mdash;</span>
+							<a href="catalog.html" class="breadcrumbs__item">
+								Токарные пластины по ISO
+							</a>
+							<span aria-hidden="true">&mdash;</span>
+							<span aria-current="page" class="breadcrumbs__item">
+								Твердосплавная пластина ZCC-CT TNMG160404-PM YBC252
+							</span>
+						</nav>
+					</div>
+				</div>
+				<div class="catalog-detail-wrapper">
+					<div class="container container_bordered1">
+						<div class="catalog-detail">
+							<div class="catalog-detail__preview">
+								<div data-swiper="preview" class="swiper swiper-preview">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<img src="img/product1.webp" alt="">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/product2.webp" alt="">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/product1.webp" alt="">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/product2.webp" alt="">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/product1.webp" alt="">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/product2.webp" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="catalog-detail__photos">
+								<div class="catalog-detail__badges">
+									<span class="badge1 badge1_black">Новинка</span>
+									<span class="badge1 badge1_red">Акция</span>
+									<span class="badge1 badge1_orange">Хит</span>
+								</div>
+								<div data-swiper="photos" class="swiper swiper-photos">
+									<div class="swiper-wrapper">
+										<a href="img/product1.webp" data-fancybox="photo-big" class="swiper-slide">
+											<img src="img/product1.webp" alt="">
+										</a>
+										<a href="img/product2.webp" data-fancybox="photo-big" class="swiper-slide">
+											<img src="img/product2.webp" alt="">
+										</a>
+										<a href="img/product1.webp" data-fancybox="photo-big" class="swiper-slide">
+											<img src="img/product1.webp" alt="">
+										</a>
+										<a href="img/product2.webp" data-fancybox="photo-big" class="swiper-slide">
+											<img src="img/product2.webp" alt="">
+										</a>
+										<a href="img/product1.webp" data-fancybox="photo-big" class="swiper-slide">
+											<img src="img/product1.webp" alt="">
+										</a>
+										<a href="img/product2.webp" data-fancybox="photo-big" class="swiper-slide">
+											<img src="img/product2.webp" alt="">
+										</a>
+									</div>
+									<button class="swiper-nav swiper-nav_prev" type="button">
+										<svg aria-hidden="true" width="11" height="20">
+											<use xlink:href="img/sprite.svg#chevron1"></use>
+										</svg>
+										<span class="v-h">Назад</span>
+									</button>
+									<button class="swiper-nav swiper-nav_next" type="button">
+										<svg aria-hidden="true" width="11" height="20">
+											<use xlink:href="img/sprite.svg#chevron1"></use>
+										</svg>
+										<span class="v-h">Вперед</span>
+									</button>
+								</div>
+							</div>
+							<div class="catalog-detail__data">
+								<h1 class="catalog-detail__name">Твердосплавная пластина ZCC-CT TNMG160404-PM YBC252</h1>
+								<div class="catalog-detail__code">Артикул: 5004651950046519</div>
+								<div class="text-cutter1">
+									<div class="catalog-detail__description">
+										Сменная твердосплавная пластина CNMG 120408 - OSM OP1105 для получистовой обработки жаропрочных, титановых и нержавеющих сплавов на средних и низких режимах резания. Возможно применение для других сталей при стабильном точении.
+										Сменная твердосплавная пластина CNMG 120408 - OSM OP1105 для получистовой обработки жаропрочных, титановых и нержавеющих сплавов на средних и низких режимах резания. Возможно применение для других сталей при стабильном точении.
+									</div>
+									<a data-action="scroll" class="btn-text btn-text_2" href="#description">Подробнее</a>
+								</div>
+								<h2 class="catalog-detail__title">Характеристики</h2>
+								<div class="table-specs1-wrapper">
+									<table class="table-specs1">
+										<tr>
+											<td>Форма пластины</td>
+											<td>C (Ромб 80°)</td>
+										</tr>
+										<tr>
+											<td>Размер пластины</td>
+											<td>06</td>
+										</tr>
+										<tr>
+											<td>Радиус при вершине r (мм)</td>
+											<td>0.4</td>
+										</tr>
+										<tr>
+											<td>Вид обработки</td>
+											<td>Получистовая / Получерновая</td>
+										</tr>
+										<tr>
+											<td>Материал пластины</td>
+											<td>Кубический нитрид бора (CBN)</td>
+										</tr>
+									</table>
+									<a data-action="scroll" class="btn-text btn-text_2" href="#specs">Все характеристики</a>
+								</div>
+							</div>
+							<div class="catalog-detail__order">
+								<div class="catalog-detail__grid1">
+									<div>
+										<div class="catalog-detail__status status_instock">В наличии</div>
+										<div class="catalog-detail__prices">
+											<span class="catalog-detail__label1">С НДС (1 шт.)</span>
+											<span class="catalog-detail__price1">441 ₽</span>
+											<span class="catalog-detail__price2">1 200 ₽</span>
+											<span class="catalog-detail__label1">Упаковка (10 шт.)</span>
+											<span class="catalog-detail__price3">4 410 ₽</span>
+										</div>
+									</div>
+									<button class="catalog-detail__btn-favorite" type="button">
+										<svg aria-hidden="true" width="22" height="20">
+											<use xlink:href="img/sprite.svg#heart1"></use>
+										</svg>
+									</button>
+								</div>
+								<div class="catalog-detail__grid2">
+									<div class="stepcounter">
+										<button class="stepcounter__btn" type="button" disabled>
+											<svg aria-hidden="true" width="14" height="2">
+												<use xlink:href="img/sprite.svg#minus1"></use>
+											</svg>
+											<span class="v-h">Увеличить количество</span>
+										</button>
+										<input class="stepcounter__input" type="number" value="1" readonly>
+										<button class="stepcounter__btn" type="button">
+											<svg aria-hidden="true" width="14" height="14">
+												<use xlink:href="img/sprite.svg#plus1"></use>
+											</svg>
+											<span class="v-h">Уменьшить количество</span>
+										</button>
+									</div>
+									<a href="cart.html" class="btn btn_black">В корзине</a>
+									<button data-hystmodal="#modalBuy1Click" class="btn btn_primary btn_hollow btn_wide" type="button">Купить в 1 клик</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="block1 catalog-detail-tabs">
+					<div class="container">
+						<div class="tab-nav1">
+							<button data-action="showTab2" data-tab="description" class="tab-nav1__btn active" type="button">Описание</button>
+							<button data-action="showTab2" data-tab="specs" class="tab-nav1__btn" type="button">Характеристики</button>
+						</div>
+					</div>
+					<div class="container container_bordered1">
+						<div data-tab-content="description" class="catalog-detail-tabs__content">
+							<h2 class="title4">Описание</h2>
+							<div class="textblock1 textblock1_big">
+								<p>ООО «НААНИТ» — динамично развивающаяся компания на рынке металлорежущего инструмента. Мы занимаемся комплексным оснащением и поставкой промышленного инструмента на ведущие предприятия ЮФО, являемся официальным дистрибьютором бренда ZCC-CT. Наша компания представляет весь спектр инструмента от стандартного до специального сложнопрофильного режущего инструмента по чертежам Заказчика. Качество инструмента испытано и подтверждено ведущими предприятиями России. Наши специалисты всегда готовы оказать консультативную и техническую поддержку, а также выехать на Ваше предприятие для подбора и испытания необходимого инструмента. Будем рады увидеть Вас в числе наших клиентов с надеждой на долгосрочное и взаимовыгодное сотрудничество!</p>
+							</div>
+						</div>
+						<div data-tab-content="specs" class="catalog-detail-tabs__content" style="display: none;">
+							<h2 class="title4">Характеристики</h2>
+							<dl class="table-specs2">
+								<dt>Форма пластины</dt>
+								<dd>C (Ромб 80°)</dd>
+								<dt>Форма пластины</dt>
+								<dd>C (Ромб 80°)</dd>
+
+								<dt>Размер пластины</dt>
+								<dd>06</dd>
+								<dt>Размер пластины</dt>
+								<dd>06</dd>
+
+								<dt>Радиус при вершине r (мм)</dt>
+								<dd>0.4</dd>
+								<dt>Радиус при вершине r (мм)</dt>
+								<dd>0.4</dd>
+
+								<dt>Вид обработки</dt>
+								<dd>Получистовая / Получерновая</dd>
+								<dt>Вид обработки</dt>
+								<dd>Получистовая / Получерновая</dd>
+
+								<dt>Материал пластины</dt>
+								<dd>Кубический нитрид бора (CBN)</dd>
+								<dt>Материал пластины</dt>
+								<dd>Кубический нитрид бора (CBN)</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+
+				<section class="block-products">
+					<div class="container">
+						<div class="heading-cols1">
+							<h2 class="title2">Рекомендуем</h2>
+						</div>
+					</div>
+					<div class="container container_bordered1">
+						<div data-swiper="products" class="swiper swiper-products">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="card-product">
+										<div class="card-product__inner">
+											<a href="product-detail.html" class="card-product__photo">
+												<img src="img/product2.webp" loading="lazy" alt="">
+											</a>
+											<div class="card-product__badges"></div>
+											<div class="card-product__name">
+												<a href="product-detail.html">УШМ (болгарка) SPARKY MB 1200E 14000077112</a>
+											</div>
+											<div class="card-product__description">УШМ SPARKY MB 1200E HD относится к классу профессиональных инструментов и предназначена для резки, шлифовки, полировки, зачистки различных материалов.</div>
+											<div class="card-product__status status_instock">Нет в наличии</div>
+											<div class="card-product__prices">
+												<div>
+													<span class="card-product__label1">С НДС (1 шт.)</span>
+													<span class="card-product__price1">441 ₽</span>
+													<span class="card-product__price3">1 200 ₽</span>
+												</div>
+												<div>
+													<span class="card-product__label1">Упаковка (10 шт.)</span>
+													<span class="card-product__price2">4 410 ₽</span>
+												</div>
+											</div>
+											<button class="card-product__btn-favorite active" type="button">
+												<svg aria-hidden="true" width="25" height="23">
+													<use xlink:href="img/sprite.svg#heart1"></use>
+												</svg>
+												<span class="v-h">Добавить в избранное</span>
+											</button>
+										</div>
+										<div class="card-product__bottom">
+											<div class="stepcounter">
+												<button class="stepcounter__btn" type="button" disabled>
+													<svg aria-hidden="true" width="14" height="2">
+														<use xlink:href="img/sprite.svg#minus1"></use>
+													</svg>
+													<span class="v-h">Увеличить количество</span>
+												</button>
+												<input class="stepcounter__input" type="number" value="1" readonly>
+												<button class="stepcounter__btn" type="button">
+													<svg aria-hidden="true" width="14" height="14">
+														<use xlink:href="img/sprite.svg#plus1"></use>
+													</svg>
+													<span class="v-h">Уменьшить количество</span>
+												</button>
+											</div>
+											<button class="btn btn_grey">Подписаться</button>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="card-product">
+										<div class="card-product__inner">
+											<a href="product-detail.html" class="card-product__photo">
+												<img src="img/product2.webp" loading="lazy" alt="">
+											</a>
+											<div class="card-product__badges">
+												<span class="badge1 badge1_black">Новинка</span>
+												<span class="badge1 badge1_red">Акция</span>
+												<span class="badge1 badge1_orange">Хит</span>
+											</div>
+											<div class="card-product__name">
+												<a href="product-detail.html">УШМ (болгарка) SPARKY MB 1200E 14000077112</a>
+											</div>
+											<div class="card-product__description">УШМ SPARKY MB 1200E HD относится к классу профессиональных инструментов и предназначена для резки, шлифовки, полировки, зачистки различных материалов.</div>
+											<div class="card-product__status status_instock">Нет в наличии</div>
+											<div class="card-product__prices">
+												<div>
+													<span class="card-product__label1">С НДС (1 шт.)</span>
+													<span class="card-product__price1">441 ₽</span>
+													<span class="card-product__price3">1 200 ₽</span>
+												</div>
+												<div>
+													<span class="card-product__label1">Упаковка (10 шт.)</span>
+													<span class="card-product__price2">4 410 ₽</span>
+												</div>
+											</div>
+											<button class="card-product__btn-favorite active" type="button">
+												<svg aria-hidden="true" width="25" height="23">
+													<use xlink:href="img/sprite.svg#heart1"></use>
+												</svg>
+												<span class="v-h">Добавить в избранное</span>
+											</button>
+										</div>
+										<div class="card-product__bottom">
+											<div class="stepcounter">
+												<button class="stepcounter__btn" type="button" disabled>
+													<svg aria-hidden="true" width="14" height="2">
+														<use xlink:href="img/sprite.svg#minus1"></use>
+													</svg>
+													<span class="v-h">Увеличить количество</span>
+												</button>
+												<input class="stepcounter__input" type="number" value="1" readonly>
+												<button class="stepcounter__btn" type="button">
+													<svg aria-hidden="true" width="14" height="14">
+														<use xlink:href="img/sprite.svg#plus1"></use>
+													</svg>
+													<span class="v-h">Уменьшить количество</span>
+												</button>
+											</div>
+											<button class="btn btn_primary">В корзину</button>
+										</div>
+									</div>
+
+								</div>
+								<div class="swiper-slide">
+									<div class="card-product">
+										<div class="card-product__inner">
+											<a href="product-detail.html" class="card-product__photo">
+												<img src="img/product1.webp" loading="lazy" alt="">
+											</a>
+											<div class="card-product__name">
+												<a href="product-detail.html">Твердосплавная пластина ZCC-CT TNMG160404-PM YBC2521</a>
+											</div>
+											<div class="card-product__description">Короткое описание</div>
+											<div class="card-product__status status_outstock">Нет в наличии</div>
+											<div class="card-product__prices">
+												<div>
+													<span class="card-product__label1">С НДС (1 шт.)</span>
+													<span class="card-product__price1">441 ₽</span>
+													<span class="card-product__price3">1 200 ₽</span>
+												</div>
+												<div>
+													<span class="card-product__label1">Упаковка (10 шт.)</span>
+													<span class="card-product__price2">4 410 ₽</span>
+												</div>
+											</div>
+											<button class="card-product__btn-favorite" type="button">
+												<svg aria-hidden="true" width="25" height="23">
+													<use xlink:href="img/sprite.svg#heart1"></use>
+												</svg>
+												<span class="v-h">Добавить в избранное</span>
+											</button>
+										</div>
+										<div class="card-product__bottom">
+											<div class="stepcounter">
+												<button class="stepcounter__btn" type="button" disabled>
+													<svg aria-hidden="true" width="14" height="2">
+														<use xlink:href="img/sprite.svg#minus1"></use>
+													</svg>
+													<span class="v-h">Увеличить количество</span>
+												</button>
+												<input class="stepcounter__input" type="number" value="1" readonly>
+												<button class="stepcounter__btn" type="button">
+													<svg aria-hidden="true" width="14" height="14">
+														<use xlink:href="img/sprite.svg#plus1"></use>
+													</svg>
+													<span class="v-h">Уменьшить количество</span>
+												</button>
+											</div>
+											<a href="cart.html" class="btn btn_black">В корзине</a>
+										</div>
+									</div>
+
+								</div>
+								<div class="swiper-slide">
+									<div class="card-product">
+										<div class="card-product__inner">
+											<a href="product-detail.html" class="card-product__photo">
+												<img src="img/product2.webp" loading="lazy" alt="">
+											</a>
+											<div class="card-product__badges">
+												<span class="badge1 badge1_black">Новинка</span>
+												<span class="badge1 badge1_red">Акция</span>
+												<span class="badge1 badge1_orange">Хит</span>
+											</div>
+											<div class="card-product__name">
+												<a href="product-detail.html">УШМ (болгарка) SPARKY MB 1200E 14000077112</a>
+											</div>
+											<div class="card-product__description">УШМ SPARKY MB 1200E HD относится к классу профессиональных инструментов и предназначена для резки, шлифовки, полировки, зачистки различных материалов.</div>
+											<div class="card-product__status status_instock">Нет в наличии</div>
+											<div class="card-product__prices">
+												<div>
+													<span class="card-product__label1">С НДС (1 шт.)</span>
+													<span class="card-product__price1">441 ₽</span>
+													<span class="card-product__price3">1 200 ₽</span>
+												</div>
+												<div>
+													<span class="card-product__label1">Упаковка (10 шт.)</span>
+													<span class="card-product__price2">4 410 ₽</span>
+												</div>
+											</div>
+											<button class="card-product__btn-favorite active" type="button">
+												<svg aria-hidden="true" width="25" height="23">
+													<use xlink:href="img/sprite.svg#heart1"></use>
+												</svg>
+												<span class="v-h">Добавить в избранное</span>
+											</button>
+										</div>
+										<div class="card-product__bottom">
+											<div class="stepcounter">
+												<button class="stepcounter__btn" type="button" disabled>
+													<svg aria-hidden="true" width="14" height="2">
+														<use xlink:href="img/sprite.svg#minus1"></use>
+													</svg>
+													<span class="v-h">Увеличить количество</span>
+												</button>
+												<input class="stepcounter__input" type="number" value="1" readonly>
+												<button class="stepcounter__btn" type="button">
+													<svg aria-hidden="true" width="14" height="14">
+														<use xlink:href="img/sprite.svg#plus1"></use>
+													</svg>
+													<span class="v-h">Уменьшить количество</span>
+												</button>
+											</div>
+											<button class="btn btn_primary">В корзину</button>
+										</div>
+									</div>
+
+								</div>
+								<div class="swiper-slide">
+									<div class="card-product">
+										<div class="card-product__inner">
+											<a href="product-detail.html" class="card-product__photo">
+												<img src="img/product1.webp" loading="lazy" alt="">
+											</a>
+											<div class="card-product__name">
+												<a href="product-detail.html">Твердосплавная пластина ZCC-CT TNMG160404-PM YBC2521</a>
+											</div>
+											<div class="card-product__description">Короткое описание</div>
+											<div class="card-product__status status_outstock">Нет в наличии</div>
+											<div class="card-product__prices">
+												<div>
+													<span class="card-product__label1">С НДС (1 шт.)</span>
+													<span class="card-product__price1">441 ₽</span>
+													<span class="card-product__price3">1 200 ₽</span>
+												</div>
+												<div>
+													<span class="card-product__label1">Упаковка (10 шт.)</span>
+													<span class="card-product__price2">4 410 ₽</span>
+												</div>
+											</div>
+											<button class="card-product__btn-favorite" type="button">
+												<svg aria-hidden="true" width="25" height="23">
+													<use xlink:href="img/sprite.svg#heart1"></use>
+												</svg>
+												<span class="v-h">Добавить в избранное</span>
+											</button>
+										</div>
+										<div class="card-product__bottom">
+											<div class="stepcounter">
+												<button class="stepcounter__btn" type="button" disabled>
+													<svg aria-hidden="true" width="14" height="2">
+														<use xlink:href="img/sprite.svg#minus1"></use>
+													</svg>
+													<span class="v-h">Увеличить количество</span>
+												</button>
+												<input class="stepcounter__input" type="number" value="1" readonly>
+												<button class="stepcounter__btn" type="button">
+													<svg aria-hidden="true" width="14" height="14">
+														<use xlink:href="img/sprite.svg#plus1"></use>
+													</svg>
+													<span class="v-h">Уменьшить количество</span>
+												</button>
+											</div>
+											<a href="cart.html" class="btn btn_black">В корзине</a>
+										</div>
+									</div>
+
+								</div>
+								<div class="swiper-slide">
+									<div class="card-product">
+										<div class="card-product__inner">
+											<a href="product-detail.html" class="card-product__photo">
+												<img src="img/product2.webp" loading="lazy" alt="">
+											</a>
+											<div class="card-product__badges">
+												<span class="badge1 badge1_black">Новинка</span>
+												<span class="badge1 badge1_red">Акция</span>
+												<span class="badge1 badge1_orange">Хит</span>
+											</div>
+											<div class="card-product__name">
+												<a href="product-detail.html">УШМ (болгарка) SPARKY MB 1200E 14000077112</a>
+											</div>
+											<div class="card-product__description">УШМ SPARKY MB 1200E HD относится к классу профессиональных инструментов и предназначена для резки, шлифовки, полировки, зачистки различных материалов.</div>
+											<div class="card-product__status status_instock">Нет в наличии</div>
+											<div class="card-product__prices">
+												<div>
+													<span class="card-product__label1">С НДС (1 шт.)</span>
+													<span class="card-product__price1">441 ₽</span>
+													<span class="card-product__price3">1 200 ₽</span>
+												</div>
+												<div>
+													<span class="card-product__label1">Упаковка (10 шт.)</span>
+													<span class="card-product__price2">4 410 ₽</span>
+												</div>
+											</div>
+											<button class="card-product__btn-favorite active" type="button">
+												<svg aria-hidden="true" width="25" height="23">
+													<use xlink:href="img/sprite.svg#heart1"></use>
+												</svg>
+												<span class="v-h">Добавить в избранное</span>
+											</button>
+										</div>
+										<div class="card-product__bottom">
+											<div class="stepcounter">
+												<button class="stepcounter__btn" type="button" disabled>
+													<svg aria-hidden="true" width="14" height="2">
+														<use xlink:href="img/sprite.svg#minus1"></use>
+													</svg>
+													<span class="v-h">Увеличить количество</span>
+												</button>
+												<input class="stepcounter__input" type="number" value="1" readonly>
+												<button class="stepcounter__btn" type="button">
+													<svg aria-hidden="true" width="14" height="14">
+														<use xlink:href="img/sprite.svg#plus1"></use>
+													</svg>
+													<span class="v-h">Уменьшить количество</span>
+												</button>
+											</div>
+											<button class="btn btn_primary">В корзину</button>
+										</div>
+									</div>
+
+								</div>
+								<div class="swiper-slide">
+									<div class="card-product">
+										<div class="card-product__inner">
+											<a href="product-detail.html" class="card-product__photo">
+												<img src="img/product1.webp" loading="lazy" alt="">
+											</a>
+											<div class="card-product__name">
+												<a href="product-detail.html">Твердосплавная пластина ZCC-CT TNMG160404-PM YBC2521</a>
+											</div>
+											<div class="card-product__description">Короткое описание</div>
+											<div class="card-product__status status_outstock">Нет в наличии</div>
+											<div class="card-product__prices">
+												<div>
+													<span class="card-product__label1">С НДС (1 шт.)</span>
+													<span class="card-product__price1">441 ₽</span>
+													<span class="card-product__price3">1 200 ₽</span>
+												</div>
+												<div>
+													<span class="card-product__label1">Упаковка (10 шт.)</span>
+													<span class="card-product__price2">4 410 ₽</span>
+												</div>
+											</div>
+											<button class="card-product__btn-favorite" type="button">
+												<svg aria-hidden="true" width="25" height="23">
+													<use xlink:href="img/sprite.svg#heart1"></use>
+												</svg>
+												<span class="v-h">Добавить в избранное</span>
+											</button>
+										</div>
+										<div class="card-product__bottom">
+											<div class="stepcounter">
+												<button class="stepcounter__btn" type="button" disabled>
+													<svg aria-hidden="true" width="14" height="2">
+														<use xlink:href="img/sprite.svg#minus1"></use>
+													</svg>
+													<span class="v-h">Увеличить количество</span>
+												</button>
+												<input class="stepcounter__input" type="number" value="1" readonly>
+												<button class="stepcounter__btn" type="button">
+													<svg aria-hidden="true" width="14" height="14">
+														<use xlink:href="img/sprite.svg#plus1"></use>
+													</svg>
+													<span class="v-h">Уменьшить количество</span>
+												</button>
+											</div>
+											<a href="cart.html" class="btn btn_black">В корзине</a>
+										</div>
+									</div>
+
+								</div>
+								<div class="swiper-slide">
+									<div class="card-product">
+										<div class="card-product__inner">
+											<a href="product-detail.html" class="card-product__photo">
+												<img src="img/product2.webp" loading="lazy" alt="">
+											</a>
+											<div class="card-product__badges">
+												<span class="badge1 badge1_black">Новинка</span>
+												<span class="badge1 badge1_red">Акция</span>
+												<span class="badge1 badge1_orange">Хит</span>
+											</div>
+											<div class="card-product__name">
+												<a href="product-detail.html">УШМ (болгарка) SPARKY MB 1200E 14000077112</a>
+											</div>
+											<div class="card-product__description">УШМ SPARKY MB 1200E HD относится к классу профессиональных инструментов и предназначена для резки, шлифовки, полировки, зачистки различных материалов.</div>
+											<div class="card-product__status status_instock">Нет в наличии</div>
+											<div class="card-product__prices">
+												<div>
+													<span class="card-product__label1">С НДС (1 шт.)</span>
+													<span class="card-product__price1">441 ₽</span>
+													<span class="card-product__price3">1 200 ₽</span>
+												</div>
+												<div>
+													<span class="card-product__label1">Упаковка (10 шт.)</span>
+													<span class="card-product__price2">4 410 ₽</span>
+												</div>
+											</div>
+											<button class="card-product__btn-favorite active" type="button">
+												<svg aria-hidden="true" width="25" height="23">
+													<use xlink:href="img/sprite.svg#heart1"></use>
+												</svg>
+												<span class="v-h">Добавить в избранное</span>
+											</button>
+										</div>
+										<div class="card-product__bottom">
+											<div class="stepcounter">
+												<button class="stepcounter__btn" type="button" disabled>
+													<svg aria-hidden="true" width="14" height="2">
+														<use xlink:href="img/sprite.svg#minus1"></use>
+													</svg>
+													<span class="v-h">Увеличить количество</span>
+												</button>
+												<input class="stepcounter__input" type="number" value="1" readonly>
+												<button class="stepcounter__btn" type="button">
+													<svg aria-hidden="true" width="14" height="14">
+														<use xlink:href="img/sprite.svg#plus1"></use>
+													</svg>
+													<span class="v-h">Уменьшить количество</span>
+												</button>
+											</div>
+											<button class="btn btn_primary">В корзину</button>
+										</div>
+									</div>
+
+								</div>
+								<div class="swiper-slide">
+									<div class="card-product">
+										<div class="card-product__inner">
+											<a href="product-detail.html" class="card-product__photo">
+												<img src="img/product1.webp" loading="lazy" alt="">
+											</a>
+											<div class="card-product__name">
+												<a href="product-detail.html">Твердосплавная пластина ZCC-CT TNMG160404-PM YBC2521</a>
+											</div>
+											<div class="card-product__description">Короткое описание</div>
+											<div class="card-product__status status_outstock">Нет в наличии</div>
+											<div class="card-product__prices">
+												<div>
+													<span class="card-product__label1">С НДС (1 шт.)</span>
+													<span class="card-product__price1">441 ₽</span>
+													<span class="card-product__price3">1 200 ₽</span>
+												</div>
+												<div>
+													<span class="card-product__label1">Упаковка (10 шт.)</span>
+													<span class="card-product__price2">4 410 ₽</span>
+												</div>
+											</div>
+											<button class="card-product__btn-favorite" type="button">
+												<svg aria-hidden="true" width="25" height="23">
+													<use xlink:href="img/sprite.svg#heart1"></use>
+												</svg>
+												<span class="v-h">Добавить в избранное</span>
+											</button>
+										</div>
+										<div class="card-product__bottom">
+											<div class="stepcounter">
+												<button class="stepcounter__btn" type="button" disabled>
+													<svg aria-hidden="true" width="14" height="2">
+														<use xlink:href="img/sprite.svg#minus1"></use>
+													</svg>
+													<span class="v-h">Увеличить количество</span>
+												</button>
+												<input class="stepcounter__input" type="number" value="1" readonly>
+												<button class="stepcounter__btn" type="button">
+													<svg aria-hidden="true" width="14" height="14">
+														<use xlink:href="img/sprite.svg#plus1"></use>
+													</svg>
+													<span class="v-h">Уменьшить количество</span>
+												</button>
+											</div>
+											<a href="cart.html" class="btn btn_black">В корзине</a>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<button class="swiper-nav swiper-nav_prev" type="button">
+								<svg aria-hidden="true" width="14" height="24">
+									<use xlink:href="img/sprite.svg#chevron1"></use>
+								</svg>
+								<span class="v-h">Назад</span>
+							</button>
+							<button class="swiper-nav swiper-nav_next" type="button">
+								<svg aria-hidden="true" width="14" height="24">
+									<use xlink:href="img/sprite.svg#chevron1"></use>
+								</svg>
+								<span class="v-h">Вперед</span>
+							</button>
+						</div>
+					</div>
+				</section>
+
+				<section class="block-feedback">
+					<div class="container">
+						<div class="block-feedback__grid">
+							<div class="block-feedback__left">
+								<h2 class="title2">Остались вопросы?</h2>
+								<form data-validate class="block-feedback__form" action="feedback.php">
+									<div class="block-feedback__text">Оставьте заявку и наш менеджер свяжется с Вами в ближайшее время!</div>
+									<div class="form-grid1">
+										<div class="form-grid1__row form-grid1__row_2">
+											<div class="form-group">
+												<label class="form-group__label">Имя</label>
+												<input class="field-input1 form-group__field" type="text" name="feedback_name" required>
+											</div>
+										</div>
+										<div class="form-grid1__row form-grid1__row_2">
+											<div class="form-group">
+												<label class="form-group__label">Номер телефона</label>
+												<input class="field-input1 form-group__field" data-mask="phone" data-type="phone" placeholder="+7 (000) 000-00-00" type="text" name="feedback_phone" required>
+											</div>
+										</div>
+										<div class="form-grid1__row">
+											<label class="checkbox-text">
+												<span class="checkbox">
+													<input class="checkbox__input" type="checkbox" name="agreement">
+													<span class="checkbox__visual">
+														<svg class="checkbox__mark" width="12" height="11" aria-hidden="true">
+															<use xlink:href="img/sprite.svg#mark1"></use>
+														</svg>
+													</span>
+												</span>
+												<span class="checkbox-text__label">Даю согласие на обработку своих персональных данных</span>
+											</label>
+										</div>
+									</div>
+									<button class="btn btn_primary" type="submit">
+										<span>Отправить</span>
+										<svg width="12" height="12" aria-hidden="true">
+											<use xlink:href="img/sprite.svg#arrow1"></use>
+										</svg>
+									</button>
+								</form>
+							</div>
+							<div class="block-feedback__right">
+								<img src="img/feedback.webp" aria-hidden="true" srcset="img/feedback@2x.webp 2x" loading="lazy" alt="">
+							</div>
+						</div>
+					</div>
+				</section>
+
+			</main>
+			<footer class="footer">
+				<div class="footer__top">
+					<div class="container">
+						<div class="footer__grid">
+							<div>
+								<a class="footer__logo" href="/">
+									<img src="img/logo-light.svg" alt="">
+								</a>
+								<div class="footer__name"><span>ООО «НААНИТ» </span><span>Официальный импортер </span><span>и&nbsp;дистрибьютор бренда ZCC-CT</span></div>
+							</div>
+							<div>
+								<p class="footer__caption"><a href="catalog.html">Каталог</a></p>
+								<ul class="footer__nav">
+									<li>
+										<a href="catalog.html">Токарная обработка</a>
+									</li>
+									<li>
+										<a href="catalog.html">Точение резьбы</a>
+									</li>
+									<li>
+										<a href="catalog.html">Сверление</a>
+									</li>
+									<li>
+										<a href="catalog.html">Станочная оснастка</a>
+									</li>
+									<li>
+										<a href="catalog.html">Твердосплавные фрезы</a>
+									</li>
+									<li>
+										<a href="catalog.html">Метчики и резьбофрезы</a>
+									</li>
+									<li>
+										<a href="catalog.html">Токарные держатели</a>
+									</li>
+									<li>
+										<a href="catalog.html">Твердосплавные столбики</a>
+									</li>
+								</ul>
+							</div>
+							<div>
+								<p class="footer__caption"><a href="about.html">О компании</a></p>
+								<p class="footer__caption"><a href="info.html">Тех.информация</a></p>
+								<p class="footer__caption"><a href="catalogs.html">Каталоги</a></p>
+								<p class="footer__caption"><a href="news.html">Новости</a></p>
+								<p class="footer__caption"><a href="contacts.html">Контакты</a></p>
+							</div>
+							<div>
+								<div class="footer__location">
+									<svg width="18" height="21" aria-hidden="true">
+										<use xlink:href="img/sprite.svg#placemark1"></use>
+									</svg>
+									344029 г. Ростов-на-Дону, ул. Селиванова, 49, офис 9
+								</div>
+								<p class="footer__phone">
+									<a href="tel:+79614290802">+7 (961) 429-08-02</a>
+								</p>
+								<p class="footer__phone">
+									<a href="tel:+79045084162">+7 (904) 508-41-62</a>
+								</p>
+								<p class="footer__mail">
+									<a href="mailto:naanit1@yandex.ru">naanit1@yandex.ru</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="container">
+						<div class="footer__bottom-grid">
+							Copyright © 2025 «НААНИТ»
+							<div class="footer__bottom-grid-inner">
+								<a href="policy.html">Обработка персональных данных</a>
+								<a class="logo" href="https://acroweb.ru/">
+									<img src="img/logo-acroweb.svg" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+		</div>
+		<div class="hystmodal" id="modalCallback" aria-hidden="true">
+			<div class="hystmodal__wrap">
+				<div class="hystmodal__window" role="dialog" aria-modal="true">
+					<div class="hystmodal__inner">
+						<h2 class="hystmodal__title">Заказать звонок</h2>
+						<div class="hystmodal__description">Оставьте заявку и наш менеджер свяжется с Вами в ближайшее время!</div>
+						<form data-validate action="callback.php">
+							<div class="form-grid1">
+								<div class="form-grid1__row">
+									<div class="form-group1">
+										<input id="popup_callback_name" class="field-input1 form-group1__field" placeholder=" " type="text" name="popup_callback_name" required>
+										<label class="form-group1__label form-group1__label_req" for="popup_callback_name">ФИО</label>
+									</div>
+								</div>
+								<div class="form-grid1__row">
+									<div class="form-group1">
+										<input id="popup_callback_phone" data-type="phone" data-mask="phone" placeholder=" " class="field-input1 form-group1__field" type="text" name="popup_callback_phone" required>
+										<label class="form-group1__label form-group1__label_hidden" for="popup_callback_phone">Номер телефона</label>
+										<span class="form-group1__placeholder1 form-group1__placeholder1_req"><span>+7</span> (999) 999-99-99</span>
+									</div>
+								</div>
+								<div class="form-grid1__row form-grid1__row_sparse">
+									<div class="form-group">
+										<label class="checkbox-text">
+											<span class="checkbox">
+												<input class="checkbox__input" type="checkbox" name="agreement" required>
+												<span class="checkbox__visual">
+													<svg class="checkbox__mark" width="12" height="11" aria-hidden="true">
+														<use xlink:href="img/sprite.svg#mark1"></use>
+													</svg>
+												</span>
+											</span>
+											<span class="checkbox-text__label">Даю согласие на обработку своих персональных данных</span>
+										</label>
+									</div>
+								</div>
+								<div class="form-grid1__row">
+									<button type="submit" class="btn btn_primary btn_wide">Заказать звонок</button>
+								</div>
+							</div>
+						</form>
+					</div>
+					<button data-hystclose class="hystmodal__close">
+						<svg aria-hidden="true" width="20" height="20">
+							<use xlink:href="img/sprite.svg#close1"></use>
+						</svg>
+						<span class="v-h">Закрыть</span>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="hystmodal" id="modalBuy1Click" aria-hidden="true">
+			<div class="hystmodal__wrap">
+				<div class="hystmodal__window" role="dialog" aria-modal="true">
+					<div class="hystmodal__inner">
+						<h2 class="hystmodal__title">Купить в 1 клик</h2>
+						<div class="hystmodal__product">
+							<img src="img/product1.webp" alt="">
+							<div>Твердосплавная пластина ZCC-CT TNMG160404-PM YBC252</div>
+						</div>
+						<form data-validate action="buy1click.php">
+							<div class="form-grid1">
+								<div class="form-grid1__row">
+									<div class="form-group1">
+										<input id="popup_buy1click_name" class="field-input1 form-group1__field" placeholder=" " type="text" name="popup_buy1click_name" required>
+										<label class="form-group1__label form-group1__label_req" for="popup_buy1click_name">ФИО</label>
+									</div>
+								</div>
+								<div class="form-grid1__row">
+									<div class="form-group1">
+										<input id="popup_buy1click_phone" data-type="phone" data-mask="phone" placeholder=" " class="field-input1 form-group1__field" type="text" name="popup_buy1click_phone" required>
+										<label class="form-group1__label form-group1__label_hidden" for="popup_buy1click_phone">Номер телефона</label>
+										<span class="form-group1__placeholder1 form-group1__placeholder1_req"><span>+7</span> (999) 999-99-99</span>
+									</div>
+								</div>
+								<div class="form-grid1__row">
+									<div class="form-group1">
+										<input id="popup_buy1click_email" class="field-input1 form-group1__field" placeholder=" " type="text" name="popup_buy1click_email" required>
+										<label class="form-group1__label form-group1__label_req" for="popup_buy1click_email">E-mail</label>
+									</div>
+								</div>
+								<div class="form-grid1__row">
+									<div class="form-group1">
+										<input id="popup_buy1click_inn" class="field-input1 form-group1__field" placeholder=" " type="text" name="popup_buy1click_inn" required>
+										<label class="form-group1__label form-group1__label_req" for="popup_buy1click_inn">ИНН</label>
+									</div>
+								</div>
+								<div class="form-grid1__row">
+									<div class="form-group1">
+										<textarea name="popup_buy1click_message" class="field-input1 form-group1__field" placeholder=" " id="popup_buy1click_message"></textarea>
+										<label class="form-group1__label" for="popup_buy1click_message">Комментарий к заказу</label>
+									</div>
+								</div>
+								<div class="form-grid1__row form-grid1__row_sparse">
+									<div class="form-group">
+										<label class="checkbox-text">
+											<span class="checkbox">
+												<input class="checkbox__input" type="checkbox" name="agreement" required>
+												<span class="checkbox__visual">
+													<svg class="checkbox__mark" width="12" height="11" aria-hidden="true">
+														<use xlink:href="img/sprite.svg#mark1"></use>
+													</svg>
+												</span>
+											</span>
+											<span class="checkbox-text__label">Даю согласие на обработку своих персональных данных</span>
+										</label>
+									</div>
+								</div>
+								<div class="form-grid1__row">
+									<button type="submit" class="btn btn_primary btn_wide">Купить в 1 клик</button>
+								</div>
+							</div>
+						</form>
+					</div>
+					<button data-hystclose class="hystmodal__close">
+						<svg aria-hidden="true" width="20" height="20">
+							<use xlink:href="img/sprite.svg#close1"></use>
+						</svg>
+						<span class="v-h">Закрыть</span>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="hystmodal" id="modalProductSubscribe" aria-hidden="true">
+			<div class="hystmodal__wrap">
+				<div class="hystmodal__window" role="dialog" aria-modal="true">
+					<div class="hystmodal__inner">
+						<h2 class="hystmodal__title">сообщить о поступлении</h2>
+						<div class="hystmodal__product">
+							<img src="img/product1.webp" alt="">
+							<div>Твердосплавная пластина ZCC-CT TNMG160404-PM YBC252</div>
+						</div>
+						<form data-validate action="product-subscribe.php">
+							<div class="form-grid1">
+								<div class="form-grid1__row">
+									<div class="form-group1">
+										<input id="popup_buy1click_name" class="field-input1 form-group1__field" placeholder=" " type="text" name="popup_buy1click_name" required>
+										<label class="form-group1__label form-group1__label_req" for="popup_buy1click_name">ФИО</label>
+									</div>
+								</div>
+								<div class="form-grid1__row">
+									<div class="form-group1">
+										<input id="popup_buy1click_email" class="field-input1 form-group1__field" placeholder=" " type="text" name="popup_buy1click_email" required>
+										<label class="form-group1__label form-group1__label_req" for="popup_buy1click_email">E-mail</label>
+									</div>
+								</div>
+								<div class="form-grid1__row form-grid1__row_sparse">
+									<div class="form-group">
+										<label class="checkbox-text">
+											<span class="checkbox">
+												<input class="checkbox__input" type="checkbox" name="agreement" required>
+												<span class="checkbox__visual">
+													<svg class="checkbox__mark" width="12" height="11" aria-hidden="true">
+														<use xlink:href="img/sprite.svg#mark1"></use>
+													</svg>
+												</span>
+											</span>
+											<span class="checkbox-text__label">Даю согласие на обработку своих персональных данных</span>
+										</label>
+									</div>
+								</div>
+								<div class="form-grid1__row">
+									<button type="submit" class="btn btn_primary btn_wide">Подписаться</button>
+								</div>
+							</div>
+						</form>
+					</div>
+					<button data-hystclose class="hystmodal__close">
+						<svg aria-hidden="true" width="20" height="20">
+							<use xlink:href="img/sprite.svg#close1"></use>
+						</svg>
+						<span class="v-h">Закрыть</span>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/jquery-3.7.1.min.js"></script>
+		<script src="js/swiper-11.0.5.min.js"></script>
+		<script src="js/imask-7.6.1.min.js"></script>
+		<script src="js/jquery.validate-1.21.0.min.js"></script>
+		<script src="js/tom-select.complete-2.4.3.min.js"></script>
+		<script src="js/fancybox.umd.js"></script>
+		<script src="js/hystmodal.min.js"></script>
+		<script src="js/scripts.js?v=1759735949860"></script>
+
+	</body>
+
+</html>

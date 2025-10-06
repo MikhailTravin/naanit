@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Вакансии</title>
+    {% include 'blocks/head.njk' %}
+</head>
+
+<body class="preload mp">
+    <div class="main-wrapper-outer">
+        {% include 'blocks/header.njk' %}
+        <main class="main">
+
+            <div class="block-breadcrumbs breadcrumbs-delivery">
+                <div class="container">
+                    <nav aria-label="breadcrumb" class="breadcrumbs">
+                        <a href="/" class="breadcrumbs__item">
+                            Главная
+                        </a>
+                        <span aria-hidden="true">&mdash;</span>
+                        <a href="/" class="breadcrumbs__item">
+                            Тех.информация
+                        </a>
+                        <span aria-hidden="true">&mdash;</span>
+                        <span aria-current="page" class="breadcrumbs__item">
+                            Доставка и оплата
+                        </span>
+                    </nav>
+                    <h1 class="title2">доставка и оплата</h1>
+                </div>
+            </div>
+
+            <div class="block-delivery block1">
+                <div class="container container_bordered1">
+                    <div class="block-delivery__content">
+                        <div class="block-delivery__column">
+                            <div class="block-delivery__top">
+                                <img src="img/delivery1.svg" alt="">
+                                <span>доставка</span>
+                            </div>
+                            <div class="block-delivery__text">
+                                <p>
+                                    Мы осуществляем доставку металлорежущего инструмента по Москве и Московской области.
+                                </p>
+                                <p>
+                                    В регионы доставка осуществляется силами транспортной компании на ваш выбор. Мы со
+                                    своей
+                                    стороны можем доставить изделия до склада транспортной компании в московском
+                                    регионе.
+                                </p>
+                                <p>
+                                    При наличии собственного транспортного средства вы можете забрать изготовленные
+                                    изделия
+                                    самостоятельно с нашей производственной площадки. Мы осуществим погрузку
+                                    архитектурных
+                                    элементов на ваш транспорт.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="block-delivery__column">
+                            <div class="block-delivery__top">
+                                <img src="img/delivery2.svg" alt="">
+                                <span>оплата</span>
+                            </div>
+                            <div class="block-delivery__text">
+                                <p>
+                                    Оплата для физических и юридических лиц доступна посредством банковского перевода.
+                                    Платежные реквизиты нашей компании указаны <a href="#">здесь</a>.
+                                </p>
+                                <p>
+                                    Расчет производится на основе подготовленной с нашей стороны сметы, в которой
+                                    перечислены все заказываемые Вами изделия из искусственного камня, количество
+                                    каждого из них, расчетная масса и стоимость. Также уточняется, сколько будет стоить
+                                    доставка в пересчете на километраж и вес заказа.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {% include 'blocks/feedback.njk' %}
+
+        </main>
+        {% include 'blocks/footer.njk' %}
+    </div>
+    {% include 'blocks/popups.njk' %}
+    {% include 'blocks/scripts.njk' %}
+</body>
+
+</html>

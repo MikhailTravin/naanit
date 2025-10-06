@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>404</title>
+    {% include 'blocks/head.njk' %}
+</head>
+
+<body class="preload mp">
+    <div class="main-wrapper-outer">
+        <main class="main">
+
+            <div class="block-error">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <img src="img/404.webp" alt="" class="block-error__bg">
+                <div class="block-error__content">
+                    <div class="block-error__body">
+                        <h1 class="title1">404</h1>
+                        <h2 class="title2">Страница не найдена...</h2>
+                        <p>
+                            Может быть, эта страница переместилась, была удалена, находится
+                            на карантине или никогда не существовала, попробуйте проверить адрес, обновить страницу
+                            или
+                            же вернитесь назад.
+                        </p>
+                        <a class="btn btn_primary" href="index.html">
+                            <span>вернуться на главную</span>
+                            <svg width="12" height="12" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#arrow1"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+    {% include 'blocks/scripts.njk' %}
+</body>
+
+</html>

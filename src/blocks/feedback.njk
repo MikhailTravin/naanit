@@ -1,0 +1,48 @@
+<section class="block-feedback">
+  <div class="container">
+    <div class="block-feedback__grid">
+      <div class="block-feedback__left">
+        <h2 class="title2">Остались вопросы?</h2>
+        <form data-validate class="block-feedback__form" action="feedback.php">
+          <div class="block-feedback__text">Оставьте заявку и наш менеджер свяжется с Вами в ближайшее время!</div>
+          <div class="form-grid1">
+            <div class="form-grid1__row form-grid1__row_2">
+              <div class="form-group">
+                <label class="form-group__label">Имя</label>
+                <input class="field-input1 form-group__field" type="text" name="feedback_name" required>
+              </div>
+            </div>
+            <div class="form-grid1__row form-grid1__row_2">
+              <div class="form-group">
+                <label class="form-group__label">Номер телефона</label>
+                <input class="field-input1 form-group__field" data-mask="phone" data-type="phone" placeholder="+7 (000) 000-00-00" type="text" name="feedback_phone" required>
+              </div>
+            </div>
+            <div class="form-grid1__row">
+              <label class="checkbox-text">
+                <span class="checkbox">
+                  <input class="checkbox__input" type="checkbox" name="agreement">
+                  <span class="checkbox__visual">
+                    <svg class="checkbox__mark" width="12" height="11" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#mark1"></use>
+                    </svg>
+                  </span>
+                </span>
+                <span class="checkbox-text__label">Даю согласие на обработку своих персональных данных</span>
+              </label>
+            </div>
+          </div>
+          <button class="btn btn_primary" type="submit">
+            <span>Отправить</span>
+            <svg width="12" height="12" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#arrow1"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+      <div class="block-feedback__right">
+        <img src="img/feedback.webp" aria-hidden="true" srcset="img/feedback@2x.webp 2x" loading="lazy" alt="">
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Оформление заказа</title>
+    {% include 'blocks/head.njk' %}
+</head>
+
+<body class="preload mp">
+    <div class="main-wrapper-outer">
+        {% include 'blocks/header.njk' %}
+        <main class="main">
+
+            <div class="block-breadcrumbs">
+                <div class="container">
+                    <nav aria-label="breadcrumb" class="breadcrumbs">
+                        <a href="/" class="breadcrumbs__item">
+                            Главная
+                        </a>
+                        <span aria-hidden="true">&mdash;</span>
+                        <a href="cart.html" class="breadcrumbs__item">
+                            Корзина
+                        </a>
+                        <span aria-hidden="true">&mdash;</span>
+                        <span aria-current="page" class="breadcrumbs__item">
+                            Оформление заказа
+                        </span>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="block-order">
+                <div class="container">
+                    <a href="cart.html" class="back">
+                        <svg aria-hidden="true" width="16" height="16">
+                            <use xlink:href="img/sprite.svg#arrow1"></use>
+                        </svg>
+                        <span>в корзину</span>
+                    </a>
+                    <div class="heading-cols1">
+                        <h1 class="title2">оформление заказа</h1>
+                    </div>
+                </div>
+                <div class="container container_bordered1">
+                    <form data-validate action="#" class="block-order__content form">
+                        <div class="block-order__body block1">
+                            <div class="block-order__column">
+                                <div class="block-order__title">
+                                    данные покупателя
+                                </div>
+                                <div class="form">
+                                    <div class="form-grid1">
+                                        <div class="form-grid1__row">
+                                            <div class="form-group1">
+                                                <input id="order_fio1" class="field-input1 form-group1__field"
+                                                    placeholder=" " type="text" name="order_fio1" required>
+                                                <label class="form-group1__label form-group1__label_req"
+                                                    for="order_fio1">ФИО</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-grid1__row form-grid1__row_2">
+                                            <div class="form-group1">
+                                                <input id="order_phone1" data-type="phone" data-mask="phone"
+                                                    placeholder=" " class="field-input1 form-group1__field" type="text"
+                                                    name="order_phone1" required>
+                                                <label class="form-group1__label form-group1__label_hidden"
+                                                    for="order_phone1">Номер телефона</label>
+                                                <span
+                                                    class="form-group1__placeholder1 form-group1__placeholder1_req"><span>+7</span>
+                                                    (999) 999-99-99</span>
+                                            </div>
+                                        </div>
+                                        <div class="form-grid1__row form-grid1__row_2">
+                                            <div class="form-group1">
+                                                <input id="order_email1" class="field-input1 form-group1__field"
+                                                    placeholder=" " type="text" name="order_email1" required>
+                                                <label class="form-group1__label form-group1__label_req"
+                                                    for="order_email1">E-mail</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block-order__column">
+                                <div class="block-order__title">
+                                    данные организации
+                                </div>
+                                <div class="form">
+                                    <div class="form-grid1">
+                                        <div class="form-grid1__row">
+                                            <select data-select class="ts-wrapper_wide select2" required
+                                                name="order_select1">
+                                                <option value="1">Организация</option>
+                                                <option value="2">Организация2</option>
+                                                <option value="3">Организация3</option>
+                                                <option value="4">Организация4</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-grid1__row  form-grid1__row_2">
+                                            <div class="form-group1">
+                                                <input id="order_fio2" class="field-input1 form-group1__field"
+                                                    value="Иванов Иван Иванович" type="text" name="order_fio2">
+                                                <label class="form-group1__label" for="order_fio2">ФИО контактного
+                                                    лица</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-grid1__row form-grid1__row_2">
+                                            <div class="form-group1">
+                                                <input id="order_phone2" data-type="phone" data-mask="phone"
+                                                    placeholder=" " class="field-input1 form-group1__field" type="text"
+                                                    name="order_phone2">
+                                                <label class="form-group1__label" for="order_phone2">Телефон
+                                                    контактного лица</label>
+                                                <span
+                                                    class="form-group1__placeholder1 form-group1__label_hidden"><span>+7</span>
+                                                    (999) 999-99-99</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block-order__column">
+                                <div class="block-order__title">
+                                    способы доставки
+                                </div>
+                                <div class="header-search">
+                                    <svg class="header-search__icon" aria-hidden="true" width="19" height="19">
+                                        <use xlink:href="img/sprite.svg#search1"></use>
+                                    </svg>
+                                    <div class="header-search__inner">
+                                        <input class="header-search__input" type="text" placeholder="Город доставки">
+                                    </div>
+                                </div>
+                                <ul class="block-order-radio">
+                                    <li class="checklist__item">
+                                        <label data-target=".courier-delivery" class="checkbox-text checked">
+                                            <span class="radio">
+                                                <input checked class="radio__input" type="radio" name="rad1">
+                                                <span class="radio__visual"></span>
+                                            </span>
+                                            <span class="checkbox-text__label">
+                                                <span class="checkbox-text__titles">
+                                                    <span class="checkbox-text__title">Доставка курьером</span>
+                                                    <span class="checkbox-text__subtitle">От 1 до 7 дней</span>
+                                                </span>
+                                                <span class="checkbox-text__price">700 ₽</span>
+                                            </span>
+                                        </label>
+                                    </li>
+                                    <li class="checklist__item">
+                                        <label data-target=".pickup" class="checkbox-text">
+                                            <span class="radio">
+                                                <input class="radio__input" type="radio" name="rad1">
+                                                <span class="radio__visual"></span>
+                                            </span>
+                                            <span class="checkbox-text__label">
+                                                <span class="checkbox-text__titles">
+                                                    <span class="checkbox-text__title">Самовывоз</span>
+                                                    <span class="checkbox-text__subtitle">От 1 до 7 дней</span>
+                                                </span>
+                                                <span class="checkbox-text__price">Бесплатно</span>
+                                            </span>
+                                        </label>
+                                    </li>
+                                    <li class="checklist__item">
+                                        <label data-target=".post-delivery" class="checkbox-text">
+                                            <span class="radio">
+                                                <input class="radio__input" type="radio" name="rad1">
+                                                <span class="radio__visual"></span>
+                                            </span>
+                                            <span class="checkbox-text__label">
+                                                <span class="checkbox-text__titles">
+                                                    <span class="checkbox-text__title">Доставка почтой
+                                                        России</span>
+                                                    <span class="checkbox-text__subtitle">От 1 до 7 дней</span>
+                                                </span>
+                                                <span class="checkbox-text__price">700 ₽</span>
+                                            </span>
+                                        </label>
+                                    </li>
+                                    <li class="checklist__item">
+                                        <label data-target=".cdek-delivery" class="checkbox-text">
+                                            <span class="radio">
+                                                <input class="radio__input" type="radio" name="rad1">
+                                                <span class="radio__visual"></span>
+                                            </span>
+                                            <span class="checkbox-text__label">
+                                                <span class="checkbox-text__titles">
+                                                    <span class="checkbox-text__title">СДЭК</span>
+                                                    <span class="checkbox-text__subtitle">От 1 до 7 дней</span>
+                                                </span>
+                                                <span class="checkbox-text__price">700 ₽</span>
+                                            </span>
+                                        </label>
+                                    </li>
+                                </ul>
+                                <div class="addres-block-order courier-delivery _active">
+                                    <div class="addres-block-order__title">Адрес доставки</div>
+                                    <div class="form">
+                                        <div class="form-grid1">
+                                            <div class="form-grid1__row">
+                                                <div class="form-group1">
+                                                    <input id="order_address" class="field-input1 form-group1__field"
+                                                        placeholder=" " type="text" name="order_address" required>
+                                                    <label class="form-group1__label form-group1__label_req"
+                                                        for="order_address">Адрес доставки</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-grid1__row  form-grid1__row_3">
+                                                <div class="form-group1">
+                                                    <input id="order_entrance" class="field-input1 form-group1__field"
+                                                        placeholder=" " type="text" name="order_entrance" required>
+                                                    <label class="form-group1__label form-group1__label_req"
+                                                        for="order_entrance">Подъезд</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-grid1__row  form-grid1__row_3">
+                                                <div class="form-group1">
+                                                    <input id="order_floor" class="field-input1 form-group1__field"
+                                                        placeholder=" " type="text" name="order_floor" required>
+                                                    <label class="form-group1__label form-group1__label_req"
+                                                        for="order_floor">Этаж</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-grid1__row  form-grid1__row_3">
+                                                <div class="form-group1">
+                                                    <input id="order_apartment" class="field-input1 form-group1__field"
+                                                        placeholder=" " type="text" name="order_apartment" required>
+                                                    <label class="form-group1__label form-group1__label_req"
+                                                        for="order_apartment">Квартира/Офис</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-grid1__row">
+                                                <div class="form-group1">
+                                                    <textarea id="order_text" class="field-input1 form-group1__field"
+                                                        placeholder=" " type="text" name="order_text"></textarea>
+                                                    <label class="form-group1__label" for="order_text">Комментарий к
+                                                        доставке</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="addres-block-order pickup">
+
+                                </div>
+                                <div class="addres-block-order post-delivery">
+                                    <div class="addres-block-order__title">Адрес доставки</div>
+                                    <div class="form">
+                                        <div class="form-grid1">
+                                            <div class="form-grid1__row">
+                                                <div class="form-group1">
+                                                    <input id="order_address" class="field-input1 form-group1__field"
+                                                        placeholder=" " type="text" name="order_address" required>
+                                                    <label class="form-group1__label form-group1__label_req"
+                                                        for="order_address">Адрес доставки</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-grid1__row  form-grid1__row_3">
+                                                <div class="form-group1">
+                                                    <input id="order_entrance" class="field-input1 form-group1__field"
+                                                        placeholder=" " type="text" name="order_entrance" required>
+                                                    <label class="form-group1__label form-group1__label_req"
+                                                        for="order_entrance">Подъезд</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-grid1__row  form-grid1__row_3">
+                                                <div class="form-group1">
+                                                    <input id="order_floor" class="field-input1 form-group1__field"
+                                                        placeholder=" " type="text" name="order_floor" required>
+                                                    <label class="form-group1__label form-group1__label_req"
+                                                        for="order_floor">Этаж</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-grid1__row  form-grid1__row_3">
+                                                <div class="form-group1">
+                                                    <input id="order_apartment" class="field-input1 form-group1__field"
+                                                        placeholder=" " type="text" name="order_apartment" required>
+                                                    <label class="form-group1__label form-group1__label_req"
+                                                        for="order_apartment">Квартира/Офис</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-grid1__row">
+                                                <div class="form-group1">
+                                                    <textarea id="order_text" class="field-input1 form-group1__field"
+                                                        placeholder=" " type="text" name="order_text"></textarea>
+                                                    <label class="form-group1__label" for="order_text">Комментарий к
+                                                        доставке</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="addres-block-order cdek-delivery">
+                                    <div class="addres-block-order__title">Адрес доставки</div>
+                                    <div class="form">
+                                        <div class="form-grid1">
+                                            <div class="form-grid1__row">
+                                                <div class="form-group1">
+                                                    <input id="order_address" class="field-input1 form-group1__field"
+                                                        placeholder=" " type="text" name="order_address" required>
+                                                    <label class="form-group1__label form-group1__label_req"
+                                                        for="order_address">Адрес доставки</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-grid1__row  form-grid1__row_3">
+                                                <div class="form-group1">
+                                                    <input id="order_entrance" class="field-input1 form-group1__field"
+                                                        placeholder=" " type="text" name="order_entrance" required>
+                                                    <label class="form-group1__label form-group1__label_req"
+                                                        for="order_entrance">Подъезд</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-grid1__row  form-grid1__row_3">
+                                                <div class="form-group1">
+                                                    <input id="order_floor" class="field-input1 form-group1__field"
+                                                        placeholder=" " type="text" name="order_floor" required>
+                                                    <label class="form-group1__label form-group1__label_req"
+                                                        for="order_floor">Этаж</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-grid1__row  form-grid1__row_3">
+                                                <div class="form-group1">
+                                                    <input id="order_apartment" class="field-input1 form-group1__field"
+                                                        placeholder=" " type="text" name="order_apartment" required>
+                                                    <label class="form-group1__label form-group1__label_req"
+                                                        for="order_apartment">Квартира/Офис</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-grid1__row">
+                                                <div class="form-group1">
+                                                    <textarea id="order_text" class="field-input1 form-group1__field"
+                                                        placeholder=" " type="text" name="order_text"></textarea>
+                                                    <label class="form-group1__label" for="order_text">Комментарий к
+                                                        доставке</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block-order__column">
+                                <div class="block-order__title">
+                                    способы оплаты
+                                </div>
+                                <ul class="block-order-radio">
+                                    <li class="checklist__item">
+                                        <label class="checkbox-text checked centered">
+                                            <span class="radio">
+                                                <input checked class="radio__input" type="radio" name="rad2">
+                                                <span class="radio__visual"></span>
+                                            </span>
+                                            <span class="checkbox-text__label">
+                                                <span class="checkbox-text__titles">
+                                                    <span class="checkbox-text__title">Оплата по счёту </span>
+                                                </span>
+                                            </span>
+                                        </label>
+                                    </li>
+                                    <li class="checklist__item">
+                                        <label class="checkbox-text centered">
+                                            <span class="radio">
+                                                <input class="radio__input" type="radio" name="rad2">
+                                                <span class="radio__visual"></span>
+                                            </span>
+                                            <span class="checkbox-text__label">
+                                                <span class="checkbox-text__titles">
+                                                    <span class="checkbox-text__title">Наличными</span>
+                                                </span>
+                                            </span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="block-order__column">
+                                <div class="block-order__title">
+                                    дополнительная информация
+                                </div>
+                                <div class="form">
+                                    <div class="form-grid1">
+                                        <div class="form-grid1__row">
+                                            <select data-select class="ts-wrapper_wide select3" required
+                                                name="order_select2">
+                                                <option value="1">Личный менеджер</option>
+                                                <option value="2">Личный менеджер2</option>
+                                                <option value="3">Личный менеджер3</option>
+                                                <option value="4">Личный менеджер4</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-grid1__row">
+                                            <div class="form-group1">
+                                                <textarea id="order_text2" class="field-input1 form-group1__field"
+                                                    placeholder=" " type="text" name="order_text2"></textarea>
+                                                <label class="form-group1__label" for="order_text2">Комментарий к
+                                                    заказу</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block-order__column">
+                                <div class="block-order__title">
+                                    товары в заказе
+                                </div>
+                                <div class="block-order__cards">
+                                    <div class="card-product3 card-product4">
+                                        <div class="card-product3__col-photo">
+                                            <a href="catalog-detail.html">
+                                                <img src="img/product1.webp" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="card-product3__col-data">
+                                            <div class="card-product3__name">
+                                                <a href="catalog-detail.html">Твердосплавная пластина ZCC-CT
+                                                    TNMG160404-PM
+                                                    YBC252</a>
+                                            </div>
+                                            <div class="card-product3__description">Короткое описание</div>
+                                        </div>
+                                        <div class="card-product3__col1">
+                                            <div>
+                                                <div class="card-product3__label1">С НДС (1 шт.)</div>
+                                                <span class="card-product3__price1">441 ₽</span>
+                                                <span class="card-product3__price2">1 200 ₽</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-product3__col3">
+                                            <span>10 шт.</span>
+                                        </div>
+                                        <div class="card-product3__col2">
+                                            <div>
+                                                <span>На сумму</span>
+                                                <span class="card-product3__price3">4410 ₽</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-product3 card-product4">
+                                        <div class="card-product3__col-photo">
+                                            <a href="catalog-detail.html">
+                                                <img src="img/product1.webp" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="card-product3__col-data">
+                                            <div class="card-product3__name">
+                                                <a href="catalog-detail.html">Твердосплавная пластина ZCC-CT
+                                                    TNMG160404-PM
+                                                    YBC252</a>
+                                            </div>
+                                            <div class="card-product3__description">Короткое описание</div>
+                                        </div>
+                                        <div class="card-product3__col1">
+                                            <div>
+                                                <div class="card-product3__label1">С НДС (1 шт.)</div>
+                                                <span class="card-product3__price1">441 ₽</span>
+                                                <span class="card-product3__price2">1 200 ₽</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-product3__col3">
+                                            <span>10 шт.</span>
+                                        </div>
+                                        <div class="card-product3__col2">
+                                            <div>
+                                                <span>На сумму</span>
+                                                <span class="card-product3__price3">4410 ₽</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-product3 card-product4">
+                                        <div class="card-product3__col-photo">
+                                            <a href="catalog-detail.html">
+                                                <img src="img/product1.webp" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="card-product3__col-data">
+                                            <div class="card-product3__name">
+                                                <a href="catalog-detail.html">Твердосплавная пластина ZCC-CT
+                                                    TNMG160404-PM
+                                                    YBC252</a>
+                                            </div>
+                                            <div class="card-product3__description">Короткое описание</div>
+                                        </div>
+                                        <div class="card-product3__col1">
+                                            <div>
+                                                <div class="card-product3__label1">С НДС (1 шт.)</div>
+                                                <span class="card-product3__price1">441 ₽</span>
+                                                <span class="card-product3__price2">1 200 ₽</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-product3__col3">
+                                            <span>10 шт.</span>
+                                        </div>
+                                        <div class="card-product3__col2">
+                                            <div>
+                                                <span>На сумму</span>
+                                                <span class="card-product3__price3">4410 ₽</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="details-block-cart">
+                            <div class="details-block-cart__sticky">
+                                <div class="details-block-cart__list">
+                                    <div class="details-block-cart__title">
+                                        Ваш заказ
+                                    </div>
+                                    <div class="details-block-cart__item">
+                                        <div class="details-block-cart__product">Товары, 3 шт.</div>
+                                        <div class="details-block-cart__cost">36 000 ₽</div>
+                                    </div>
+                                    <div class="details-block-cart__item sale">
+                                        <div class="details-block-cart__product">Скидка</div>
+                                        <div class="details-block-cart__cost">-22 770 ₽</div>
+                                    </div>
+                                    <div class="details-block-cart__item delivery">
+                                        <div class="details-block-cart__product">Доставка</div>
+                                        <div class="details-block-cart__cost">770 ₽</div>
+                                    </div>
+                                </div>
+                                <div class="details-block-cart__list">
+                                    <div class="details-block-cart__title">
+                                        Промокод
+                                    </div>
+                                    <div class="details-block-cart__inputs">
+                                        <input class="field-input1" type="text" name="email2"
+                                            placeholder="Введите промокод">
+                                        <button type="button" class="btn">
+                                            <svg aria-hidden="true" width="11" height="18">
+                                                <use xlink:href="img/sprite.svg#chevron3"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="details-block-cart__totals">
+                                    <div class="details-block-cart__title">Итого к оплате:</div>
+                                    <div class="details-block-cart__summ">14 000 ₽</div>
+                                </div>
+                                <button type="submit" class="btn btn_primary">
+                                    Оформить заказ
+                                </button>
+                                <div class="textblock1 textblock1_small">Нажимая на кнопку, Вы
+                                    соглашаетесь на <a href="#">обработку персональных данных</a> и c
+                                    <a href="#">публичной офертой</a>.
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </main>
+        {% include 'blocks/footer.njk' %}
+    </div>
+    {% include 'blocks/popups.njk' %}
+    {% include 'blocks/scripts.njk' %}
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Контакты</title>
+    {% include 'blocks/head.njk' %}
+</head>
+
+<body class="preload mp">
+    <div class="main-wrapper-outer">
+        {% include 'blocks/header.njk' %}
+        <main class="main">
+
+            <div class="block-breadcrumbs">
+                <div class="container">
+                    <nav aria-label="breadcrumb" class="breadcrumbs">
+                        <a href="/" class="breadcrumbs__item">
+                            Главная
+                        </a>
+                        <span aria-hidden="true">&mdash;</span>
+                        <span aria-current="page" class="breadcrumbs__item">
+                            Контакты
+                        </span>
+                    </nav>
+                    <h1 class="title2">Контакты</h1>
+                </div>
+            </div>
+
+            <div class="block-contacts block1">
+                <div class="container container_bordered1">
+                    <div class="block-contacts__content">
+                        <div class="block-contacts__body">
+                            <h2 class="title4">
+                                ООО «НААНИТ» Официальный импортер и дистрибьютор бренда ZCC-CT
+                            </h2>
+                            <ul>
+                                <li>
+                                    <div class="block-contacts__name">Адрес</div>
+                                    <div class="block-contacts__location">
+                                        <img loading="lazy" src="img/location1.svg" alt="">
+                                        <span>344029 г. Ростов-на-Дону, ул. Селиванова, 49, офис 9</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="block-contacts__name">Телефоны</div>
+                                    <a href="tel:79614290802">+7 (961) 429-08-02</a>
+                                    <a href="tel:79045084162">+7 (904) 508-41-62</a>
+                                </li>
+                                <li>
+                                    <div class="block-contacts__name">E-mail</div>
+                                    <a href="mailto:naanit1@yandex.ru" class="mail">naanit1@yandex.ru</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="map1" class="block-contacts__map"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-details block1">
+                <div class="heading-cols1">
+                    <div class="container">
+                        <h2 class="title2">Реквизиты</h2>
+                    </div>
+                </div>
+                <div class="container container_bordered1">
+                    <div class="line"></div>
+                    <div class="block-details__body">
+                        <div class="block-details__column">
+                            <div class="block-details__name">Наименование</div>
+                            <div class="block-details__value">
+                                ООО «НААНИТ»
+                            </div>
+                        </div>
+                        <div class="block-details__column">
+                            <div class="block-details__name">Юридический адрес</div>
+                            <div class="block-details__value">
+                                121099, г. Москва, вн.тер.г. Муниципальный Округ Арбат, ул Новый Арбат, д. 30/9,
+                                помещ. 2Н
+                            </div>
+                        </div>
+                        <div class="block-details__column">
+                            <div class="block-details__name">КПП</div>
+                            <div class="block-details__value">
+                                772601001
+                            </div>
+                        </div>
+                        <div class="block-details__column">
+                            <div class="block-details__name">ИНН</div>
+                            <div class="block-details__value">
+                                7727463903
+                            </div>
+                        </div>
+                        <div class="block-details__column">
+                            <div class="block-details__name">Банк</div>
+                            <div class="block-details__value">
+                                ПАО «Сбербанк России»
+                            </div>
+                        </div>
+                        <div class="block-details__column">
+                            <div class="block-details__name">Расчетный счет</div>
+                            <div class="block-details__value">
+                                40702810138040028678
+                            </div>
+                        </div>
+                        <div class="block-details__column">
+                            <div class="block-details__name">Корреспондентский счет</div>
+                            <div class="block-details__value">
+                                30101810400000000225
+                            </div>
+                        </div>
+                        <div class="block-details__column">
+                            <div class="block-details__name">БИК</div>
+                            <div class="block-details__value">
+                                044525225
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {% include 'blocks/feedback.njk' %}
+
+        </main>
+        {% include 'blocks/footer.njk' %}
+    </div>
+    {% include 'blocks/popups.njk' %}
+    <script
+        src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&amp;lang=ru_RU&amp;_v=20240623012845&amp;_v=20250429150847"></script>
+    {% include 'blocks/scripts.njk' %}
+</body>
+
+</html>

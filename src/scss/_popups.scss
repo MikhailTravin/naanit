@@ -1,0 +1,177 @@
+@use "mixins" as *;
+
+.hystmodal {
+  --padding: 40px;
+
+  padding: var(--container-padding);
+
+  &__window {
+    padding: calc(var(--padding) * 0.85) var(--padding) var(--padding) var(--padding);
+    width: 100%;
+    max-width: 534px;
+  }
+
+  &__close {
+    background: none;
+    width: 20px;
+    height: 20px;
+    outline: none;
+    top: 30px;
+    right: 30px;
+
+    svg {
+      fill: #848283;
+
+      @include transition(fill, var(--theme-animation-duration-fast));
+    }
+
+    &:hover svg {
+      fill: var(--theme-color-text-common);
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin: 0 0 7px 0;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 0 31px 0;
+  }
+
+  &__product {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    border-top: 1px var(--theme-border-color) solid;
+    border-bottom: 1px var(--theme-border-color) solid;
+    padding: 24px 0;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    img {
+      max-width: 100px;
+      max-height: 90px;
+    }
+  }
+
+  .form-grid1 {
+    gap: 16px;
+
+    &__row_sparse {
+      padding-top: 14px;
+      padding-bottom: 14px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    padding: 0;
+
+    &__window {
+      padding: 24px 15px;
+      min-height: 100dvh;
+    }
+
+    &__description {
+      margin-bottom: 25px;
+    }
+
+    .form-grid1 {
+      &__row_sparse {
+        padding-top: 6px;
+        padding-bottom: 6px;
+      }
+    }
+
+    &__close {
+      right: 20px;
+      top: 20px;
+    }
+  }
+}
+
+#modalCallback .hystmodal__description {
+  max-width: 280px;
+}
+
+.hystmodal-confirmation {
+  .hystmodal__window {
+    padding: 40px 30px 30px 30px;
+    min-height: auto;
+    @media (max-width: 500px) {
+      padding: 60px 20px;
+      margin: 15px;
+      width: calc(100% - 30px);
+    }
+  }
+  .hystmodal__title {
+    text-align: center;
+    margin: 0px 0px 15px 0px;
+  }
+  .hystmodal__description {
+    text-align: center;
+    @media (max-width: 500px) {
+      margin-bottom: 20px;
+    }
+  }
+  .hystmodal__close {
+    top: 20px;
+    right: 20px;
+  }
+  .hystmodal__buttons {
+    display: grid;
+    gap: 10px 16px;
+    grid-template-columns: repeat(2, 1fr);
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr;
+    }
+    .btn {
+      --height: 52px;
+    }
+    .btn_close {
+      background: #848283;
+      color: #fff;
+    }
+  }
+}
+
+.hystmodal-add-organization {
+  .hystmodal__title {
+    margin: 0px 30px 25px 0px;
+  }
+  .block-user-cabinet__column {
+    padding: 0px 0px 0px 0px;
+  }
+  .file-user-cabinet {
+    margin: 0px 0px 12px 0px;
+  }
+  .field-input1:focus {
+    border-color: #3da10c;
+    background-color: #fff;
+  }
+  .textsmall {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+  }
+  .btn {
+    width: 100%;
+    padding: 5px 20px;
+    margin: 25px 0px 0px 0px;
+  }
+}
+
+

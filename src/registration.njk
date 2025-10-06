@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Регистрация</title>
+    {% include 'blocks/head.njk' %}
+</head>
+
+<body class="preload mp">
+    <div class="main-wrapper-outer">
+        {% include 'blocks/header.njk' %}
+        <main class="main">
+
+            <div class="block-breadcrumbs breadcrumbs-delivery">
+                <div class="container">
+                    <nav aria-label="breadcrumb" class="breadcrumbs">
+                        <a href="/" class="breadcrumbs__item">
+                            Главная
+                        </a>
+                        <span aria-hidden="true">&mdash;</span>
+                        <span aria-current="page" class="breadcrumbs__item">
+                            Регистрация
+                        </span>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="block-login block1">
+                <div class="container">
+                    <div class="block-login__top">
+                        <h1 class="title2">Регистрация</h1>
+                        <p>
+                            У Вас уже есть учётная запись?
+                        </p>
+                        <a href="login.html" class="btn-text2">
+                            <span>авторизоваться</span>
+                            <svg aria-hidden="true" width="14" height="14">
+                                <use xlink:href="img/sprite.svg#arrow1"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="container container_bordered1">
+                    <form data-validate action="#" class="form">
+                        <div class="form-grid1">
+                            <div class="form-grid1__row form-grid1-top">
+                                <div class="form-grid1__title">личные данные</div>
+                                <p>
+                                    На указанный в форме email придет запрос на подтверждение регистрации.
+                                </p>
+                            </div>
+                            <div class="form-grid1__row">
+                                <div class="form-group1">
+                                    <input id="popup_login_fio" class="field-input1 form-group1__field" placeholder=" "
+                                        type="text" name="popup_login_fio" required>
+                                    <label class="form-group1__label form-group1__label_req"
+                                        for="popup_login_fio">ФИО</label>
+                                </div>
+                            </div>
+                            <div class="form-grid1__row form-grid1__row_2">
+                                <div class="form-group1">
+                                    <input id="popup_buy1click_phone" data-type="phone" data-mask="phone"
+                                        placeholder=" " class="field-input1 form-group1__field" type="text"
+                                        name="popup_buy1click_phone" required>
+                                    <label class="form-group1__label form-group1__label_hidden"
+                                        for="popup_buy1click_phone">Номер телефона</label>
+                                    <span
+                                        class="form-group1__placeholder1 form-group1__placeholder1_req"><span>+7</span>
+                                        (999) 999-99-99</span>
+                                </div>
+                            </div>
+                            <div class="form-grid1__row form-grid1__row_2">
+                                <div class="form-group1">
+                                    <input id="popup_login_email" class="field-input1 form-group1__field"
+                                        placeholder=" " type="text" name="popup_login_email" required>
+                                    <label class="form-group1__label form-group1__label_req"
+                                        for="popup_login_email">E-mail</label>
+                                </div>
+                            </div>
+                            <div class="form-grid1__row">
+                                <div class="form-group1">
+                                    <input id="popup_login_city" class="field-input1 form-group1__field" placeholder=" "
+                                        type="text" name="popup_login_city" required>
+                                    <label class="form-group1__label form-group1__label_req"
+                                        for="popup_login_city">Город</label>
+                                </div>
+                            </div>
+                            <div class="form-grid1__row">
+                                <div class="form-group1">
+                                    <input id="popup_login_address" class="field-input1 form-group1__field"
+                                        placeholder=" " type="text" name="popup_login_address" required>
+                                    <label class="form-group1__label form-group1__label_req"
+                                        for="popup_login_address">Адрес</label>
+                                </div>
+                            </div>
+                            <div class="form-grid1__row form-grid1__row_2">
+                                <div class="form-group1">
+                                    <input id="popup_login_password" class="field-input1 form-group1__field"
+                                        placeholder=" " type="password" name="popup_login_password" required>
+                                    <label class="form-group1__label form-group1__label_req"
+                                        for="popup_login_password">Пароль</label>
+                                    <div class="form-group1__icon">
+                                        <img class="eye1" src="img/eye1.svg" alt="">
+                                        <img class="eye2 hidden" src="img/eye2.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-grid1__row form-grid1__row_2">
+                                <div class="form-group1">
+                                    <input id="popup_login_password2" class="field-input1 form-group1__field"
+                                        placeholder=" " type="password" name="popup_login_password2" required>
+                                    <label class="form-group1__label form-group1__label_req"
+                                        for="popup_login_password2">Подтверждение пароля</label>
+                                    <div class="form-group1__icon">
+                                        <img class="eye1" src="img/eye1.svg" alt="">
+                                        <img class="eye2 hidden" src="img/eye2.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-grid1">
+                            <div class="form-grid1__row form-grid1-top">
+                                <div class="form-grid1__title">данные организации</div>
+                            </div>
+                            <div class="form-grid1__row">
+                                <div class="form-group1">
+                                    <input id="popup_login_inn" class="field-input1 form-group1__field"
+                                        value="1234567891" type="text" name="popup_login_inn" required>
+                                    <label class="form-group1__label form-group1__label_req"
+                                        for="popup_login_inn">ИНН</label>
+                                </div>
+                            </div>
+                            <div class="form-grid1__row">
+                                <div class="form-group1">
+                                    <input id="popup_login_title" class="field-input1 form-group1__field filled"
+                                        value="ООО НААНИТ" type="text" name="popup_login_title" required>
+                                    <label class="form-group1__label form-group1__label_req"
+                                        for="popup_login_title">Название</label>
+                                </div>
+                            </div>
+                            <div class="form-grid1__row">
+                                <div class="form-group1">
+                                    <input id="popup_login_kpp" class="field-input1 form-group1__field filled"
+                                        value="123456654" type="text" name="popup_login_kpp" required>
+                                    <label class="form-group1__label form-group1__label_req"
+                                        for="popup_login_kpp">КПП</label>
+                                </div>
+                            </div>
+                            <div class="form-grid1__row">
+                                <div class="form-group1">
+                                    <textarea id="popup_login_address2" class="field-input1 form-group1__field filled"
+                                         type="text" name="popup_login_address2">628011, Ханты-Мансийский Автономный округ - Югра, г Ханты-Мансийск, ул Комсомольская, зд 6</textarea>
+                                    <label class="form-group1__label" for="popup_login_address2">Юридический
+                                        адрес</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-grid1__buttons">
+                            <div class="form-grid1__row form-grid1__row_sparse">
+                                <div class="form-group">
+                                    <label class="checkbox-text">
+                                        <span class="checkbox">
+                                            <input class="checkbox__input" type="checkbox" name="agreement" required>
+                                            <span class="checkbox__visual">
+                                                <svg class="checkbox__mark" width="12" height="11" aria-hidden="true">
+                                                    <use xlink:href="img/sprite.svg#mark1"></use>
+                                                </svg>
+                                            </span>
+                                        </span>
+                                        <span class="checkbox-text__label">Даю согласие на обработку своих персональных
+                                            данных</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <button class="btn btn_primary" type="submit">
+                                Зарегистрироваться
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </main>
+        {% include 'blocks/footer.njk' %}
+    </div>
+    {% include 'blocks/popups.njk' %}
+    {% include 'blocks/scripts.njk' %}
+</body>
+
+</html>

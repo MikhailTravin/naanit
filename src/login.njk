@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Авторизация</title>
+    {% include 'blocks/head.njk' %}
+</head>
+
+<body class="preload mp">
+    <div class="main-wrapper-outer">
+        {% include 'blocks/header.njk' %}
+        <main class="main">
+
+            <div class="block-breadcrumbs breadcrumbs-delivery">
+                <div class="container">
+                    <nav aria-label="breadcrumb" class="breadcrumbs">
+                        <a href="/" class="breadcrumbs__item">
+                            Главная
+                        </a>
+                        <span aria-hidden="true">&mdash;</span>
+                        <span aria-current="page" class="breadcrumbs__item">
+                            Авторизация
+                        </span>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="block-login block1">
+                <div class="container">
+                    <div class="block-login__top">
+                        <h1 class="title2">авторизация</h1>
+                        <p>
+                            У Вас еще нет учётной записи?
+                        </p>
+                        <a href="registration.html" class="btn-text2">
+                            <span>зарегистрироваться</span>
+                            <svg aria-hidden="true" width="14" height="14">
+                                <use xlink:href="img/sprite.svg#arrow1"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="container container_bordered1">
+                    <form data-validate action="#" class="form">
+                        <div class="form-grid1">
+                            <div class="form-grid1__row">
+                                <div class="form-group1">
+                                    <input id="popup_login_email" class="field-input1 form-group1__field"
+                                        placeholder=" " type="text" name="popup_login_email" required>
+                                    <label class="form-group1__label form-group1__label_req"
+                                        for="popup_login_email">E-mail</label>
+                                </div>
+                            </div>
+                            <div class="form-grid1__row">
+                                <div class="form-group1">
+                                    <input id="popup_login_password" class="field-input1 form-group1__field"
+                                        placeholder=" " type="password" name="popup_login_password" required>
+                                    <label class="form-group1__label form-group1__label_req"
+                                        for="popup_login_password">Пароль</label>
+                                    <div class="form-group1__icon">
+                                        <img class="eye1" src="img/eye1.svg" alt="">
+                                        <img class="eye2 hidden" src="img/eye2.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-grid1__buttons">
+                            <button class="btn btn_primary" type="submit">
+                                Авторизоваться
+                            </button>
+                            <a href="forgot-password.html" class="forgot-password">
+                                Забыли пароль?
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </main>
+        {% include 'blocks/footer.njk' %}
+    </div>
+    {% include 'blocks/popups.njk' %}
+    {% include 'blocks/scripts.njk' %}
+</body>
+
+</html>

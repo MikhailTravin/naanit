@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>О компании</title>
+    {% include 'blocks/head.njk' %}
+</head>
+
+<body class="preload mp">
+    <div class="main-wrapper-outer">
+        {% include 'blocks/header.njk' %}
+        <main class="main">
+
+            <div class="block-intro-about block1">
+                <div class="block-intro-about__photo">
+                    <div class="block-intro-about__photo-inner">
+                        <img src="img/about.webp" alt="" class="">
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="block-intro-about__content">
+                        <div class="block-breadcrumbs">
+                            <nav aria-label="breadcrumb" class="breadcrumbs">
+                                <a href="/" class="breadcrumbs__item">
+                                    Главная
+                                </a>
+                                <span aria-hidden="true">&mdash;</span>
+                                <span aria-current="page" class="breadcrumbs__item">
+                                    О компании
+                                </span>
+                            </nav>
+                        </div>
+                        <div class="block-intro-about__titles">
+                            <h1 class="block-intro-about__title">
+                                Компания «НААНИТ» — признанный лидер в области производства металлорежущих инструментов
+                            </h1>
+                            <div class="block-intro-about__text">
+                                Мы гордимся тем, что являемся надежным производителем, предоставляющим
+                                высококачественные инструменты для обработки металла, которые удовлетворяют потребности
+                                как крупных промышленных предприятий, так и индивидуальных мастеров.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container container_bordered1">
+                    <div class="block-intro-about__advantage">
+                        <div class="card-advantage">
+                            <div class="card-advantage__pic" style="mask-image: url(img/advantage-pic1.svg);">
+                                <img src="img/advantage-pic1.svg" loading="lazy" alt="">
+                            </div>
+                            <div class="card-advantage__title">Гибкая система скидок</div>
+                        </div>
+                        <div class="card-advantage">
+                            <div class="card-advantage__pic" style="mask-image: url(img/advantage-pic2.svg);">
+                                <img src="img/advantage-pic2.svg" loading="lazy" alt="">
+                            </div>
+                            <div class="card-advantage__title">Квалифицированный персонал</div>
+                        </div>
+                        <div class="card-advantage">
+                            <div class="card-advantage__pic" style="mask-image: url(img/advantage-pic4.svg);">
+                                <img src="img/advantage-pic4.svg" loading="lazy" alt="">
+                            </div>
+                            <div class="card-advantage__title">Своевременные поставки</div>
+                        </div>
+                        <div class="card-advantage">
+                            <div class="card-advantage__pic" style="mask-image: url(img/advantage-pic3.svg);">
+                                <img src="img/advantage-pic3.svg" loading="lazy" alt="">
+                            </div>
+                            <div class="card-advantage__title">Подход к каждому клиенту</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-about-descr block1">
+                <div class="container">
+                    <div class="block-about-descr__grid">
+                        <div class="block-about-descr__left">
+                            <a href="files/videos/video.mp4" data-fancybox="video1" class="block-about-descr__video">
+                                <img loading="lazy" class="block-about-descr__photo" src="img/video1.webp" alt="">
+                                <div class="play">
+                                    <svg aria-hidden="true" width="23" height="24">
+                                        <use xlink:href="img/sprite.svg#play"></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="block-about-descr__right">
+                            <h2 class="title2">ИНСТРУМЕНТ ZCC-CT</h2>
+                            <div class="block-about-descr__text">
+                                <p>
+                                    Мы предлагаем высокоточные инструменты ZCC-CT для оптимизации вашего
+                                    производственного процесса. Как официальный дистрибьютор, мы обеспечиваем
+                                    машиностроительные предприятия инновационным металлорежущим оборудованием, которое
+                                    повышает эффективность и точность обработки.
+                                </p>
+                                <p>
+                                    У нас вы можете купить инструменты для
+                                    металлообработки, которые обеспечат высокую точность и долговечность в работе.
+                                    Изготавливаем на заказ инструменты для резки
+                                    и сверления металла, полностью соответствующие вашим требованиям.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="block-certificates block1">
+                <div class="container">
+                    <div class="block-certificates__top">
+                        <h2 class="title2">ZCC – ПРОИЗВОДИТЕЛЬ,
+                            КОТОРОМУ ДОВЕРЯЮТ</h2>
+                        <div class="block-certificates__text">
+                            <p>
+                                Инвестируя в инструменты ZCC-CT, вы вкладываете средства в будущее вашего предприятия.
+                                Высокая точность, долговечность и эффективность нашего оборудования позволят выйти на
+                                новый
+                                уровень производительности и качества выпускаемой продукции.
+                            </p>
+                            <p>
+                                Не упустите возможность
+                                оптимизировать производство с помощью передовых инструментов. Свяжитесь с нами сейчас,
+                                чтобы
+                                получить индивидуальное предложение и консультацию по выбору оптимального решения для
+                                вашего
+                                предприятия.
+                            </p>
+                            <p>
+                                Вместе мы сможем вывести ваше производство на новый уровень эффективности и
+                                конкурентоспособности.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div data-swiper="certificates" class="swiper swiper-certificates">
+                    <div class="swiper-wrapper">
+                        <a href="img/certificate1.webp" data-fancybox="gallery1" class="swiper-slide">
+                            <img loading="lazy" src="img/certificate1.webp" alt="">
+                        </a>
+                        <a href="img/certificate1.webp" data-fancybox="gallery1" class="swiper-slide">
+                            <img loading="lazy" src="img/certificate1.webp" alt="">
+                        </a>
+                        <a href="img/certificate1.webp" data-fancybox="gallery1" class="swiper-slide">
+                            <img loading="lazy" src="img/certificate1.webp" alt="">
+                        </a>
+                        <a href="img/certificate1.webp" data-fancybox="gallery1" class="swiper-slide">
+                            <img loading="lazy" src="img/certificate1.webp" alt="">
+                        </a>
+                        <a href="img/certificate1.webp" data-fancybox="gallery1" class="swiper-slide">
+                            <img loading="lazy" src="img/certificate1.webp" alt="">
+                        </a>
+                        <a href="img/certificate1.webp" data-fancybox="gallery1" class="swiper-slide">
+                            <img loading="lazy" src="img/certificate1.webp" alt="">
+                        </a>
+                        <a href="img/certificate1.webp" data-fancybox="gallery1" class="swiper-slide">
+                            <img loading="lazy" src="img/certificate1.webp" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-brands">
+                <div class="container">
+                    <h2 class="title2">Другие бренды</h2>
+                </div>
+                <div class="container container_bordered1">
+                    <div data-swiper="brands" class="swiper swiper-brands">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a class="card-brand" href="#">
+                                    <img src="img/brand1.png" loading="lazy" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="card-brand" href="#">
+                                    <img src="img/brand2.png" loading="lazy" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="card-brand" href="#">
+                                    <img src="img/brand3.png" loading="lazy" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="card-brand" href="#">
+                                    <img src="img/brand4.png" loading="lazy" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="card-brand" href="#">
+                                    <img src="img/brand5.png" loading="lazy" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="card-brand" href="#">
+                                    <img src="img/brand6.png" loading="lazy" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="card-brand" href="#">
+                                    <img src="img/brand7.png" loading="lazy" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="card-brand" href="#">
+                                    <img src="img/brand8.png" loading="lazy" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="card-brand" href="#">
+                                    <img src="img/brand1.png" loading="lazy" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="card-brand" href="#">
+                                    <img src="img/brand2.png" loading="lazy" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="card-brand" href="#">
+                                    <img src="img/brand3.png" loading="lazy" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="card-brand" href="#">
+                                    <img src="img/brand4.png" loading="lazy" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="card-brand" href="#">
+                                    <img src="img/brand5.png" loading="lazy" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="card-brand" href="#">
+                                    <img src="img/brand6.png" loading="lazy" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="card-brand" href="#">
+                                    <img src="img/brand7.png" loading="lazy" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="card-brand" href="#">
+                                    <img src="img/brand8.png" loading="lazy" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {% include 'blocks/feedback.njk' %}
+
+        </main>
+        {% include 'blocks/footer.njk' %}
+    </div>
+    {% include 'blocks/popups.njk' %}
+    {% include 'blocks/scripts.njk' %}
+</body>
+
+</html>

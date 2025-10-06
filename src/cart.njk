@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Корзина</title>
+    {% include 'blocks/head.njk' %}
+</head>
+
+<body class="preload mp">
+    <div class="main-wrapper-outer">
+        {% include 'blocks/header.njk' %}
+        <main class="main">
+
+            <div class="block-breadcrumbs">
+                <div class="container">
+                    <nav aria-label="breadcrumb" class="breadcrumbs">
+                        <a href="/" class="breadcrumbs__item">
+                            Главная
+                        </a>
+                        <span aria-hidden="true">&mdash;</span>
+                        <span aria-current="page" class="breadcrumbs__item">
+                            Корзина
+                        </span>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="block-cart">
+                <div class="container">
+                    <a href="catalog.html" class="back">
+                        <svg aria-hidden="true" width="14" height="14">
+                            <use xlink:href="img/sprite.svg#arrow1"></use>
+                        </svg>
+                        <span>вернуться к покупкам</span>
+                    </a>
+                    <div class="heading-cols1">
+                        <h1 class="title2">корзина</h1>
+                        <button class="btn-text btn-text_primary" type="button">
+                            <img src="img/delete.svg" alt="">
+                            <span>очистить корзину</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="container container_bordered1">
+                    <div class="block-cart__content">
+                        <div class="block-cart__body">
+                            <div class="card-product3 card-product4">
+                                <div class="card-product3__col-photo">
+                                    <a href="catalog-detail.html">
+                                        <img src="img/product1.webp" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-product3__col-data">
+                                    <div class="card-product3__col-specs">
+                                        <div class="card-product3__label2">Характеристики</div>
+                                        <div class="card-product3__specs">
+                                            <div>
+                                                <span>Форма пластины C</span>
+                                                <span>(Ромб 80°)</span>
+                                            </div>
+                                            <div>
+                                                <span>Размер пластины</span>
+                                                <span>06</span>
+                                            </div>
+                                            <div>
+                                                <span>Радиус при вершине r (мм)</span>
+                                                <span>0.4</span>
+                                            </div>
+                                            <div>
+                                                <span>Вид обработки</span>
+                                                <span>Получистовая / Получерновая</span>
+                                            </div>
+                                            <div>
+                                                <span>Материал пластины</span>
+                                                <span>Кубический нитрид бора (CBN)</span>
+                                            </div>
+                                            <div>
+                                                <span>Форма пластины C</span>
+                                                <span>(Ромб 80°)</span>
+                                            </div>
+                                            <div>
+                                                <span>Размер пластины</span>
+                                                <span>06</span>
+                                            </div>
+                                            <div>
+                                                <span>Радиус при вершине r (мм)</span>
+                                                <span>0.4</span>
+                                            </div>
+                                            <div>
+                                                <span>Вид обработки</span>
+                                                <span>Получистовая / Получерновая</span>
+                                            </div>
+                                            <div>
+                                                <span>Материал пластины</span>
+                                                <span>Кубический нитрид бора (CBN)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-product3__name">
+                                        <a href="catalog-detail.html">Твердосплавная пластина ZCC-CT TNMG160404-PM
+                                            YBC252</a>
+                                    </div>
+                                    <div class="card-product3__description">Короткое описание</div>
+                                    <div class="card-product3__status status_instock">В наличии</div>
+                                </div>
+                                <div class="card-product3__col1">
+                                    <div>
+                                        <div class="card-product3__label1">С НДС (1 шт.)</div>
+                                        <span class="card-product3__price1">441 ₽</span>
+                                        <span class="card-product3__price2">1 200 ₽</span>
+                                    </div>
+                                </div>
+                                <div class="card-product3__col3">
+                                    <div class="stepcounter">
+                                        <button class="stepcounter__btn" type="button" disabled>
+                                            <svg aria-hidden="true" width="14" height="2">
+                                                <use xlink:href="img/sprite.svg#minus1"></use>
+                                            </svg>
+                                            <span class="v-h">Увеличить количество</span>
+                                        </button>
+                                        <input class="stepcounter__input" type="number" value="1" readonly>
+                                        <button class="stepcounter__btn" type="button">
+                                            <svg aria-hidden="true" width="14" height="14">
+                                                <use xlink:href="img/sprite.svg#plus1"></use>
+                                            </svg>
+                                            <span class="v-h">Уменьшить количество</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-product3__col2">
+                                    <div>
+                                        <span>На сумму</span>
+                                        <span class="card-product3__price3">4410 ₽</span>
+                                    </div>
+                                </div>
+                                <div class="card-product3__col-btn">
+                                    <button data-action="showSpecs" class="card-product3__btn-info" type="button">
+                                        <svg aria-hidden="true" width="6" height="15">
+                                            <use xlink:href="img/sprite.svg#info1"></use>
+                                        </svg>
+                                        <span class="v-h">Характеристики</span>
+                                    </button>
+                                </div>
+                                <button type="button" class="card-product3__delete">
+                                    <img src="img/delete.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="card-product3 card-product4">
+                                <div class="card-product3__col-photo">
+                                    <a href="catalog-detail.html">
+                                        <img src="img/product1.webp" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-product3__col-data">
+                                    <div class="card-product3__col-specs">
+                                        <div class="card-product3__label2">Характеристики</div>
+                                        <div class="card-product3__specs">
+                                            <div>
+                                                <span>Форма пластины C</span>
+                                                <span>(Ромб 80°)</span>
+                                            </div>
+                                            <div>
+                                                <span>Размер пластины</span>
+                                                <span>06</span>
+                                            </div>
+                                            <div>
+                                                <span>Радиус при вершине r (мм)</span>
+                                                <span>0.4</span>
+                                            </div>
+                                            <div>
+                                                <span>Вид обработки</span>
+                                                <span>Получистовая / Получерновая</span>
+                                            </div>
+                                            <div>
+                                                <span>Материал пластины</span>
+                                                <span>Кубический нитрид бора (CBN)</span>
+                                            </div>
+                                            <div>
+                                                <span>Форма пластины C</span>
+                                                <span>(Ромб 80°)</span>
+                                            </div>
+                                            <div>
+                                                <span>Размер пластины</span>
+                                                <span>06</span>
+                                            </div>
+                                            <div>
+                                                <span>Радиус при вершине r (мм)</span>
+                                                <span>0.4</span>
+                                            </div>
+                                            <div>
+                                                <span>Вид обработки</span>
+                                                <span>Получистовая / Получерновая</span>
+                                            </div>
+                                            <div>
+                                                <span>Материал пластины</span>
+                                                <span>Кубический нитрид бора (CBN)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-product3__name">
+                                        <a href="catalog-detail.html">Твердосплавная пластина ZCC-CT TNMG160404-PM
+                                            YBC252</a>
+                                    </div>
+                                    <div class="card-product3__description">Короткое описание</div>
+                                    <div class="card-product3__status status_instock">В наличии</div>
+                                </div>
+                                <div class="card-product3__col1">
+                                    <div>
+                                        <div class="card-product3__label1">С НДС (1 шт.)</div>
+                                        <span class="card-product3__price1">441 ₽</span>
+                                        <span class="card-product3__price2">1 200 ₽</span>
+                                    </div>
+                                </div>
+                                <div class="card-product3__col3">
+                                    <div class="stepcounter">
+                                        <button class="stepcounter__btn" type="button" disabled>
+                                            <svg aria-hidden="true" width="14" height="2">
+                                                <use xlink:href="img/sprite.svg#minus1"></use>
+                                            </svg>
+                                            <span class="v-h">Увеличить количество</span>
+                                        </button>
+                                        <input class="stepcounter__input" type="number" value="1" readonly>
+                                        <button class="stepcounter__btn" type="button">
+                                            <svg aria-hidden="true" width="14" height="14">
+                                                <use xlink:href="img/sprite.svg#plus1"></use>
+                                            </svg>
+                                            <span class="v-h">Уменьшить количество</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-product3__col2">
+                                    <div>
+                                        <span>На сумму</span>
+                                        <span class="card-product3__price3">4410 ₽</span>
+                                    </div>
+                                </div>
+                                <div class="card-product3__col-btn">
+                                    <button data-action="showSpecs" class="card-product3__btn-info" type="button">
+                                        <svg aria-hidden="true" width="6" height="15">
+                                            <use xlink:href="img/sprite.svg#info1"></use>
+                                        </svg>
+                                        <span class="v-h">Характеристики</span>
+                                    </button>
+                                </div>
+                                <button type="button" class="card-product3__delete">
+                                    <img src="img/delete.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="card-product3 card-product4">
+                                <div class="card-product3__col-photo">
+                                    <a href="catalog-detail.html">
+                                        <img src="img/product1.webp" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-product3__col-data">
+                                    <div class="card-product3__col-specs">
+                                        <div class="card-product3__label2">Характеристики</div>
+                                        <div class="card-product3__specs">
+                                            <div>
+                                                <span>Форма пластины C</span>
+                                                <span>(Ромб 80°)</span>
+                                            </div>
+                                            <div>
+                                                <span>Размер пластины</span>
+                                                <span>06</span>
+                                            </div>
+                                            <div>
+                                                <span>Радиус при вершине r (мм)</span>
+                                                <span>0.4</span>
+                                            </div>
+                                            <div>
+                                                <span>Вид обработки</span>
+                                                <span>Получистовая / Получерновая</span>
+                                            </div>
+                                            <div>
+                                                <span>Материал пластины</span>
+                                                <span>Кубический нитрид бора (CBN)</span>
+                                            </div>
+                                            <div>
+                                                <span>Форма пластины C</span>
+                                                <span>(Ромб 80°)</span>
+                                            </div>
+                                            <div>
+                                                <span>Размер пластины</span>
+                                                <span>06</span>
+                                            </div>
+                                            <div>
+                                                <span>Радиус при вершине r (мм)</span>
+                                                <span>0.4</span>
+                                            </div>
+                                            <div>
+                                                <span>Вид обработки</span>
+                                                <span>Получистовая / Получерновая</span>
+                                            </div>
+                                            <div>
+                                                <span>Материал пластины</span>
+                                                <span>Кубический нитрид бора (CBN)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-product3__name">
+                                        <a href="catalog-detail.html">Твердосплавная пластина ZCC-CT TNMG160404-PM
+                                            YBC252</a>
+                                    </div>
+                                    <div class="card-product3__description">Короткое описание</div>
+                                    <div class="card-product3__status status_instock">В наличии</div>
+                                </div>
+                                <div class="card-product3__col1">
+                                    <div>
+                                        <div class="card-product3__label1">С НДС (1 шт.)</div>
+                                        <span class="card-product3__price1">441 ₽</span>
+                                        <span class="card-product3__price2">1 200 ₽</span>
+                                    </div>
+                                </div>
+                                <div class="card-product3__col3">
+                                    <div class="stepcounter">
+                                        <button class="stepcounter__btn" type="button" disabled>
+                                            <svg aria-hidden="true" width="14" height="2">
+                                                <use xlink:href="img/sprite.svg#minus1"></use>
+                                            </svg>
+                                            <span class="v-h">Увеличить количество</span>
+                                        </button>
+                                        <input class="stepcounter__input" type="number" value="1" readonly>
+                                        <button class="stepcounter__btn" type="button">
+                                            <svg aria-hidden="true" width="14" height="14">
+                                                <use xlink:href="img/sprite.svg#plus1"></use>
+                                            </svg>
+                                            <span class="v-h">Уменьшить количество</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-product3__col2">
+                                    <div>
+                                        <span>На сумму</span>
+                                        <span class="card-product3__price3">4410 ₽</span>
+                                    </div>
+                                </div>
+                                <div class="card-product3__col-btn">
+                                    <button data-action="showSpecs" class="card-product3__btn-info" type="button">
+                                        <svg aria-hidden="true" width="6" height="15">
+                                            <use xlink:href="img/sprite.svg#info1"></use>
+                                        </svg>
+                                        <span class="v-h">Характеристики</span>
+                                    </button>
+                                </div>
+                                <button type="button" class="card-product3__delete">
+                                    <img src="img/delete.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="details-block-cart">
+                            <div class="details-block-cart__sticky">
+                                <div class="details-block-cart__list">
+                                    <div class="details-block-cart__title">
+                                        Ваша корзина
+                                    </div>
+                                    <div class="details-block-cart__item">
+                                        <div class="details-block-cart__product">Товары, 3 шт.</div>
+                                        <div class="details-block-cart__cost">36 000 ₽</div>
+                                    </div>
+                                    <div class="details-block-cart__item sale">
+                                        <div class="details-block-cart__product">Скидка</div>
+                                        <div class="details-block-cart__cost">-22 770 ₽</div>
+                                    </div>
+                                </div>
+                                <div class="details-block-cart__list">
+                                    <div class="details-block-cart__title">
+                                        Промокод
+                                    </div>
+                                    <div class="details-block-cart__inputs">
+                                        <input class="field-input1" type="text" name="email2"
+                                            placeholder="Введите промокод">
+                                        <button type="button" class="btn">
+                                            <svg aria-hidden="true" width="11" height="18">
+                                                <use xlink:href="img/sprite.svg#chevron3"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="details-block-cart__totals">
+                                    <div class="details-block-cart__title">Итого к оплате:</div>
+                                    <div class="details-block-cart__summ">13 230 ₽</div>
+                                </div>
+                                <a href="order.html" class="btn btn_primary">
+                                    Оформить заказ
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        {% include 'blocks/footer.njk' %}
+    </div>
+    {% include 'blocks/popups.njk' %}
+    {% include 'blocks/scripts.njk' %}
+</body>
+
+</html>

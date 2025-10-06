@@ -1,0 +1,376 @@
+<header class="header">
+  <div class="container">
+    <div class="header__grid">
+      <div class="header__cell-logo">
+        <a class="header__logo" href="/">
+          <img src="img/logo-dark.svg" alt="">
+          <span>ООО "НААНИТ" <br>Официальный импортер <br>и дистрибьютор бренда ZCC-CT</span>
+        </a>
+      </div>
+      <div class="header__cell-nav scrollable">
+        <ul class="menu-main">
+          <li class="menu-main__catalog">
+            <button data-action="showCatalogMenu" type="button">
+              Продукция
+              <span class="menu-main__chevron1">
+                <svg aria-hidden="true" width="13" height="8">
+                  <use xlink:href="img/sprite.svg#chevron2"></use>
+                </svg>
+              </span>
+            </button>
+          </li>
+          <li>
+            <a href="about.html">О компании</a>
+            <button class="menu-main__chevron1" type="button">
+              <svg aria-hidden="true" width="13" height="8">
+                <use xlink:href="img/sprite.svg#chevron2"></use>
+              </svg>
+            </button>
+            <div class="menu-main__sub">
+              <button data-action="menuBack1" class="header__btn-back" type="button">
+                <svg aria-hidden="true" width="20" height="12">
+                  <use xlink:href="img/sprite.svg#chevron2"></use>
+                </svg>
+                О компании
+              </button>
+              <ul>
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="vacancies.html">Вакансии</a></li>
+                <li><a href="blog.html">Блог</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="info.html">Тех.информация</a>
+          </li>
+          <li>
+            <a href="catalogs.html">Каталоги</a>
+          </li>
+          <li>
+            <a href="news.html">Новости</a>
+          </li>
+          <li>
+            <a href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+        <div class="header__cell-phone">
+          <a href="tel:+79045084162">
+            <svg aria-hidden="true" width="17" height="17">
+              <use xlink:href="img/sprite.svg#phone1"></use>
+            </svg>
+            <span>+7 (904) 508-41-62</span>
+          </a>
+          <button class="header__btn-phone" type="button">
+            <svg aria-hidden="true" width="13" height="8">
+              <use xlink:href="img/sprite.svg#chevron2"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="header__cell-callback">
+          <button data-hystmodal="#modalCallback" class="header__btn-callback" type="button">Заказать звонок</button>
+        </div>
+      </div>
+      <div class="header__cell-catalog">
+        <button data-action="toggleCatalogMenu" class="btn-catalog" type="button">Продукция</button>
+      </div>
+      <div class="header__cell-search">
+        <div class="header-search">
+          <svg class="header-search__icon" aria-hidden="true" width="19" height="19">
+            <use xlink:href="img/sprite.svg#search1"></use>
+          </svg>
+          <div class="header-search__inner">
+            <input data-action-input="showSearchDropdown" class="header-search__input" type="text" placeholder="Поиск по сайту...">
+            <button class="header-search__clear" type="button">
+              <svg aria-hidden="true" width="14" height="14">
+                <use xlink:href="img/sprite.svg#close1"></use>
+              </svg>
+              <span class="v-h">Очистить</span>
+            </button>
+          </div>
+          <button class="header-search__btn btn btn_primary" type="submit">Найти</button>
+        </div>
+        <div class="header-search-dd">
+          <div class="header-search-dd__categories">
+            <ul class="categories-list1">
+              <li>
+                <a href="#">
+                  <img src="img/category1.webp" alt="">
+                  Токарная обработка
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/category2.webp" alt="">
+                  Точение резьбы
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/category3.webp" alt="">
+                  Токарная обработка
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/category4.webp" alt="">
+                  Точение резьбы
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-search-dd__products">
+            {% include 'blocks/card-product-search.njk' %}
+            {% include 'blocks/card-product-search.njk' %}
+            {% include 'blocks/card-product-search.njk' %}
+          </div>
+        </div>
+      </div>
+      <div class="header__cell-burger">
+        <button data-action="toggleMobileMenu" class="btn-burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="header__cell-toolbar">
+        <a class="header__btn1 header__btn-user" href="login.html">
+          <svg aria-hidden="true" width="19" height="25">
+            <use xlink:href="img/sprite.svg#user1"></use>
+          </svg>
+          <span>Вход</span>
+        </a>
+        <a href="favorites.html" class="header__btn1">
+          <svg aria-hidden="true" width="25" height="23">
+            <use xlink:href="img/sprite.svg#heart1"></use>
+          </svg>
+          <span class="header__counter">
+            <span class="v-h">Товаров в избранном: </span>0
+          </span>
+        </a>
+        <a href="cart.html" class="header__btn1" >
+          <svg aria-hidden="true" width="24" height="25">
+            <use xlink:href="img/sprite.svg#cart1"></use>
+          </svg>
+          <span class="header__counter">
+            <span class="v-h">Товаров в корзине: </span>0
+          </span>
+        </a>
+      </div>
+      <div class="catalog-menu">
+        <ul class="scrollable">
+          <li>
+            <button data-action="menuBack2" class="header__btn-back" type="button">
+              <svg aria-hidden="true" width="20" height="12">
+                <use xlink:href="img/sprite.svg#chevron2"></use>
+              </svg>
+              Продукция
+            </button>
+          </li>
+          <li class="catalog-menu__lvl1 active">
+            <div class="catalog-menu__inner1">
+              <a class="catalog-menu__lvl1-lnk" href="#">
+                <img src="img/category1.webp" alt="">
+                Токарная обработка
+              </a>
+              <button class="catalog-menu__btn1" type="button">
+                <svg aria-hidden="true" width="10" height="17">
+                  <use xlink:href="img/sprite.svg#chevron3"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="catalog-menu__sub">
+              <div class="catalog-menu__sub-inner scrollable">
+                <div class="catalog-menu__title1">Токарная обработка</div>
+                <button data-action="menuBack3" class="header__btn-back" type="button">
+                  <svg aria-hidden="true" width="20" height="12">
+                    <use xlink:href="img/sprite.svg#chevron2"></use>
+                  </svg>
+                  Токарная обработка
+                </button>
+                {% include 'blocks/catalog-menu-sub1.njk' %}
+              </div>
+            </div>
+          </li>
+          <li class="catalog-menu__lvl1">
+            <div class="catalog-menu__inner1">
+              <a class="catalog-menu__lvl1-lnk" href="#">
+                <img src="img/category2.webp" alt="">
+                Точение резьбы
+              </a>
+              <button class="catalog-menu__btn1" type="button">
+                <svg aria-hidden="true" width="10" height="17">
+                  <use xlink:href="img/sprite.svg#chevron3"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="catalog-menu__sub">
+              <div class="catalog-menu__sub-inner scrollable">
+                <div class="catalog-menu__title1">Точение резьбы</div>
+                <button data-action="menuBack3" class="header__btn-back" type="button">
+                  <svg aria-hidden="true" width="20" height="12">
+                    <use xlink:href="img/sprite.svg#chevron2"></use>
+                  </svg>
+                  Точение резьбы
+                </button>
+                {% include 'blocks/catalog-menu-sub2.njk' %}
+              </div>
+            </div>
+          </li>
+          <li class="catalog-menu__lvl1">
+            <div class="catalog-menu__inner1">
+              <a class="catalog-menu__lvl1-lnk" href="#">
+                <img src="img/category3.webp" alt="">
+                Сверление
+              </a>
+              <button class="catalog-menu__btn1" type="button">
+                <svg aria-hidden="true" width="10" height="17">
+                  <use xlink:href="img/sprite.svg#chevron3"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="catalog-menu__sub">
+              <div class="catalog-menu__sub-inner scrollable">
+                <div class="catalog-menu__title1">Сверление</div>
+                <button data-action="menuBack3" class="header__btn-back" type="button">
+                  <svg aria-hidden="true" width="20" height="12">
+                    <use xlink:href="img/sprite.svg#chevron2"></use>
+                  </svg>
+                  Сверление
+                </button>
+                {% include 'blocks/catalog-menu-sub1.njk' %}
+              </div>
+            </div>
+          </li>
+          <li class="catalog-menu__lvl1">
+            <div class="catalog-menu__inner1">
+              <a class="catalog-menu__lvl1-lnk" href="#">
+                <img src="img/category4.webp" alt="">
+                Станочная оснастка
+              </a>
+              <button class="catalog-menu__btn1" type="button">
+                <svg aria-hidden="true" width="10" height="17">
+                  <use xlink:href="img/sprite.svg#chevron3"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="catalog-menu__sub">
+              <div class="catalog-menu__sub-inner scrollable">
+                <div class="catalog-menu__title1">Станочная оснастка</div>
+                <button data-action="menuBack3" class="header__btn-back" type="button">
+                  <svg aria-hidden="true" width="20" height="12">
+                    <use xlink:href="img/sprite.svg#chevron2"></use>
+                  </svg>
+                  Станочная оснастка
+                </button>
+                {% include 'blocks/catalog-menu-sub2.njk' %}
+              </div>
+            </div>
+          </li>
+          <li class="catalog-menu__lvl1">
+            <div class="catalog-menu__inner1">
+              <a class="catalog-menu__lvl1-lnk" href="#">
+                <img src="img/category5.webp" alt="">
+                Твердосплавные фрезы
+              </a>
+              <button class="catalog-menu__btn1" type="button">
+                <svg aria-hidden="true" width="10" height="17">
+                  <use xlink:href="img/sprite.svg#chevron3"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="catalog-menu__sub">
+              <div class="catalog-menu__sub-inner scrollable">
+                <div class="catalog-menu__title1">Твердосплавные фрезы</div>
+                <button data-action="menuBack3" class="header__btn-back" type="button">
+                  <svg aria-hidden="true" width="20" height="12">
+                    <use xlink:href="img/sprite.svg#chevron2"></use>
+                  </svg>
+                  Твердосплавные фрезы
+                </button>
+                {% include 'blocks/catalog-menu-sub1.njk' %}
+              </div>
+            </div>
+          </li>
+          <li class="catalog-menu__lvl1">
+            <div class="catalog-menu__inner1">
+              <a class="catalog-menu__lvl1-lnk" href="#">
+                <img src="img/category6.webp" alt="">
+                Метчики и резьбофрезы
+              </a>
+              <button class="catalog-menu__btn1" type="button">
+                <svg aria-hidden="true" width="10" height="17">
+                  <use xlink:href="img/sprite.svg#chevron3"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="catalog-menu__sub">
+              <div class="catalog-menu__sub-inner scrollable">
+                <div class="catalog-menu__title1">Метчики и резьбофрезы</div>
+                <button data-action="menuBack3" class="header__btn-back" type="button">
+                  <svg aria-hidden="true" width="20" height="12">
+                    <use xlink:href="img/sprite.svg#chevron2"></use>
+                  </svg>
+                  Метчики и резьбофрезы
+                </button>
+                {% include 'blocks/catalog-menu-sub2.njk' %}
+              </div>
+            </div>
+          </li>
+          <li class="catalog-menu__lvl1">
+            <div class="catalog-menu__inner1">
+              <a class="catalog-menu__lvl1-lnk" href="#">
+                <img src="img/category7.webp" alt="">
+                Токарные держатели
+              </a>
+              <button class="catalog-menu__btn1" type="button">
+                <svg aria-hidden="true" width="10" height="17">
+                  <use xlink:href="img/sprite.svg#chevron3"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="catalog-menu__sub">
+              <div class="catalog-menu__sub-inner scrollable">
+                <div class="catalog-menu__title1">Токарные держатели</div>
+                <button data-action="menuBack3" class="header__btn-back" type="button">
+                  <svg aria-hidden="true" width="20" height="12">
+                    <use xlink:href="img/sprite.svg#chevron2"></use>
+                  </svg>
+                  Токарные держатели
+                </button>
+                {% include 'blocks/catalog-menu-sub1.njk' %}
+              </div>
+            </div>
+          </li>
+          <li class="catalog-menu__lvl1">
+            <div class="catalog-menu__inner1">
+              <a class="catalog-menu__lvl1-lnk" href="#">
+                <img src="img/category8.webp" alt="">
+                Твердосплавные столбики
+              </a>
+              <button class="catalog-menu__btn1" type="button">
+                <svg aria-hidden="true" width="10" height="17">
+                  <use xlink:href="img/sprite.svg#chevron3"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="catalog-menu__sub">
+              <div class="catalog-menu__sub-inner scrollable">
+                <div class="catalog-menu__title1">Твердосплавные столбики</div>
+                <button data-action="menuBack3" class="header__btn-back" type="button">
+                  <svg aria-hidden="true" width="20" height="12">
+                    <use xlink:href="img/sprite.svg#chevron2"></use>
+                  </svg>
+                  Твердосплавные столбики
+                </button>
+                {% include 'blocks/catalog-menu-sub2.njk' %}
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="cart-items-stack"></div>
+    </div>
+  </div>
+</header>
+<div class="header-backdrop"></div>
+

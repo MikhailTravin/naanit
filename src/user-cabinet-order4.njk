@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Оформление заказа</title>
+    {% include 'blocks/head.njk' %}
+</head>
+
+<body class="preload mp">
+    <div class="main-wrapper-outer">
+        {% include 'blocks/header.njk' %}
+        <main class="main">
+
+            <div class="block-breadcrumbs">
+                <div class="container">
+                    <nav aria-label="breadcrumb" class="breadcrumbs">
+                        <a href="/" class="breadcrumbs__item">
+                            Главная
+                        </a>
+                        <span aria-hidden="true">&mdash;</span>
+                        <a href="orders-cabinet.html" class="breadcrumbs__item">
+                            Мои заказы
+                        </a>
+                        <span aria-hidden="true">&mdash;</span>
+                        <span aria-current="page" class="breadcrumbs__item">
+                            Заказ №123456
+                        </span>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="block-order block-order-info">
+                <div class="container">
+                    <a href="orders-cabinet.html" class="back">
+                        <svg aria-hidden="true" width="14" height="14">
+                            <use xlink:href="img/sprite.svg#arrow1"></use>
+                        </svg>
+                        <span>к моим заказам</span>
+                    </a>
+                </div>
+                <div class="container container_bordered1">
+                    <div class="block-order__content">
+                        <div class="block-order__body block1">
+                            <div class="block-order__column">
+                                <h2 class="title2">
+                                    заказ №123456 от 26.08.2025
+                                </h2>
+                                <div class="block-order__status status_cancel">
+                                    <svg aria-hidden="true" width="30" height="30">
+                                        <use xlink:href="img/sprite.svg#cancel1"></use>
+                                    </svg>
+                                    Отменен
+                                </div>
+                            </div>
+                            <div class="block-order__column">
+                                <div class="block-order__title">
+                                    данные покупателя
+                                </div>
+                                <ul class="block-order__details">
+                                    <li>
+                                        <span>ФИО:</span> Иванов Иван Иванович
+                                    </li>
+                                    <li>
+                                        <span>Телефон:</span> +7 (999) 999-00-00
+                                    </li>
+                                    <li>
+                                        <span>E-mail:</span> ivanov@mail.ru
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="block-order__column">
+                                <div class="block-order__title">
+                                    данные организации
+                                </div>
+                                <ul class="block-order__details">
+                                    <li>
+                                        <span>Название организации:</span> ООО НААНИТ
+                                    </li>
+                                    <li>
+                                        <span>ФИО контактного лица:</span> Иванов Иван Иванович
+                                    </li>
+                                    <li>
+                                        <span>Телефон контактного лица:</span> +7 (999) 999-00-00
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="block-order__grid">
+                                <div class="block-order__row">
+                                    <div class="block-order__title">
+                                        способы доставки
+                                    </div>
+                                    <div class="checkbox-text">
+                                        <div class="checkbox-text__label">
+                                            <div class="checkbox-text__titles">
+                                                <div class="checkbox-text__title">Доставка курьером</div>
+                                                <div class="checkbox-text__subtitle">От 1 до 7 дней</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="addres-block-order _active">
+                                        <div class="addres-block-order__title">Адрес доставки</div>
+                                        <ul class="block-order__details">
+                                            <li>
+                                                <span>Город доставки:</span> г. Москва
+                                            </li>
+                                            <li>
+                                                <span>Адрес доставки:</span> ул. Кошкина д12, к3
+                                            </li>
+                                            <li>
+                                                <span>Подъезд:</span> 4
+                                            </li>
+                                            <li>
+                                                <span>Этаж:</span> 14
+                                            </li>
+                                            <li>
+                                                <span>Квартира:</span> 444
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="block-order__row">
+                                    <div class="block-order__title">
+                                        способы оплаты
+                                    </div>
+                                    <div class="checkbox-text payment">
+                                        <div class="checkbox-text__label">
+                                            <div class="checkbox-text__titles">
+                                                <div class="checkbox-text__title">Оплата по счёту</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block-order__column">
+                                <div class="block-order__title">
+                                    дополнительная информация
+                                </div>
+                                <ul class="block-order__details">
+                                    <li>
+                                        <span>Личный менеджер:</span> Иванов Иван Иванович
+                                    </li>
+                                    <li>
+                                        <span>Комментарий к заказу:</span> Текст комментария
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="block-order__column">
+                                <div class="block-order__title">
+                                    товары в заказе
+                                </div>
+                                <div class="block-order__cards">
+                                    <div class="card-product3 card-product4">
+                                        <div class="card-product3__col-photo">
+                                            <a href="catalog-detail.html">
+                                                <img src="img/product1.webp" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="card-product3__col-data">
+                                            <div class="card-product3__name">
+                                                <a href="catalog-detail.html">Твердосплавная пластина ZCC-CT
+                                                    TNMG160404-PM
+                                                    YBC252</a>
+                                            </div>
+                                            <div class="card-product3__description">Короткое описание</div>
+                                        </div>
+                                        <div class="card-product3__col1">
+                                            <div>
+                                                <div class="card-product3__label1">С НДС (1 шт.)</div>
+                                                <span class="card-product3__price1">441 ₽</span>
+                                                <span class="card-product3__price2">1 200 ₽</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-product3__col3">
+                                            <span>10 шт.</span>
+                                        </div>
+                                        <div class="card-product3__col2">
+                                            <div>
+                                                <span>На сумму</span>
+                                                <span class="card-product3__price3">4410 ₽</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-product3 card-product4">
+                                        <div class="card-product3__col-photo">
+                                            <a href="catalog-detail.html">
+                                                <img src="img/product1.webp" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="card-product3__col-data">
+                                            <div class="card-product3__name">
+                                                <a href="catalog-detail.html">Твердосплавная пластина ZCC-CT
+                                                    TNMG160404-PM
+                                                    YBC252</a>
+                                            </div>
+                                            <div class="card-product3__description">Короткое описание</div>
+                                        </div>
+                                        <div class="card-product3__col1">
+                                            <div>
+                                                <div class="card-product3__label1">С НДС (1 шт.)</div>
+                                                <span class="card-product3__price1">441 ₽</span>
+                                                <span class="card-product3__price2">1 200 ₽</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-product3__col3">
+                                            <span>10 шт.</span>
+                                        </div>
+                                        <div class="card-product3__col2">
+                                            <div>
+                                                <span>На сумму</span>
+                                                <span class="card-product3__price3">4410 ₽</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-product3 card-product4">
+                                        <div class="card-product3__col-photo">
+                                            <a href="catalog-detail.html">
+                                                <img src="img/product1.webp" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="card-product3__col-data">
+                                            <div class="card-product3__name">
+                                                <a href="catalog-detail.html">Твердосплавная пластина ZCC-CT
+                                                    TNMG160404-PM
+                                                    YBC252</a>
+                                            </div>
+                                            <div class="card-product3__description">Короткое описание</div>
+                                        </div>
+                                        <div class="card-product3__col1">
+                                            <div>
+                                                <div class="card-product3__label1">С НДС (1 шт.)</div>
+                                                <span class="card-product3__price1">441 ₽</span>
+                                                <span class="card-product3__price2">1 200 ₽</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-product3__col3">
+                                            <span>10 шт.</span>
+                                        </div>
+                                        <div class="card-product3__col2">
+                                            <div>
+                                                <span>На сумму</span>
+                                                <span class="card-product3__price3">4410 ₽</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="details-block-cart">
+                            <div class="details-block-cart__sticky">
+                                <div class="details-block-cart__list">
+                                    <div class="details-block-cart__title">
+                                        Ваш заказ
+                                        <div class="details-block-cart__status status_cancel">
+                                            <svg aria-hidden="true" width="16" height="16">
+                                                <use xlink:href="img/sprite.svg#cancel1"></use>
+                                            </svg>
+                                            Отменен
+                                        </div>
+                                    </div>
+                                    <div class="details-block-cart__item">
+                                        <div class="details-block-cart__product">Товары, 3 шт.</div>
+                                        <div class="details-block-cart__cost">36 000 ₽</div>
+                                    </div>
+                                    <div class="details-block-cart__item sale">
+                                        <div class="details-block-cart__product">Скидка</div>
+                                        <div class="details-block-cart__cost">-22 770 ₽</div>
+                                    </div>
+                                    <div class="details-block-cart__item delivery">
+                                        <div class="details-block-cart__product">Доставка</div>
+                                        <div class="details-block-cart__cost">770 ₽</div>
+                                    </div>
+                                </div>
+                                <div class="details-block-cart__totals">
+                                    <div class="details-block-cart__title">Сумма заказа:</div>
+                                    <div class="details-block-cart__summ">14 000 ₽</div>
+                                </div>
+                                <a href="#" class="btn btn_primary">
+                                    Заказать повторно
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        {% include 'blocks/footer.njk' %}
+    </div>
+    {% include 'blocks/popups.njk' %}
+    {% include 'blocks/scripts.njk' %}
+</body>
+
+</html>

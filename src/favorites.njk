@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Избранное</title>
+    {% include 'blocks/head.njk' %}
+</head>
+
+<body class="preload mp">
+    <div class="main-wrapper-outer">
+        {% include 'blocks/header.njk' %}
+        <main class="main">
+
+            <div class="block-breadcrumbs">
+                <div class="container">
+                    <nav aria-label="breadcrumb" class="breadcrumbs">
+                        <a href="/" class="breadcrumbs__item">
+                            Главная
+                        </a>
+                        <span aria-hidden="true">&mdash;</span>
+                        <span aria-current="page" class="breadcrumbs__item">
+                            Избранное
+                        </span>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="block-favorites block1">
+                <div class="container">
+                    <div class="heading-cols1">
+                        <h1 class="title2">Избранное</h1>
+                        <button class="btn-text btn-text_primary" type="button">
+                            <img src="img/delete.svg" alt="">
+                            <span>очистить избранное</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="container container_bordered1">
+                    <div class="block-favorites__cards">
+                        <div class="card-product">
+                            <div class="card-product__inner">
+                                <a href="product-detail.html" class="card-product__photo">
+                                    <img src="img/product1.webp" loading="lazy" alt="">
+                                </a>
+                                <div class="card-product__badges">
+                                    <span class="badge1 badge1_black">Новинка</span>
+                                </div>
+                                <div class="card-product__name">
+                                    <a href="product-detail.html">Твердосплавная пластина ZCC-CT TNMG160404-PM
+                                        YBC2521</a>
+                                </div>
+                                <div class="card-product__description">Короткое описание</div>
+                                <div class="card-product__status status_instock">В наличии</div>
+                                <div class="card-product__prices">
+                                    <div>
+                                        <span class="card-product__label1">С НДС (1 шт.)</span>
+                                        <span class="card-product__price1">441 ₽</span>
+                                        <span class="card-product__price3">1 200 ₽</span>
+                                    </div>
+                                    <div>
+                                        <span class="card-product__label1">Упаковка (10 шт.)</span>
+                                        <span class="card-product__price2">4 410 ₽</span>
+                                    </div>
+                                </div>
+                                <button class="card-product__btn-favorite active" type="button">
+                                    <svg aria-hidden="true" width="25" height="23">
+                                        <use xlink:href="img/sprite.svg#heart1"></use>
+                                    </svg>
+                                    <span class="v-h">Добавить в избранное</span>
+                                </button>
+                            </div>
+                            <div class="card-product__bottom">
+                                <div class="stepcounter">
+                                    <button class="stepcounter__btn" type="button" disabled>
+                                        <svg aria-hidden="true" width="14" height="2">
+                                            <use xlink:href="img/sprite.svg#minus1"></use>
+                                        </svg>
+                                        <span class="v-h">Увеличить количество</span>
+                                    </button>
+                                    <input class="stepcounter__input" type="number" value="1" readonly>
+                                    <button class="stepcounter__btn" type="button">
+                                        <svg aria-hidden="true" width="14" height="14">
+                                            <use xlink:href="img/sprite.svg#plus1"></use>
+                                        </svg>
+                                        <span class="v-h">Уменьшить количество</span>
+                                    </button>
+                                </div>
+                                <a href="cart.html" class="btn btn_primary">В корзину</a>
+                            </div>
+                        </div>
+                        <div class="card-product">
+                            <div class="card-product__inner">
+                                <a href="product-detail.html" class="card-product__photo">
+                                    <img src="img/product1.webp" loading="lazy" alt="">
+                                </a>
+                                <div class="card-product__badges">
+                                    <span class="badge1 badge1_black">Новинка</span>
+                                </div>
+                                <div class="card-product__name">
+                                    <a href="product-detail.html">Твердосплавная пластина ZCC-CT TNMG160404-PM
+                                        YBC2521</a>
+                                </div>
+                                <div class="card-product__description">Короткое описание</div>
+                                <div class="card-product__status status_instock">В наличии</div>
+                                <div class="card-product__prices">
+                                    <div>
+                                        <span class="card-product__label1">С НДС (1 шт.)</span>
+                                        <span class="card-product__price1">441 ₽</span>
+                                        <span class="card-product__price3">1 200 ₽</span>
+                                    </div>
+                                    <div>
+                                        <span class="card-product__label1">Упаковка (10 шт.)</span>
+                                        <span class="card-product__price2">4 410 ₽</span>
+                                    </div>
+                                </div>
+                                <button class="card-product__btn-favorite active" type="button">
+                                    <svg aria-hidden="true" width="25" height="23">
+                                        <use xlink:href="img/sprite.svg#heart1"></use>
+                                    </svg>
+                                    <span class="v-h">Добавить в избранное</span>
+                                </button>
+                            </div>
+                            <div class="card-product__bottom">
+                                <div class="stepcounter">
+                                    <button class="stepcounter__btn" type="button" disabled>
+                                        <svg aria-hidden="true" width="14" height="2">
+                                            <use xlink:href="img/sprite.svg#minus1"></use>
+                                        </svg>
+                                        <span class="v-h">Увеличить количество</span>
+                                    </button>
+                                    <input class="stepcounter__input" type="number" value="1" readonly>
+                                    <button class="stepcounter__btn" type="button">
+                                        <svg aria-hidden="true" width="14" height="14">
+                                            <use xlink:href="img/sprite.svg#plus1"></use>
+                                        </svg>
+                                        <span class="v-h">Уменьшить количество</span>
+                                    </button>
+                                </div>
+                                <a href="cart.html" class="btn btn_primary">В корзину</a>
+                            </div>
+                        </div>
+                        <div class="card-product">
+                            <div class="card-product__inner">
+                                <a href="product-detail.html" class="card-product__photo">
+                                    <img src="img/product1.webp" loading="lazy" alt="">
+                                </a>
+                                <div class="card-product__badges">
+                                    <span class="badge1 badge1_black">Новинка</span>
+                                </div>
+                                <div class="card-product__name">
+                                    <a href="product-detail.html">Твердосплавная пластина ZCC-CT TNMG160404-PM
+                                        YBC2521</a>
+                                </div>
+                                <div class="card-product__description">Короткое описание</div>
+                                <div class="card-product__status status_instock">В наличии</div>
+                                <div class="card-product__prices">
+                                    <div>
+                                        <span class="card-product__label1">С НДС (1 шт.)</span>
+                                        <span class="card-product__price1">441 ₽</span>
+                                        <span class="card-product__price3">1 200 ₽</span>
+                                    </div>
+                                    <div>
+                                        <span class="card-product__label1">Упаковка (10 шт.)</span>
+                                        <span class="card-product__price2">4 410 ₽</span>
+                                    </div>
+                                </div>
+                                <button class="card-product__btn-favorite active" type="button">
+                                    <svg aria-hidden="true" width="25" height="23">
+                                        <use xlink:href="img/sprite.svg#heart1"></use>
+                                    </svg>
+                                    <span class="v-h">Добавить в избранное</span>
+                                </button>
+                            </div>
+                            <div class="card-product__bottom">
+                                <div class="stepcounter">
+                                    <button class="stepcounter__btn" type="button" disabled>
+                                        <svg aria-hidden="true" width="14" height="2">
+                                            <use xlink:href="img/sprite.svg#minus1"></use>
+                                        </svg>
+                                        <span class="v-h">Увеличить количество</span>
+                                    </button>
+                                    <input class="stepcounter__input" type="number" value="1" readonly>
+                                    <button class="stepcounter__btn" type="button">
+                                        <svg aria-hidden="true" width="14" height="14">
+                                            <use xlink:href="img/sprite.svg#plus1"></use>
+                                        </svg>
+                                        <span class="v-h">Уменьшить количество</span>
+                                    </button>
+                                </div>
+                                <a href="cart.html" class="btn btn_primary">В корзину</a>
+                            </div>
+                        </div>
+                        <div class="card-product">
+                            <div class="card-product__inner">
+                                <a href="product-detail.html" class="card-product__photo">
+                                    <img src="img/product1.webp" loading="lazy" alt="">
+                                </a>
+                                <div class="card-product__badges">
+                                    <span class="badge1 badge1_black">Новинка</span>
+                                </div>
+                                <div class="card-product__name">
+                                    <a href="product-detail.html">Твердосплавная пластина ZCC-CT TNMG160404-PM
+                                        YBC2521</a>
+                                </div>
+                                <div class="card-product__description">Короткое описание</div>
+                                <div class="card-product__status status_instock">В наличии</div>
+                                <div class="card-product__prices">
+                                    <div>
+                                        <span class="card-product__label1">С НДС (1 шт.)</span>
+                                        <span class="card-product__price1">441 ₽</span>
+                                        <span class="card-product__price3">1 200 ₽</span>
+                                    </div>
+                                    <div>
+                                        <span class="card-product__label1">Упаковка (10 шт.)</span>
+                                        <span class="card-product__price2">4 410 ₽</span>
+                                    </div>
+                                </div>
+                                <button class="card-product__btn-favorite active" type="button">
+                                    <svg aria-hidden="true" width="25" height="23">
+                                        <use xlink:href="img/sprite.svg#heart1"></use>
+                                    </svg>
+                                    <span class="v-h">Добавить в избранное</span>
+                                </button>
+                            </div>
+                            <div class="card-product__bottom">
+                                <div class="stepcounter">
+                                    <button class="stepcounter__btn" type="button" disabled>
+                                        <svg aria-hidden="true" width="14" height="2">
+                                            <use xlink:href="img/sprite.svg#minus1"></use>
+                                        </svg>
+                                        <span class="v-h">Увеличить количество</span>
+                                    </button>
+                                    <input class="stepcounter__input" type="number" value="1" readonly>
+                                    <button class="stepcounter__btn" type="button">
+                                        <svg aria-hidden="true" width="14" height="14">
+                                            <use xlink:href="img/sprite.svg#plus1"></use>
+                                        </svg>
+                                        <span class="v-h">Уменьшить количество</span>
+                                    </button>
+                                </div>
+                                <a href="cart.html" class="btn btn_primary">В корзину</a>
+                            </div>
+                        </div>
+                        <div class="card-product">
+                            <div class="card-product__inner">
+                                <a href="product-detail.html" class="card-product__photo">
+                                    <img src="img/product1.webp" loading="lazy" alt="">
+                                </a>
+                                <div class="card-product__badges">
+                                    <span class="badge1 badge1_black">Новинка</span>
+                                </div>
+                                <div class="card-product__name">
+                                    <a href="product-detail.html">Твердосплавная пластина ZCC-CT TNMG160404-PM
+                                        YBC2521</a>
+                                </div>
+                                <div class="card-product__description">Короткое описание</div>
+                                <div class="card-product__status status_instock">В наличии</div>
+                                <div class="card-product__prices">
+                                    <div>
+                                        <span class="card-product__label1">С НДС (1 шт.)</span>
+                                        <span class="card-product__price1">441 ₽</span>
+                                        <span class="card-product__price3">1 200 ₽</span>
+                                    </div>
+                                    <div>
+                                        <span class="card-product__label1">Упаковка (10 шт.)</span>
+                                        <span class="card-product__price2">4 410 ₽</span>
+                                    </div>
+                                </div>
+                                <button class="card-product__btn-favorite active" type="button">
+                                    <svg aria-hidden="true" width="25" height="23">
+                                        <use xlink:href="img/sprite.svg#heart1"></use>
+                                    </svg>
+                                    <span class="v-h">Добавить в избранное</span>
+                                </button>
+                            </div>
+                            <div class="card-product__bottom">
+                                <div class="stepcounter">
+                                    <button class="stepcounter__btn" type="button" disabled>
+                                        <svg aria-hidden="true" width="14" height="2">
+                                            <use xlink:href="img/sprite.svg#minus1"></use>
+                                        </svg>
+                                        <span class="v-h">Увеличить количество</span>
+                                    </button>
+                                    <input class="stepcounter__input" type="number" value="1" readonly>
+                                    <button class="stepcounter__btn" type="button">
+                                        <svg aria-hidden="true" width="14" height="14">
+                                            <use xlink:href="img/sprite.svg#plus1"></use>
+                                        </svg>
+                                        <span class="v-h">Уменьшить количество</span>
+                                    </button>
+                                </div>
+                                <a href="cart.html" class="btn btn_primary">В корзину</a>
+                            </div>
+                        </div>
+                        <div class="card-product">
+                            <div class="card-product__inner">
+                                <a href="product-detail.html" class="card-product__photo">
+                                    <img src="img/product1.webp" loading="lazy" alt="">
+                                </a>
+                                <div class="card-product__badges">
+                                    <span class="badge1 badge1_black">Новинка</span>
+                                </div>
+                                <div class="card-product__name">
+                                    <a href="product-detail.html">Твердосплавная пластина ZCC-CT TNMG160404-PM
+                                        YBC2521</a>
+                                </div>
+                                <div class="card-product__description">Короткое описание</div>
+                                <div class="card-product__status status_instock">В наличии</div>
+                                <div class="card-product__prices">
+                                    <div>
+                                        <span class="card-product__label1">С НДС (1 шт.)</span>
+                                        <span class="card-product__price1">441 ₽</span>
+                                        <span class="card-product__price3">1 200 ₽</span>
+                                    </div>
+                                    <div>
+                                        <span class="card-product__label1">Упаковка (10 шт.)</span>
+                                        <span class="card-product__price2">4 410 ₽</span>
+                                    </div>
+                                </div>
+                                <button class="card-product__btn-favorite active" type="button">
+                                    <svg aria-hidden="true" width="25" height="23">
+                                        <use xlink:href="img/sprite.svg#heart1"></use>
+                                    </svg>
+                                    <span class="v-h">Добавить в избранное</span>
+                                </button>
+                            </div>
+                            <div class="card-product__bottom">
+                                <div class="stepcounter">
+                                    <button class="stepcounter__btn" type="button" disabled>
+                                        <svg aria-hidden="true" width="14" height="2">
+                                            <use xlink:href="img/sprite.svg#minus1"></use>
+                                        </svg>
+                                        <span class="v-h">Увеличить количество</span>
+                                    </button>
+                                    <input class="stepcounter__input" type="number" value="1" readonly>
+                                    <button class="stepcounter__btn" type="button">
+                                        <svg aria-hidden="true" width="14" height="14">
+                                            <use xlink:href="img/sprite.svg#plus1"></use>
+                                        </svg>
+                                        <span class="v-h">Уменьшить количество</span>
+                                    </button>
+                                </div>
+                                <a href="cart.html" class="btn btn_primary">В корзину</a>
+                            </div>
+                        </div>
+                        <div class="card-product">
+                            <div class="card-product__inner">
+                                <a href="product-detail.html" class="card-product__photo">
+                                    <img src="img/product1.webp" loading="lazy" alt="">
+                                </a>
+                                <div class="card-product__badges">
+                                    <span class="badge1 badge1_black">Новинка</span>
+                                </div>
+                                <div class="card-product__name">
+                                    <a href="product-detail.html">Твердосплавная пластина ZCC-CT TNMG160404-PM
+                                        YBC2521</a>
+                                </div>
+                                <div class="card-product__description">Короткое описание</div>
+                                <div class="card-product__status status_instock">В наличии</div>
+                                <div class="card-product__prices">
+                                    <div>
+                                        <span class="card-product__label1">С НДС (1 шт.)</span>
+                                        <span class="card-product__price1">441 ₽</span>
+                                        <span class="card-product__price3">1 200 ₽</span>
+                                    </div>
+                                    <div>
+                                        <span class="card-product__label1">Упаковка (10 шт.)</span>
+                                        <span class="card-product__price2">4 410 ₽</span>
+                                    </div>
+                                </div>
+                                <button class="card-product__btn-favorite active" type="button">
+                                    <svg aria-hidden="true" width="25" height="23">
+                                        <use xlink:href="img/sprite.svg#heart1"></use>
+                                    </svg>
+                                    <span class="v-h">Добавить в избранное</span>
+                                </button>
+                            </div>
+                            <div class="card-product__bottom">
+                                <div class="stepcounter">
+                                    <button class="stepcounter__btn" type="button" disabled>
+                                        <svg aria-hidden="true" width="14" height="2">
+                                            <use xlink:href="img/sprite.svg#minus1"></use>
+                                        </svg>
+                                        <span class="v-h">Увеличить количество</span>
+                                    </button>
+                                    <input class="stepcounter__input" type="number" value="1" readonly>
+                                    <button class="stepcounter__btn" type="button">
+                                        <svg aria-hidden="true" width="14" height="14">
+                                            <use xlink:href="img/sprite.svg#plus1"></use>
+                                        </svg>
+                                        <span class="v-h">Уменьшить количество</span>
+                                    </button>
+                                </div>
+                                <a href="cart.html" class="btn btn_primary">В корзину</a>
+                            </div>
+                        </div>
+                        <div class="card-product">
+                            <div class="card-product__inner">
+                                <a href="product-detail.html" class="card-product__photo">
+                                    <img src="img/product1.webp" loading="lazy" alt="">
+                                </a>
+                                <div class="card-product__badges">
+                                    <span class="badge1 badge1_black">Новинка</span>
+                                </div>
+                                <div class="card-product__name">
+                                    <a href="product-detail.html">Твердосплавная пластина ZCC-CT TNMG160404-PM
+                                        YBC2521</a>
+                                </div>
+                                <div class="card-product__description">Короткое описание</div>
+                                <div class="card-product__status status_instock">В наличии</div>
+                                <div class="card-product__prices">
+                                    <div>
+                                        <span class="card-product__label1">С НДС (1 шт.)</span>
+                                        <span class="card-product__price1">441 ₽</span>
+                                        <span class="card-product__price3">1 200 ₽</span>
+                                    </div>
+                                    <div>
+                                        <span class="card-product__label1">Упаковка (10 шт.)</span>
+                                        <span class="card-product__price2">4 410 ₽</span>
+                                    </div>
+                                </div>
+                                <button class="card-product__btn-favorite active" type="button">
+                                    <svg aria-hidden="true" width="25" height="23">
+                                        <use xlink:href="img/sprite.svg#heart1"></use>
+                                    </svg>
+                                    <span class="v-h">Добавить в избранное</span>
+                                </button>
+                            </div>
+                            <div class="card-product__bottom">
+                                <div class="stepcounter">
+                                    <button class="stepcounter__btn" type="button" disabled>
+                                        <svg aria-hidden="true" width="14" height="2">
+                                            <use xlink:href="img/sprite.svg#minus1"></use>
+                                        </svg>
+                                        <span class="v-h">Увеличить количество</span>
+                                    </button>
+                                    <input class="stepcounter__input" type="number" value="1" readonly>
+                                    <button class="stepcounter__btn" type="button">
+                                        <svg aria-hidden="true" width="14" height="14">
+                                            <use xlink:href="img/sprite.svg#plus1"></use>
+                                        </svg>
+                                        <span class="v-h">Уменьшить количество</span>
+                                    </button>
+                                </div>
+                                <a href="cart.html" class="btn btn_primary">В корзину</a>
+                            </div>
+                        </div>
+                        <div class="card-product">
+                            <div class="card-product__inner">
+                                <a href="product-detail.html" class="card-product__photo">
+                                    <img src="img/product1.webp" loading="lazy" alt="">
+                                </a>
+                                <div class="card-product__badges">
+                                    <span class="badge1 badge1_black">Новинка</span>
+                                </div>
+                                <div class="card-product__name">
+                                    <a href="product-detail.html">Твердосплавная пластина ZCC-CT TNMG160404-PM
+                                        YBC2521</a>
+                                </div>
+                                <div class="card-product__description">Короткое описание</div>
+                                <div class="card-product__status status_instock">В наличии</div>
+                                <div class="card-product__prices">
+                                    <div>
+                                        <span class="card-product__label1">С НДС (1 шт.)</span>
+                                        <span class="card-product__price1">441 ₽</span>
+                                        <span class="card-product__price3">1 200 ₽</span>
+                                    </div>
+                                    <div>
+                                        <span class="card-product__label1">Упаковка (10 шт.)</span>
+                                        <span class="card-product__price2">4 410 ₽</span>
+                                    </div>
+                                </div>
+                                <button class="card-product__btn-favorite active" type="button">
+                                    <svg aria-hidden="true" width="25" height="23">
+                                        <use xlink:href="img/sprite.svg#heart1"></use>
+                                    </svg>
+                                    <span class="v-h">Добавить в избранное</span>
+                                </button>
+                            </div>
+                            <div class="card-product__bottom">
+                                <div class="stepcounter">
+                                    <button class="stepcounter__btn" type="button" disabled>
+                                        <svg aria-hidden="true" width="14" height="2">
+                                            <use xlink:href="img/sprite.svg#minus1"></use>
+                                        </svg>
+                                        <span class="v-h">Увеличить количество</span>
+                                    </button>
+                                    <input class="stepcounter__input" type="number" value="1" readonly>
+                                    <button class="stepcounter__btn" type="button">
+                                        <svg aria-hidden="true" width="14" height="14">
+                                            <use xlink:href="img/sprite.svg#plus1"></use>
+                                        </svg>
+                                        <span class="v-h">Уменьшить количество</span>
+                                    </button>
+                                </div>
+                                <a href="cart.html" class="btn btn_primary">В корзину</a>
+                            </div>
+                        </div>
+                        <div class="card-product">
+                            <div class="card-product__inner">
+                                <a href="product-detail.html" class="card-product__photo">
+                                    <img src="img/product1.webp" loading="lazy" alt="">
+                                </a>
+                                <div class="card-product__badges">
+                                    <span class="badge1 badge1_black">Новинка</span>
+                                </div>
+                                <div class="card-product__name">
+                                    <a href="product-detail.html">Твердосплавная пластина ZCC-CT TNMG160404-PM
+                                        YBC2521</a>
+                                </div>
+                                <div class="card-product__description">Короткое описание</div>
+                                <div class="card-product__status status_instock">В наличии</div>
+                                <div class="card-product__prices">
+                                    <div>
+                                        <span class="card-product__label1">С НДС (1 шт.)</span>
+                                        <span class="card-product__price1">441 ₽</span>
+                                        <span class="card-product__price3">1 200 ₽</span>
+                                    </div>
+                                    <div>
+                                        <span class="card-product__label1">Упаковка (10 шт.)</span>
+                                        <span class="card-product__price2">4 410 ₽</span>
+                                    </div>
+                                </div>
+                                <button class="card-product__btn-favorite active" type="button">
+                                    <svg aria-hidden="true" width="25" height="23">
+                                        <use xlink:href="img/sprite.svg#heart1"></use>
+                                    </svg>
+                                    <span class="v-h">Добавить в избранное</span>
+                                </button>
+                            </div>
+                            <div class="card-product__bottom">
+                                <div class="stepcounter">
+                                    <button class="stepcounter__btn" type="button" disabled>
+                                        <svg aria-hidden="true" width="14" height="2">
+                                            <use xlink:href="img/sprite.svg#minus1"></use>
+                                        </svg>
+                                        <span class="v-h">Увеличить количество</span>
+                                    </button>
+                                    <input class="stepcounter__input" type="number" value="1" readonly>
+                                    <button class="stepcounter__btn" type="button">
+                                        <svg aria-hidden="true" width="14" height="14">
+                                            <use xlink:href="img/sprite.svg#plus1"></use>
+                                        </svg>
+                                        <span class="v-h">Уменьшить количество</span>
+                                    </button>
+                                </div>
+                                <a href="cart.html" class="btn btn_primary">В корзину</a>
+                            </div>
+                        </div>
+                        <div class="card-product">
+                            <div class="card-product__inner">
+                                <a href="product-detail.html" class="card-product__photo">
+                                    <img src="img/product1.webp" loading="lazy" alt="">
+                                </a>
+                                <div class="card-product__badges">
+                                    <span class="badge1 badge1_black">Новинка</span>
+                                </div>
+                                <div class="card-product__name">
+                                    <a href="product-detail.html">Твердосплавная пластина ZCC-CT TNMG160404-PM
+                                        YBC2521</a>
+                                </div>
+                                <div class="card-product__description">Короткое описание</div>
+                                <div class="card-product__status status_instock">В наличии</div>
+                                <div class="card-product__prices">
+                                    <div>
+                                        <span class="card-product__label1">С НДС (1 шт.)</span>
+                                        <span class="card-product__price1">441 ₽</span>
+                                        <span class="card-product__price3">1 200 ₽</span>
+                                    </div>
+                                    <div>
+                                        <span class="card-product__label1">Упаковка (10 шт.)</span>
+                                        <span class="card-product__price2">4 410 ₽</span>
+                                    </div>
+                                </div>
+                                <button class="card-product__btn-favorite active" type="button">
+                                    <svg aria-hidden="true" width="25" height="23">
+                                        <use xlink:href="img/sprite.svg#heart1"></use>
+                                    </svg>
+                                    <span class="v-h">Добавить в избранное</span>
+                                </button>
+                            </div>
+                            <div class="card-product__bottom">
+                                <div class="stepcounter">
+                                    <button class="stepcounter__btn" type="button" disabled>
+                                        <svg aria-hidden="true" width="14" height="2">
+                                            <use xlink:href="img/sprite.svg#minus1"></use>
+                                        </svg>
+                                        <span class="v-h">Увеличить количество</span>
+                                    </button>
+                                    <input class="stepcounter__input" type="number" value="1" readonly>
+                                    <button class="stepcounter__btn" type="button">
+                                        <svg aria-hidden="true" width="14" height="14">
+                                            <use xlink:href="img/sprite.svg#plus1"></use>
+                                        </svg>
+                                        <span class="v-h">Уменьшить количество</span>
+                                    </button>
+                                </div>
+                                <a href="cart.html" class="btn btn_primary">В корзину</a>
+                            </div>
+                        </div>
+                        <div class="card-product">
+                            <div class="card-product__inner">
+                                <a href="product-detail.html" class="card-product__photo">
+                                    <img src="img/product1.webp" loading="lazy" alt="">
+                                </a>
+                                <div class="card-product__badges">
+                                    <span class="badge1 badge1_black">Новинка</span>
+                                </div>
+                                <div class="card-product__name">
+                                    <a href="product-detail.html">Твердосплавная пластина ZCC-CT TNMG160404-PM
+                                        YBC2521</a>
+                                </div>
+                                <div class="card-product__description">Короткое описание</div>
+                                <div class="card-product__status status_instock">В наличии</div>
+                                <div class="card-product__prices">
+                                    <div>
+                                        <span class="card-product__label1">С НДС (1 шт.)</span>
+                                        <span class="card-product__price1">441 ₽</span>
+                                        <span class="card-product__price3">1 200 ₽</span>
+                                    </div>
+                                    <div>
+                                        <span class="card-product__label1">Упаковка (10 шт.)</span>
+                                        <span class="card-product__price2">4 410 ₽</span>
+                                    </div>
+                                </div>
+                                <button class="card-product__btn-favorite active" type="button">
+                                    <svg aria-hidden="true" width="25" height="23">
+                                        <use xlink:href="img/sprite.svg#heart1"></use>
+                                    </svg>
+                                    <span class="v-h">Добавить в избранное</span>
+                                </button>
+                            </div>
+                            <div class="card-product__bottom">
+                                <div class="stepcounter">
+                                    <button class="stepcounter__btn" type="button" disabled>
+                                        <svg aria-hidden="true" width="14" height="2">
+                                            <use xlink:href="img/sprite.svg#minus1"></use>
+                                        </svg>
+                                        <span class="v-h">Увеличить количество</span>
+                                    </button>
+                                    <input class="stepcounter__input" type="number" value="1" readonly>
+                                    <button class="stepcounter__btn" type="button">
+                                        <svg aria-hidden="true" width="14" height="14">
+                                            <use xlink:href="img/sprite.svg#plus1"></use>
+                                        </svg>
+                                        <span class="v-h">Уменьшить количество</span>
+                                    </button>
+                                </div>
+                                <a href="cart.html" class="btn btn_primary">В корзину</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-bottom">
+                    <button type="button" class="btn-load">
+                        <svg aria-hidden="true" width="24" height="24">
+                            <use xlink:href="img/sprite.svg#plus2"></use>
+                        </svg>
+                        <span>Показать еще</span>
+                    </button>
+                    <nav aria-label="Постраничная навигация">
+                        <ul class="pagination">
+                            <li>
+                                <span
+                                    class="pagination__item pagination__item_nav pagination__item_nav-prev pagination__item_disabled"
+                                    href="#">
+                                    <svg aria-hidden="true" width="12" height="21">
+                                        <use xlink:href="img/sprite.svg#chevron1"></use>
+                                    </svg>
+                                </span>
+                            </li>
+                            <li>
+                                <a class="pagination__item pagination__item_active" aria-current="page" href="#">1</a>
+                            </li>
+                            <li>
+                                <a class="pagination__item" href="#"><span class="v-h">Страница </span>2</a>
+                            </li>
+                            <li>
+                                <a class="pagination__item" href="#"><span class="v-h">Страница </span>3</a>
+                            </li>
+                            <li>
+                                <a class="pagination__item pagination__item_divider" href="#">...</a>
+                            </li>
+                            <li>
+                                <a class="pagination__item" href="#"><span class="v-h">Страница </span>12</a>
+                            </li>
+                            <li>
+                                <a class="pagination__item pagination__item_nav pagination__item_nav-next" href="#">
+                                    <svg aria-hidden="true" width="12" height="21">
+                                        <use xlink:href="img/sprite.svg#chevron3"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </main>
+        {% include 'blocks/footer.njk' %}
+    </div>
+    {% include 'blocks/popups.njk' %}
+    {% include 'blocks/scripts.njk' %}
+</body>
+
+</html>

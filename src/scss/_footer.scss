@@ -1,0 +1,281 @@
+@use 'mixins' as *;
+
+.footer {
+  width: 100%;
+  background-color: var(--theme-color-text-common);
+  color: #fff;
+  font-size: 14px;
+
+  a:hover,
+  a:focus-visible {
+    color: var(--theme-color-accent);
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.95fr 1fr max-content;
+    gap: 20px;
+  }
+
+  &__top {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  &__bottom {
+    border-top: 1px rgba(234, 234, 234, 0.1) solid;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    a {
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    .logo {
+      display: block;
+      width: 124px;
+
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+
+  &__bottom-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__bottom-grid-inner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px 70px;
+  }
+
+  &__logo {
+    width: 125px;
+    display: block;
+    margin-bottom: 36px;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  &__name {
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 600;
+    text-transform: uppercase;
+    max-width: 250px;
+  }
+
+  &__caption {
+    font-family: var(--theme-font-secondary);
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+
+  &__nav {
+    font-size: 14px;
+    line-height: 1.22;
+
+    & > *:not(:last-child) {
+      margin-bottom: 11px;
+    }
+  }
+
+  &__caption + &__nav {
+    margin-top: 14px;
+  }
+
+  &__caption + &__caption {
+    margin-top: 9px;
+  }
+
+  &__location {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    position: relative;
+    margin-bottom: 24px;
+
+    svg {
+      position: absolute;
+      left: -30px;
+      top: -1px;
+      fill: var(--theme-color-accent);
+    }
+  }
+
+  &__phone {
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 500;
+    margin-bottom: 15px;
+
+    a:hover {
+      color: #fff;
+    }
+  }
+
+  &__mail {
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 300;
+
+    a {
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    &__grid {
+      grid-template-columns: 1.15fr 0.95fr 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    &__top {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+
+    &__location {
+      display: inline-block;
+    }
+
+    &__grid {
+      grid-template-columns: 1.3fr 1fr 1fr;
+
+      & > div:nth-child(4) {
+        padding-top: 30px;
+        text-align: center;
+        grid-column: span 3;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__logo {
+      margin-bottom: 20px;
+    }
+
+    &__name {
+      text-align: center;
+      max-width: 100%;
+
+      span {
+        display: block;
+      }
+    }
+
+    &__nav > *:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+    &__caption + &__nav {
+      margin-top: 18px;
+    }
+
+    &__caption + &__caption {
+      margin-top: 13px;
+    }
+
+    &__grid {
+      grid-template-columns: 1fr 1fr;
+
+      & > div:nth-child(1) {
+        grid-column: span 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 28px;
+      }
+
+      & > div:nth-child(2) {
+        text-align: center;
+      }
+
+      & > div:nth-child(3) {
+        text-align: center;
+      }
+
+      & > div:nth-child(4) {
+        grid-column: span 2;
+        padding-top: 20px;
+        padding-bottom: 18px;
+      }
+    }
+
+    &__phone {
+      margin-bottom: 19px;
+    }
+
+    &__bottom-grid-inner {
+      gap: 30px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    &__bottom {
+      text-align: center;
+      padding-top: 35px;
+    }
+
+    &__bottom-grid-inner {
+      padding-top: 32px;
+    }
+
+    .logo {
+      margin: 33px auto 0 auto;
+    }
+
+    &__bottom-grid,
+    &__bottom-grid-inner {
+      display: block;
+    }
+  }
+
+  @media (max-width: 500px) {
+    &__location {
+      max-width: 250px;
+      text-align: left;
+      margin-left: 30px;
+    }
+
+    &__grid {
+      grid-template-columns: 1fr;
+
+      & > div:nth-child(1) {
+        grid-column: auto;
+
+      }
+
+      & > div:nth-child(2) {
+        text-align: center;
+        padding-bottom: 12px;
+      }
+
+      & > div:nth-child(3) {
+        text-align: center;
+      }
+
+      & > div:nth-child(4) {
+        padding-top: 10px;
+        grid-column: auto;
+      }
+    }
+  }
+}

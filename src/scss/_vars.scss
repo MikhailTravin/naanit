@@ -1,0 +1,28 @@
+:root {
+  --container-width: 1520px;
+  --main-outer-width: 1920px;
+  --container-padding: 30px;
+  --calculated-padding: calc((100% - var(--container-width)) / 2);
+  --theme-color-accent: #da251e;
+  --theme-color-text-common: #0c1422;
+  --theme-border-color: rgba(234, 234, 234, 1);
+  --theme-animation-duration: 200ms;
+  --theme-font-primary: "Fira Sans", sans-serif;
+  --theme-font-secondary: "Play", sans-serif;
+  --third-family: "Inter", sans-serif;
+  --block-margin1: 160px;
+
+  @media (max-width: 1000px) {
+    --block-margin1: 140px;
+  }
+
+  @media (max-width: 768px) {
+    --container-padding: 20px;
+    --block-margin1: 120px;
+  }
+
+  @media (max-width: 575px) {
+    --container-padding: 15px;
+    --block-margin1: 100px;
+  }
+}

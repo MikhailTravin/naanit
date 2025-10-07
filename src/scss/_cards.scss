@@ -1380,6 +1380,10 @@
     }
     @media (max-width: 768px) {
       grid-column: 2;
+      border-top: none;
+    }
+    @media (max-width: 500px) {
+      border-left: 1px solid var(--theme-border-color);
     }
   }
 

@@ -25,6 +25,9 @@
 	flex-grow: 1;
 	flex-shrink: 1;
 }
+.main-catalog{
+  overflow: hidden;
+}
 
 .container {
   padding-left: max(var(--calculated-padding), var(--container-padding));

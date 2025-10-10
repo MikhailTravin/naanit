@@ -761,8 +761,9 @@
     overflow: hidden;
   }
 
-  body.filter-active .main {
+  body.filter-active .main-catalog .grid1 {
     z-index: 51;
+    position: relative;
   }
 
   body.filter-active .catalog-filter {
@@ -772,6 +773,11 @@
 
   body.filter-active .catalog-filter__data {
     overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
     transform: translateX(0);
   }
 }
@@ -2235,6 +2241,80 @@
   }
   .checklist__item {
     margin: 0px 0px 0px 0px;
+  }
+  .checkbox-text {
+    width: 100%;
+    padding: 30px 30px 26px 30px;
+    border: 1px solid var(--theme-border-color);
+    @media (max-width: 650px) {
+      padding: 20px 20px 16px 20px;
+      min-height: 80px;
+      &.centered {
+        align-items: center;
+      }
+    }
+    &.checked {
+      border: 1px solid var(--theme-color-accent);
+      .radio__visual {
+        border: 6px solid var(--theme-color-accent);
+      }
+      .radio__input:checked + .radio__visual {
+        border-color: var(--theme-color-accent);
+      }
+    }
+    .radio__visual {
+      margin: -2px 0px 0px 0px;
+      border: 1px solid var(--theme-color-text-common);
+      @media (max-width: 650px) {
+        margin: -1px 0px 0px 0px;
+      }
+    }
+    // .checkbox-text__label
+
+    &__label {
+      width: 100%;
+      align-items: start;
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      @media (max-width: 992px) {
+        flex-direction: column;
+        gap: 9px;
+      }
+    }
+
+    // .checkbox-text__titles
+
+    &__titles {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    // .checkbox-text__title
+
+    &__title {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 120%;
+    }
+
+    // .checkbox-text__subtitle
+
+    &__subtitle {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 100%;
+      color: #848283;
+    }
+
+    // .checkbox-text__price
+
+    &__price {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 100%;
+    }
   }
 }
 

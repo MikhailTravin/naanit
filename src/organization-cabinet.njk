@@ -626,21 +626,21 @@
                         <div class="form-grid1">
                             <div class="form-grid1__row">
                                 <div class="form-group1">
+                                    <input id="popup_login_inn" class="field-input1 form-group1__field"
+                                         type="text" name="popup_login_inn" required data-inn-input>
+                                    <label class="form-group1__label form-group1__label_req"
+                                        for="popup_login_inn">ИНН</label>
+                                </div>
+                            </div>
+                            <div class="form-grid1__row hide" data-org-field>
+                                <div class="form-group1">
                                     <input id="popup_login_title" class="field-input1 form-group1__field filled"
                                         value="ООО НААНИТ" type="text" name="popup_login_title" required>
                                     <label class="form-group1__label form-group1__label_req"
                                         for="popup_login_title">Название</label>
                                 </div>
                             </div>
-                            <div class="form-grid1__row">
-                                <div class="form-group1">
-                                    <input id="popup_login_inn" class="field-input1 form-group1__field filled"
-                                        value="1234567891" type="text" name="popup_login_inn" required>
-                                    <label class="form-group1__label form-group1__label_req"
-                                        for="popup_login_inn">ИНН</label>
-                                </div>
-                            </div>
-                            <div class="form-grid1__row">
+                            <div class="form-grid1__row hide" data-org-field>
                                 <div class="form-group1">
                                     <input id="popup_login_kpp" class="field-input1 form-group1__field filled"
                                         value="123456654" type="text" name="popup_login_kpp" required>
@@ -648,7 +648,7 @@
                                         for="popup_login_kpp">КПП</label>
                                 </div>
                             </div>
-                            <div class="form-grid1__row">
+                            <div class="form-grid1__row hide" data-org-field>
                                 <div class="form-group1">
                                     <textarea id="popup_login_address2" class="field-input1 form-group1__field filled"
                                         type="text"
@@ -657,7 +657,7 @@
                                         адрес</label>
                                 </div>
                             </div>
-                            <div class="form-grid1__row">
+                            <div class="form-grid1__row hide" data-org-field>
                                 <div class="file-user-cabinet">
                                     <div class="file-user-cabinet__content">
                                         <div class="file-user-cabinet__body">
@@ -672,9 +672,10 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="textsmall">Загрузите карточку организации для самостоятельной оплаты заказов
+                                </div>
                             </div>
                         </div>
-                        <div class="textsmall">Загрузите карточку организации для самостояльной оплаты заказов</div>
                         <button type="submit" class="btn btn_primary">Сохранить</button>
                     </form>
                 </div>

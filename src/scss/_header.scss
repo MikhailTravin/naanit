@@ -848,7 +848,7 @@
   border-left: 1px var(--theme-border-color) solid;
   border-right: 1px var(--theme-border-color) solid;
   display: none;
-  z-index: 10;
+  z-index: 55;
 
   &.active {
     display: block;
@@ -1005,6 +1005,12 @@
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 12px;
+    .catalog-menu__btn1 {
+      display: none;
+      @media (max-width: 768px) {
+        display: block;
+      }
+    }
   }
 
   @media (max-width: 1300px) {

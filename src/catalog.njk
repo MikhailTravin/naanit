@@ -1,418 +1,432 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<title>Главная страница</title>
-		{% include 'blocks/head.njk' %}
-	</head>
-	<body class="preload mp">
-		<div class="main-wrapper-outer">
-			{% include 'blocks/header.njk' %}
-			<main class="main">
-        <div class="block-breadcrumbs">
-					<div class="container">
-						<nav aria-label="breadcrumb" class="breadcrumbs">
-							<a href="/" class="breadcrumbs__item">
-								Главная
-							</a>
-							<span aria-hidden="true">&mdash;</span>
-							<a href="catalog.html" class="breadcrumbs__item">
-								Продукция
-							</a>
-							<span aria-hidden="true">&mdash;</span>
-							<span aria-current="page" class="breadcrumbs__item">
-								Токарные пластины по ISO
-							</span>
-						</nav>
-            <h1 class="title2">Токарные пластины по ISO</h1>
-					</div>
-				</div>
+
+<head>
+  <title>Главная страница</title>
+  {% include 'blocks/head.njk' %}
+</head>
+
+<body class="preload mp">
+  <div class="main-wrapper-outer">
+    {% include 'blocks/header.njk' %}
+    <main class="main main-catalog">
+      <div class="block-breadcrumbs">
         <div class="container">
-          <div class="grid1">
-            <div class="grid1__aside">
-              <div class="grid1__inner1">
-                <div class="title3">Категории</div>
-                <a class="btn-back" href="#">
-                  <svg aria-hidden="true" width="9" height="14">
-                    <use xlink:href="img/sprite.svg#chevron4"></use>
-                  </svg>
-                  <span>Токарная обработка</span>
-                </a>
-                <ul class="menu1 menu1_expandable">
-                  <li>
-                    <a href="#">Расточные сверла</a>
-                  </li>
-                  <li>
-                    <a href="#">Твердосплавные сверла</a>
-                  </li>
-                  <li>
-                    <a href="#">Сверла со сменными пластинами</a>
-                  </li>
-                  <li>
-                    <a href="#">Сверла со сменными головками</a>
-                  </li>
-                  <li>
-                    <a href="#">Расточные системы</a>
-                  </li>
-                  <li>
-                    <a href="#">Расточные сверла</a>
-                  </li>
-                  <li>
-                    <a href="#">Твердосплавные сверла</a>
-                  </li>
-                  <li>
-                    <a href="#">Сверла со сменными пластинами</a>
-                  </li>
-                  <li>
-                    <a href="#">Сверла со сменными головками</a>
-                  </li>
-                  <li>
-                    <a href="#">Расточные системы</a>
-                  </li>
-                  <li class="menu1__expander">
-                    <button data-action="expandList2" class="btn-text btn-text_3" type="button">Посмотреть все</button>
-                    <button data-action="collapseList2" class="btn-text btn-text_3" type="button">Свернуть</button>
-                  </li>
-                </ul>
-              </div>
-              <div class="catalog-filter expanded">
-                <button data-action="toggleCatalogFilter" class="btn-toggle" type="button">
-                  <span>Фильтр подбора</span>
-                  <svg aria-hidden="true" width="14" height="9">
-                    <use xlink:href="img/sprite.svg#chevron2"></use>
+          <nav aria-label="breadcrumb" class="breadcrumbs">
+            <a href="/" class="breadcrumbs__item">
+              Главная
+            </a>
+            <span aria-hidden="true">&mdash;</span>
+            <a href="catalog.html" class="breadcrumbs__item">
+              Продукция
+            </a>
+            <span aria-hidden="true">&mdash;</span>
+            <span aria-current="page" class="breadcrumbs__item">
+              Токарные пластины по ISO
+            </span>
+          </nav>
+          <h1 class="title2">Токарные пластины по ISO</h1>
+        </div>
+      </div>
+      <div class="container">
+        <div class="grid1">
+          <div class="grid1__aside">
+            <div class="grid1__inner1">
+              <div class="title3">Категории</div>
+              <a class="btn-back" href="#">
+                <svg aria-hidden="true" width="9" height="14">
+                  <use xlink:href="img/sprite.svg#chevron4"></use>
+                </svg>
+                <span>Токарная обработка</span>
+              </a>
+              <ul class="menu1 menu1_expandable">
+                <li>
+                  <a href="#">Расточные сверла</a>
+                </li>
+                <li>
+                  <a href="#">Твердосплавные сверла</a>
+                </li>
+                <li>
+                  <a href="#">Сверла со сменными пластинами</a>
+                </li>
+                <li>
+                  <a href="#">Сверла со сменными головками</a>
+                </li>
+                <li>
+                  <a href="#">Расточные системы</a>
+                </li>
+                <li>
+                  <a href="#">Расточные сверла</a>
+                </li>
+                <li>
+                  <a href="#">Твердосплавные сверла</a>
+                </li>
+                <li>
+                  <a href="#">Сверла со сменными пластинами</a>
+                </li>
+                <li>
+                  <a href="#">Сверла со сменными головками</a>
+                </li>
+                <li>
+                  <a href="#">Расточные системы</a>
+                </li>
+                <li class="menu1__expander">
+                  <button data-action="expandList2" class="btn-text btn-text_3" type="button">Посмотреть все</button>
+                  <button data-action="collapseList2" class="btn-text btn-text_3" type="button">Свернуть</button>
+                </li>
+              </ul>
+            </div>
+            <div class="catalog-filter expanded">
+              <button data-action="toggleCatalogFilter" class="btn-toggle" type="button">
+                <span>Фильтр подбора</span>
+                <svg aria-hidden="true" width="14" height="9">
+                  <use xlink:href="img/sprite.svg#chevron2"></use>
+                </svg>
+              </button>
+              <div class="grid1__inner1 catalog-filter__data" style="display: block;">
+                <div class="title2">Фильтр</div>
+                <button data-action="hideFilter" class="catalog-filter__close">
+                  <svg aria-hidden="true" width="14" height="14">
+                    <use xlink:href="img/sprite.svg#close1"></use>
                   </svg>
                 </button>
-                <div class="grid1__inner1 catalog-filter__data" style="display: block;">
-                  <div class="title2">Фильтр</div>
-                  <button data-action="hideFilter" class="catalog-filter__close">
-                    <svg aria-hidden="true" width="14" height="14">
-                      <use xlink:href="img/sprite.svg#close1"></use>
-                    </svg>
-                  </button>
-                  <form action="filter.php" class="filter">
-                    <div class="filter__items">
-                      <fieldset class="filter__group">
-                        <legend class="filter__title1">Форма пластины</legend>
-                        <div class="bx_filter_container_modef">
-                          <select data-select class="ts-wrapper_wide" name="filter_field1">
-                            <option value="1">Все</option>
-                            <option value="2">Круглые</option>
-                            <option value="3">Квадратные</option>
-                            <option value="4">Прямые</option>
-                          </select>
-                          <a href="#" class="bx_filter_popup_result">
-                            Показать (2)
-                          </a>
-                        </div>
-                      </fieldset>
-                      <fieldset class="filter__group bx_filter_container_modef">
-                        <legend class="filter__title1">Размер пластины</legend>
-                        <select data-select class="ts-wrapper_wide" name="filter_field2">
+                <form action="filter.php" class="filter">
+                  <div class="filter__items">
+                    <fieldset class="filter__group">
+                      <legend class="filter__title1">Форма пластины</legend>
+                      <div class="bx_filter_container_modef">
+                        <select data-select class="ts-wrapper_wide" name="filter_field1">
                           <option value="1">Все</option>
-                          <option value="2">Малые</option>
-                          <option value="3">Крохотные</option>
-                          <option value="4">Гигантские</option>
+                          <option value="2">Круглые</option>
+                          <option value="3">Квадратные</option>
+                          <option value="4">Прямые</option>
+                          <option value="5">Прямые</option>
+                          <option value="6">Прямые</option>
+                          <option value="7">Прямые</option>
                         </select>
-                      </fieldset>
-                      <fieldset class="filter__group bx_filter_container_modef">
-                        <legend class="filter__title1">Материал обработки</legend>
-                        <div class="filter__scroll">
-                          <ul class="checklist">
-                            <li class="checklist__item">
-                              <label class="checkbox-text">
-                                <span class="checkbox1">
-                                  <input class="checkbox1__input" type="checkbox" name="filter_field3" value="1">
-                                  <span class="checkbox1__visual">
-                                    <svg class="checkbox1__mark" width="12" height="11" aria-hidden="true">
-                                      <use xlink:href="img/sprite.svg#mark1"></use>
-                                    </svg>
-                                  </span>
+                        <a href="#" class="bx_filter_popup_result">
+                          Показать (2)
+                        </a>
+                      </div>
+                    </fieldset>
+                    <fieldset class="filter__group bx_filter_container_modef">
+                      <legend class="filter__title1">Размер пластины</legend>
+                      <select data-select class="ts-wrapper_wide" name="filter_field2">
+                        <option value="1">Все</option>
+                        <option value="2">Малые</option>
+                        <option value="3">Крохотные</option>
+                        <option value="4">Гигантские</option>
+                      </select>
+                    </fieldset>
+                    <fieldset class="filter__group bx_filter_container_modef">
+                      <legend class="filter__title1">Материал обработки</legend>
+                      <div data-simplebar class="filter__scroll">
+                        <ul class="checklist">
+                          <li class="checklist__item">
+                            <label class="checkbox-text">
+                              <span class="checkbox1">
+                                <input class="checkbox1__input" type="checkbox" name="filter_field3" value="1">
+                                <span class="checkbox1__visual">
+                                  <svg class="checkbox1__mark" width="12" height="11" aria-hidden="true">
+                                    <use xlink:href="img/sprite.svg#mark1"></use>
+                                  </svg>
                                 </span>
-                                <span class="checkbox-text__label">Сталь</span>
-                              </label>
-                            </li>
-                            <li class="checklist__item">
-                              <label class="checkbox-text">
-                                <span class="checkbox1">
-                                  <input class="checkbox1__input" type="checkbox" name="filter_field3" value="2">
-                                  <span class="checkbox1__visual">
-                                    <svg class="checkbox1__mark" width="12" height="11" aria-hidden="true">
-                                      <use xlink:href="img/sprite.svg#mark1"></use>
-                                    </svg>
-                                  </span>
+                              </span>
+                              <span class="checkbox-text__label">Сталь</span>
+                            </label>
+                          </li>
+                          <li class="checklist__item">
+                            <label class="checkbox-text">
+                              <span class="checkbox1">
+                                <input class="checkbox1__input" type="checkbox" name="filter_field3" value="2">
+                                <span class="checkbox1__visual">
+                                  <svg class="checkbox1__mark" width="12" height="11" aria-hidden="true">
+                                    <use xlink:href="img/sprite.svg#mark1"></use>
+                                  </svg>
                                 </span>
-                                <span class="checkbox-text__label">Нержавеющая сталь</span>
-                              </label>
-                            </li>
-                            <li class="checklist__item">
-                              <label class="checkbox-text">
-                                <span class="checkbox1">
-                                  <input class="checkbox1__input" type="checkbox" name="filter_field3" value="3">
-                                  <span class="checkbox1__visual">
-                                    <svg class="checkbox1__mark" width="12" height="11" aria-hidden="true">
-                                      <use xlink:href="img/sprite.svg#mark1"></use>
-                                    </svg>
-                                  </span>
+                              </span>
+                              <span class="checkbox-text__label">Нержавеющая сталь</span>
+                            </label>
+                          </li>
+                          <li class="checklist__item">
+                            <label class="checkbox-text">
+                              <span class="checkbox1">
+                                <input class="checkbox1__input" type="checkbox" name="filter_field3" value="3">
+                                <span class="checkbox1__visual">
+                                  <svg class="checkbox1__mark" width="12" height="11" aria-hidden="true">
+                                    <use xlink:href="img/sprite.svg#mark1"></use>
+                                  </svg>
                                 </span>
-                                <span class="checkbox-text__label">Сталь</span>
-                              </label>
-                            </li>
-                            <li class="checklist__item">
-                              <label class="checkbox-text">
-                                <span class="checkbox1">
-                                  <input class="checkbox1__input" type="checkbox" name="filter_field3" value="4">
-                                  <span class="checkbox1__visual">
-                                    <svg class="checkbox1__mark" width="12" height="11" aria-hidden="true">
-                                      <use xlink:href="img/sprite.svg#mark1"></use>
-                                    </svg>
-                                  </span>
+                              </span>
+                              <span class="checkbox-text__label">Сталь</span>
+                            </label>
+                          </li>
+                          <li class="checklist__item">
+                            <label class="checkbox-text">
+                              <span class="checkbox1">
+                                <input class="checkbox1__input" type="checkbox" name="filter_field3" value="4">
+                                <span class="checkbox1__visual">
+                                  <svg class="checkbox1__mark" width="12" height="11" aria-hidden="true">
+                                    <use xlink:href="img/sprite.svg#mark1"></use>
+                                  </svg>
                                 </span>
-                                <span class="checkbox-text__label">Нержавеющая сталь</span>
-                              </label>
-                            </li>
-                            <li class="checklist__item">
-                              <label class="checkbox-text">
-                                <span class="checkbox1">
-                                  <input class="checkbox1__input" type="checkbox" name="filter_field3" value="5">
-                                  <span class="checkbox1__visual">
-                                    <svg class="checkbox1__mark" width="12" height="11" aria-hidden="true">
-                                      <use xlink:href="img/sprite.svg#mark1"></use>
-                                    </svg>
-                                  </span>
+                              </span>
+                              <span class="checkbox-text__label">Нержавеющая сталь</span>
+                            </label>
+                          </li>
+                          <li class="checklist__item">
+                            <label class="checkbox-text">
+                              <span class="checkbox1">
+                                <input class="checkbox1__input" type="checkbox" name="filter_field3" value="5">
+                                <span class="checkbox1__visual">
+                                  <svg class="checkbox1__mark" width="12" height="11" aria-hidden="true">
+                                    <use xlink:href="img/sprite.svg#mark1"></use>
+                                  </svg>
                                 </span>
-                                <span class="checkbox-text__label">Сталь</span>
-                              </label>
-                            </li>
-                          </ul>
+                              </span>
+                              <span class="checkbox-text__label">Сталь</span>
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
+                    </fieldset>
+                    <fieldset class="filter__group bx_filter_container_modef">
+                      <legend class="filter__title1">Обрабатываемый материал</legend>
+                      <div class="filter-search">
+                        <div class="filter-search__field">
+                          <svg aria-hidden="true" width="15" height="16">
+                            <use xlink:href="img/sprite.svg#search1"></use>
+                          </svg>
+                          <input type="text" placeholder="Найти">
                         </div>
-                      </fieldset>
-                      <fieldset class="filter__group bx_filter_container_modef">
-                        <legend class="filter__title1">Обрабатываемый материал</legend>
-                        <div class="filter-search">
-                          <div class="filter-search__field">
-                            <svg aria-hidden="true" width="15" height="16">
-                              <use xlink:href="img/sprite.svg#search1"></use>
-                            </svg>
-                            <input type="text" placeholder="Найти">
-                          </div>
-                          <div class="filter-search__results">
-                            <div class="filter__scroll">
-                              <ul class="checklist">
-                                <li class="checklist__item">
-                                  <label class="checkbox-text">
-                                    <span class="checkbox1">
-                                      <input class="checkbox1__input" type="checkbox" name="filter_field4" value="1">
-                                      <span class="checkbox1__visual">
-                                        <svg class="checkbox1__mark" width="12" height="11" aria-hidden="true">
-                                          <use xlink:href="img/sprite.svg#mark1"></use>
-                                        </svg>
-                                      </span>
+                        <div class="filter-search__results">
+                          <div data-simplebar class="filter__scroll">
+                            <ul class="checklist">
+                              <li class="checklist__item">
+                                <label class="checkbox-text">
+                                  <span class="checkbox1">
+                                    <input class="checkbox1__input" type="checkbox" name="filter_field4" value="1">
+                                    <span class="checkbox1__visual">
+                                      <svg class="checkbox1__mark" width="12" height="11" aria-hidden="true">
+                                        <use xlink:href="img/sprite.svg#mark1"></use>
+                                      </svg>
                                     </span>
-                                    <span class="checkbox-text__label">Сталь</span>
-                                  </label>
-                                </li>
-                                <li class="checklist__item">
-                                  <label class="checkbox-text">
-                                    <span class="checkbox1">
-                                      <input class="checkbox1__input" type="checkbox" name="filter_field4" value="2">
-                                      <span class="checkbox1__visual">
-                                        <svg class="checkbox1__mark" width="12" height="11" aria-hidden="true">
-                                          <use xlink:href="img/sprite.svg#mark1"></use>
-                                        </svg>
-                                      </span>
+                                  </span>
+                                  <span class="checkbox-text__label">Сталь</span>
+                                </label>
+                              </li>
+                              <li class="checklist__item">
+                                <label class="checkbox-text">
+                                  <span class="checkbox1">
+                                    <input class="checkbox1__input" type="checkbox" name="filter_field4" value="2">
+                                    <span class="checkbox1__visual">
+                                      <svg class="checkbox1__mark" width="12" height="11" aria-hidden="true">
+                                        <use xlink:href="img/sprite.svg#mark1"></use>
+                                      </svg>
                                     </span>
-                                    <span class="checkbox-text__label">Нержавеющая сталь</span>
-                                  </label>
-                                </li>
-                                <li class="checklist__item">
-                                  <label class="checkbox-text">
-                                    <span class="checkbox1">
-                                      <input class="checkbox1__input" type="checkbox" name="filter_field4" value="3">
-                                      <span class="checkbox1__visual">
-                                        <svg class="checkbox1__mark" width="12" height="11" aria-hidden="true">
-                                          <use xlink:href="img/sprite.svg#mark1"></use>
-                                        </svg>
-                                      </span>
+                                  </span>
+                                  <span class="checkbox-text__label">Нержавеющая сталь</span>
+                                </label>
+                              </li>
+                              <li class="checklist__item">
+                                <label class="checkbox-text">
+                                  <span class="checkbox1">
+                                    <input class="checkbox1__input" type="checkbox" name="filter_field4" value="3">
+                                    <span class="checkbox1__visual">
+                                      <svg class="checkbox1__mark" width="12" height="11" aria-hidden="true">
+                                        <use xlink:href="img/sprite.svg#mark1"></use>
+                                      </svg>
                                     </span>
-                                    <span class="checkbox-text__label">Сталь</span>
-                                  </label>
-                                </li>
-                                <li class="checklist__item">
-                                  <label class="checkbox-text">
-                                    <span class="checkbox1">
-                                      <input class="checkbox1__input" type="checkbox" name="filter_field4" value="4">
-                                      <span class="checkbox1__visual">
-                                        <svg class="checkbox1__mark" width="12" height="11" aria-hidden="true">
-                                          <use xlink:href="img/sprite.svg#mark1"></use>
-                                        </svg>
-                                      </span>
+                                  </span>
+                                  <span class="checkbox-text__label">Сталь</span>
+                                </label>
+                              </li>
+                              <li class="checklist__item">
+                                <label class="checkbox-text">
+                                  <span class="checkbox1">
+                                    <input class="checkbox1__input" type="checkbox" name="filter_field4" value="4">
+                                    <span class="checkbox1__visual">
+                                      <svg class="checkbox1__mark" width="12" height="11" aria-hidden="true">
+                                        <use xlink:href="img/sprite.svg#mark1"></use>
+                                      </svg>
                                     </span>
-                                    <span class="checkbox-text__label">Нержавеющая сталь</span>
-                                  </label>
-                                </li>
-                                <li class="checklist__item">
-                                  <label class="checkbox-text">
-                                    <span class="checkbox1">
-                                      <input class="checkbox1__input" type="checkbox" name="filter_field4" value="5">
-                                      <span class="checkbox1__visual">
-                                        <svg class="checkbox1__mark" width="12" height="11" aria-hidden="true">
-                                          <use xlink:href="img/sprite.svg#mark1"></use>
-                                        </svg>
-                                      </span>
+                                  </span>
+                                  <span class="checkbox-text__label">Нержавеющая сталь</span>
+                                </label>
+                              </li>
+                              <li class="checklist__item">
+                                <label class="checkbox-text">
+                                  <span class="checkbox1">
+                                    <input class="checkbox1__input" type="checkbox" name="filter_field4" value="5">
+                                    <span class="checkbox1__visual">
+                                      <svg class="checkbox1__mark" width="12" height="11" aria-hidden="true">
+                                        <use xlink:href="img/sprite.svg#mark1"></use>
+                                      </svg>
                                     </span>
-                                    <span class="checkbox-text__label">Сталь</span>
-                                  </label>
-                                </li>
-                                <li class="checklist__item">
-                                  <label class="checkbox-text">
-                                    <span class="checkbox1">
-                                      <input class="checkbox1__input" type="checkbox" name="filter_field4" value="6">
-                                      <span class="checkbox1__visual">
-                                        <svg class="checkbox1__mark" width="12" height="11" aria-hidden="true">
-                                          <use xlink:href="img/sprite.svg#mark1"></use>
-                                        </svg>
-                                      </span>
+                                  </span>
+                                  <span class="checkbox-text__label">Сталь</span>
+                                </label>
+                              </li>
+                              <li class="checklist__item">
+                                <label class="checkbox-text">
+                                  <span class="checkbox1">
+                                    <input class="checkbox1__input" type="checkbox" name="filter_field4" value="6">
+                                    <span class="checkbox1__visual">
+                                      <svg class="checkbox1__mark" width="12" height="11" aria-hidden="true">
+                                        <use xlink:href="img/sprite.svg#mark1"></use>
+                                      </svg>
                                     </span>
-                                    <span class="checkbox-text__label">Нержавеющая сталь</span>
-                                  </label>
-                                </li>
-                                <li class="checklist__item">
-                                  <label class="checkbox-text">
-                                    <span class="checkbox1">
-                                      <input class="checkbox1__input" type="checkbox" name="filter_field4" value="7">
-                                      <span class="checkbox1__visual">
-                                        <svg class="checkbox1__mark" width="12" height="11" aria-hidden="true">
-                                          <use xlink:href="img/sprite.svg#mark1"></use>
-                                        </svg>
-                                      </span>
+                                  </span>
+                                  <span class="checkbox-text__label">Нержавеющая сталь</span>
+                                </label>
+                              </li>
+                              <li class="checklist__item">
+                                <label class="checkbox-text">
+                                  <span class="checkbox1">
+                                    <input class="checkbox1__input" type="checkbox" name="filter_field4" value="7">
+                                    <span class="checkbox1__visual">
+                                      <svg class="checkbox1__mark" width="12" height="11" aria-hidden="true">
+                                        <use xlink:href="img/sprite.svg#mark1"></use>
+                                      </svg>
                                     </span>
-                                    <span class="checkbox-text__label">Сталь</span>
-                                  </label>
-                                </li>
-                                <li class="checklist__item">
-                                  <label class="checkbox-text">
-                                    <span class="checkbox1">
-                                      <input class="checkbox1__input" type="checkbox" name="filter_field4" value="8">
-                                      <span class="checkbox1__visual">
-                                        <svg class="checkbox1__mark" width="12" height="11" aria-hidden="true">
-                                          <use xlink:href="img/sprite.svg#mark1"></use>
-                                        </svg>
-                                      </span>
+                                  </span>
+                                  <span class="checkbox-text__label">Сталь</span>
+                                </label>
+                              </li>
+                              <li class="checklist__item">
+                                <label class="checkbox-text">
+                                  <span class="checkbox1">
+                                    <input class="checkbox1__input" type="checkbox" name="filter_field4" value="8">
+                                    <span class="checkbox1__visual">
+                                      <svg class="checkbox1__mark" width="12" height="11" aria-hidden="true">
+                                        <use xlink:href="img/sprite.svg#mark1"></use>
+                                      </svg>
                                     </span>
-                                    <span class="checkbox-text__label">Нержавеющая сталь</span>
-                                  </label>
-                                </li>
-                                <li class="checklist__item">
-                                  <label class="checkbox-text">
-                                    <span class="checkbox1">
-                                      <input class="checkbox1__input" type="checkbox" name="filter_field4" value="9">
-                                      <span class="checkbox1__visual">
-                                        <svg class="checkbox1__mark" width="12" height="11" aria-hidden="true">
-                                          <use xlink:href="img/sprite.svg#mark1"></use>
-                                        </svg>
-                                      </span>
+                                  </span>
+                                  <span class="checkbox-text__label">Нержавеющая сталь</span>
+                                </label>
+                              </li>
+                              <li class="checklist__item">
+                                <label class="checkbox-text">
+                                  <span class="checkbox1">
+                                    <input class="checkbox1__input" type="checkbox" name="filter_field4" value="9">
+                                    <span class="checkbox1__visual">
+                                      <svg class="checkbox1__mark" width="12" height="11" aria-hidden="true">
+                                        <use xlink:href="img/sprite.svg#mark1"></use>
+                                      </svg>
                                     </span>
-                                    <span class="checkbox-text__label">Сталь</span>
-                                  </label>
-                                </li>
-                              </ul>
-                            </div>
+                                  </span>
+                                  <span class="checkbox-text__label">Сталь</span>
+                                </label>
+                              </li>
+                            </ul>
                           </div>
                         </div>
-                      </fieldset>
-                    </div>
-                    <div class="filter__buttons1">
-                      <button class="btn btn_black btn_small" type="submit">Применить</button>
-                      <button class="btn btn_black btn_hollow btn_small" type="reset">Сбросить</button>
-                    </div>
-                  </form>
-                </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                  <div class="filter__buttons1">
+                    <button class="btn btn_black btn_small" type="submit">Применить</button>
+                    <button class="btn btn_black btn_hollow btn_small" type="reset">Сбросить</button>
+                  </div>
+                </form>
               </div>
             </div>
-            <div class="grid1__content">
-              <div class="catalog-topbar">
-                <div class="catalog-topbar__left">
-                  <button data-action="showFilter" class="btn-filter" type="button">
-                    <svg aria-hidden="true" width="18" height="18">
-                      <use xlink:href="img/sprite.svg#filter1"></use>
-                    </svg>
-                    Фильтры
-                  </button>
-                </div>
-                <div class="catalog-topbar__right">
-                  <select data-select class="ts-wrapper_text" name="sort">
-                    <option value="1">По популярности</option>
-                    <option value="2">По цене</option>
-                  </select>
-                </div>
-              </div>
-              <div class="products-horizontal">
-                {% include 'blocks/card-product-horizontal1.njk' %}
-                {% include 'blocks/card-product-horizontal2.njk' %}
-                {% include 'blocks/card-product-horizontal1.njk' %}
-                {% include 'blocks/card-product-horizontal2.njk' %}
-                {% include 'blocks/card-product-horizontal1.njk' %}
-                {% include 'blocks/card-product-horizontal2.njk' %}
-                {% include 'blocks/card-product-horizontal1.njk' %}
-                {% include 'blocks/card-product-horizontal2.njk' %}
-                {% include 'blocks/card-product-horizontal1.njk' %}
-                {% include 'blocks/card-product-horizontal1.njk' %}
-              </div>
-              <div class="catalog-bottom">
-                <button type="button" class="btn-load">
-                  <svg aria-hidden="true" width="24" height="24">
-                    <use xlink:href="img/sprite.svg#plus2"></use>
+          </div>
+          <div class="grid1__content">
+            <div class="catalog-topbar">
+              <div class="catalog-topbar__left">
+                <button data-action="showFilter" class="btn-filter" type="button">
+                  <svg aria-hidden="true" width="18" height="18">
+                    <use xlink:href="img/sprite.svg#filter1"></use>
                   </svg>
-                  <span>Показать еще</span>
+                  Фильтры
                 </button>
-                <nav aria-label="Постраничная навигация">
-                  <ul class="pagination">
-                    <li>
-                      <span class="pagination__item pagination__item_nav pagination__item_nav-prev pagination__item_disabled" href="#">
-                        <svg aria-hidden="true" width="12" height="21">
-                          <use xlink:href="img/sprite.svg#chevron1"></use>
-                        </svg>
-                      </span>
-                    </li>
-                    <li>
-                      <a class="pagination__item pagination__item_active" aria-current="page" href="#">1</a>
-                    </li>
-                    <li>
-                      <a class="pagination__item" href="#"><span class="v-h">Страница </span>2</a>
-                    </li>
-                    <li>
-                      <a class="pagination__item" href="#"><span class="v-h">Страница </span>3</a>
-                    </li>
-                    <li>
-                      <a class="pagination__item pagination__item_divider" href="#">...</a>
-                    </li>
-                    <li>
-                      <a class="pagination__item" href="#"><span class="v-h">Страница </span>12</a>
-                    </li>
-                    <li>
-                      <a class="pagination__item pagination__item_nav pagination__item_nav-next" href="#">
-                        <svg aria-hidden="true" width="12" height="21">
-                          <use xlink:href="img/sprite.svg#chevron3"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
               </div>
-              <div class="grid1__inner2">
-                <div class="textblock1">
-                  <h2>ООО «НААНИТ» ОФИЦИАЛЬНЫЙ ДИСТРИБЬЮТОР БРЕНДА ZCC-CT</h2>
-                  <p>ООО «НААНИТ» — динамично развивающаяся компания на рынке металлорежущего инструмента. Мы занимаемся <a href="#">комплексным оснащением</a> и поставкой промышленного инструмента на ведущие предприятия ЮФО, являемся официальным дистрибьютором бренда ZCC-CT.</p>
-                  <p>Наша компания представляет весь спектр инструмента от стандартного до специального сложнопрофильного режущего инструмента по чертежам Заказчика. Качество и подтверждено ведущими предприятиями России.</p>
-                  <p>Наши специалисты всегда готовы оказать консультативную и техническую поддержку, а также выехать на Ваше предприятие для подбора и испытания необходимого инструмента. Будем рады увидеть Вас в числе наших клиентов с надеждой на долгосрочное и взаимовыгодное сотрудничество!</p>
-                </div>
+              <div class="catalog-topbar__right">
+                <select data-select class="ts-wrapper_text" name="sort">
+                  <option value="1">По популярности</option>
+                  <option value="2">По цене</option>
+                </select>
+              </div>
+            </div>
+            <div class="products-horizontal">
+              {% include 'blocks/card-product-horizontal1.njk' %}
+              {% include 'blocks/card-product-horizontal2.njk' %}
+              {% include 'blocks/card-product-horizontal1.njk' %}
+              {% include 'blocks/card-product-horizontal2.njk' %}
+              {% include 'blocks/card-product-horizontal1.njk' %}
+              {% include 'blocks/card-product-horizontal2.njk' %}
+              {% include 'blocks/card-product-horizontal1.njk' %}
+              {% include 'blocks/card-product-horizontal2.njk' %}
+              {% include 'blocks/card-product-horizontal1.njk' %}
+              {% include 'blocks/card-product-horizontal1.njk' %}
+            </div>
+            <div class="catalog-bottom">
+              <button type="button" class="btn-load">
+                <svg aria-hidden="true" width="24" height="24">
+                  <use xlink:href="img/sprite.svg#plus2"></use>
+                </svg>
+                <span>Показать еще</span>
+              </button>
+              <nav aria-label="Постраничная навигация">
+                <ul class="pagination">
+                  <li>
+                    <span
+                      class="pagination__item pagination__item_nav pagination__item_nav-prev pagination__item_disabled"
+                      href="#">
+                      <svg aria-hidden="true" width="12" height="21">
+                        <use xlink:href="img/sprite.svg#chevron1"></use>
+                      </svg>
+                    </span>
+                  </li>
+                  <li>
+                    <a class="pagination__item pagination__item_active" aria-current="page" href="#">1</a>
+                  </li>
+                  <li>
+                    <a class="pagination__item" href="#"><span class="v-h">Страница </span>2</a>
+                  </li>
+                  <li>
+                    <a class="pagination__item" href="#"><span class="v-h">Страница </span>3</a>
+                  </li>
+                  <li>
+                    <a class="pagination__item pagination__item_divider" href="#">...</a>
+                  </li>
+                  <li>
+                    <a class="pagination__item" href="#"><span class="v-h">Страница </span>12</a>
+                  </li>
+                  <li>
+                    <a class="pagination__item pagination__item_nav pagination__item_nav-next" href="#">
+                      <svg aria-hidden="true" width="12" height="21">
+                        <use xlink:href="img/sprite.svg#chevron3"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="grid1__inner2">
+              <div class="textblock1">
+                <h2>ООО «НААНИТ» ОФИЦИАЛЬНЫЙ ДИСТРИБЬЮТОР БРЕНДА ZCC-CT</h2>
+                <p>ООО «НААНИТ» — динамично развивающаяся компания на рынке металлорежущего инструмента. Мы занимаемся
+                  <a href="#">комплексным оснащением</a> и поставкой промышленного инструмента на ведущие предприятия
+                  ЮФО, являемся официальным дистрибьютором бренда ZCC-CT.
+                </p>
+                <p>Наша компания представляет весь спектр инструмента от стандартного до специального сложнопрофильного
+                  режущего инструмента по чертежам Заказчика. Качество и подтверждено ведущими предприятиями России.</p>
+                <p>Наши специалисты всегда готовы оказать консультативную и техническую поддержку, а также выехать на
+                  Ваше предприятие для подбора и испытания необходимого инструмента. Будем рады увидеть Вас в числе
+                  наших клиентов с надеждой на долгосрочное и взаимовыгодное сотрудничество!</p>
               </div>
             </div>
           </div>
         </div>
-			</main>
-			{% include 'blocks/footer.njk' %}
-		</div>
-    {% include 'blocks/popups.njk' %}
-    {% include 'blocks/scripts.njk' %}
-	</body>
+      </div>
+    </main>
+    {% include 'blocks/footer.njk' %}
+  </div>
+  {% include 'blocks/popups.njk' %}
+  {% include 'blocks/scripts.njk' %}
+</body>
+
 </html>

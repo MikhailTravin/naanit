@@ -5,6 +5,9 @@ body {
   font-family: var(--theme-font-primary);
   font-weight: 400;
   font-size: 16px;
+  &.menu-open {
+    overflow: hidden;
+  }
 }
 
 .noscroll {

@@ -261,6 +261,21 @@ AW.initSelect = function ($el, params = {}) {
           <use xlink:href="img/sprite.svg#chevron2"></use>
         </svg>
       `);
+
+      // Предварительно создаем структуру для SimpleBar
+      this.on('dropdown_open', function () {
+        if (!this.wrapper.querySelector('.ts-dropdown-simplebar')) {
+          const simplebarDiv = document.createElement('div');
+          simplebarDiv.className = 'ts-dropdown-simplebar';
+          simplebarDiv.setAttribute('data-simplebar', '');
+
+          while (this.dropdown.firstChild) {
+            simplebarDiv.appendChild(this.dropdown.firstChild);
+          }
+
+          this.dropdown.appendChild(simplebarDiv);
+        }
+      });
     }
   }
   return new TomSelect($el[0], { ...defaults, ...params });
@@ -513,8 +528,10 @@ $(document).ready(() => {
       case 'toggleCatalogMenu': {
         $(this).toggleClass('active');
         if ($(this).hasClass('active')) {
+          $('body').addClass('menu-open');
           AW.showCatalogMenu();
         } else {
+          $('body').removeClass('menu-open');
           AW.hideCatalogMenu();
         }
         break;
@@ -1011,3 +1028,51 @@ if (filterButtons) {
 
   filterOrders('now');
 }
+
+// Обработчик для поля ИНН
+$(document).on('input', '[data-inn-input]', function () {
+  const $innField = $(this);
+  const inn = $innField.val().trim();
+  const $orgFields = $('[data-org-field]');
+
+  // Проверяем валидность ИНН (10 или 12 цифр)
+  if (/^\d{10}$|^\d{12}$/.test(inn)) {
+    $orgFields.removeClass('hide');
+
+  } else if (inn === '') {
+    // Поле пустое - скрываем поля организации
+    $orgFields.addClass('hide');
+
+  } else {
+    // Невалидный ИНН - скрываем поля
+    $orgFields.addClass('hide');
+    // showPopupNotification('Ошибка', 'Введите корректный ИНН (10 или 12 цифр)', 'OK');
+  }
+
+});
+
+// Универсальный обработчик для всех кнопок с data-action="scroll"
+document.querySelectorAll('a[data-action="scroll"]').forEach(button => {
+  button.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const href = this.getAttribute('href');
+
+    let targetBlock;
+    if (href === '#description') {
+      targetBlock = document.querySelector('.catalog-detail-data__description');
+    } else if (href === '#specs') {
+      targetBlock = document.querySelector('.catalog-detail-data__specs');
+    }
+
+    if (targetBlock) {
+      const headerHeight = document.querySelector('header')?.offsetHeight || 0;
+      const targetPosition = targetBlock.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      });
+    }
+  });
+});
